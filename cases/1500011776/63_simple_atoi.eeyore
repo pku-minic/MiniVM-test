@@ -1,0 +1,178 @@
+f_atoi_ [1]
+    var T0 // s
+    T0 = 0
+    var T1 // isMinus
+    T1 = 1
+    var T2 // i
+    T2 = 0
+l0:
+    var t0
+    t0 = 4 * T2
+    var t1
+    t1 = p0[t0]
+    var t2
+    t2 = t1 == 32
+    if t2==0 goto l1
+    var t3
+    t3 = T2 + 1
+    T2 = t3
+    goto l0
+l1:
+    var t4
+    t4 = 4 * T2
+    var t5
+    t5 = p0[t4]
+    var t6
+    t6 = t5 == 43
+    var t7
+    if t6==0 goto l2
+    t7 = 1
+    goto l4
+l2:
+    var t8
+    t8 = 4 * T2
+    var t9
+    t9 = p0[t8]
+    var t10
+    t10 = t9 == 45
+    if t10==0 goto l3
+    t7 = 1
+    goto l4
+l3:
+    t7 = 0
+l4:
+    if t7==0 goto l5
+    var t11
+    t11 = 4 * T2
+    var t12
+    t12 = p0[t11]
+    var t13
+    t13 = t12 == 45
+    if t13==0 goto l7
+    var t14
+    t14 = - 1
+    T1 = t14
+l7:
+    var t15
+    t15 = T2 + 1
+    T2 = t15
+    goto l6
+l5:
+    var t16
+    t16 = 4 * T2
+    var t17
+    t17 = p0[t16]
+    var t18
+    t18 = t17 < 48
+    var t19
+    if t18==0 goto l8
+    t19 = 1
+    goto l10
+l8:
+    var t20
+    t20 = 4 * T2
+    var t21
+    t21 = p0[t20]
+    var t22
+    t22 = t21 > 57
+    if t22==0 goto l9
+    t19 = 1
+    goto l10
+l9:
+    t19 = 0
+l10:
+    if t19==0 goto l11
+    T0 = 2147483647
+    return T0
+l11:
+l6:
+l12:
+    var t23
+    t23 = 4 * T2
+    var t24
+    t24 = p0[t23]
+    var t25
+    t25 = t24 != 0
+    var t26
+    if t25==0 goto l14
+    var t27
+    t27 = 4 * T2
+    var t28
+    t28 = p0[t27]
+    var t29
+    t29 = t28 > 47
+    if t29==0 goto l14
+    t26 = 1
+    goto l15
+l14:
+    t26 = 0
+l15:
+    var t30
+    if t26==0 goto l16
+    var t31
+    t31 = 4 * T2
+    var t32
+    t32 = p0[t31]
+    var t33
+    t33 = t32 < 58
+    if t33==0 goto l16
+    t30 = 1
+    goto l17
+l16:
+    t30 = 0
+l17:
+    if t30==0 goto l13
+    var t34
+    t34 = T0 * 10
+    var t35
+    t35 = 4 * T2
+    var t36
+    t36 = p0[t35]
+    var t37
+    t37 = t34 + t36
+    var t38
+    t38 = t37 - 48
+    T0 = t38
+    var t39
+    t39 = T2 + 1
+    T2 = t39
+    goto l12
+l13:
+    var t40
+    t40 = T0 * T1
+    return t40
+end f_atoi_
+f_main [0]
+    var 2000 T3 // string[500]
+    var T4 // temp
+    T4 = 0
+    var T5 // i
+    T5 = 0
+l18:
+    var t41
+    t41 = T4 != 10
+    if t41==0 goto l19
+    var t42
+    t42 = call f_getchar
+    T4 = t42
+    var t43
+    t43 = 4 * T5
+    T3[t43] = T4
+    var t44
+    t44 = T5 + 1
+    T5 = t44
+    goto l18
+l19:
+    var t45
+    t45 = 4 * T5
+    T3[t45] = 0
+    var t46
+    param T3
+    t46 = call f_atoi_
+    T5 = t46
+    var t47
+    param T5
+    t47 = call f_putint
+    T5 = t47
+    return 0
+end f_main

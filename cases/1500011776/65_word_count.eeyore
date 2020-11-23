@@ -1,0 +1,69 @@
+f_wc [2]
+    var T0 // inWord
+    var T1 // i
+    var T2 // count
+    T1 = 0
+    T0 = 0
+    T2 = 0
+l0:
+    var t0
+    t0 = T1 < p1
+    if t0==0 goto l1
+    var t1
+    t1 = 4 * T1
+    var t2
+    t2 = p0[t1]
+    var t3
+    t3 = t2 != 32
+    if t3==0 goto l2
+    var t4
+    t4 = T0 == 0
+    if t4==0 goto l4
+    var t5
+    t5 = T2 + 1
+    T2 = t5
+    T0 = 1
+l4:
+    goto l3
+l2:
+    T0 = 0
+l3:
+    var t6
+    t6 = T1 + 1
+    T1 = t6
+    goto l0
+l1:
+    return T2
+end f_wc
+f_main [0]
+    var 2000 T3 // string[500]
+    var T4 // temp
+    var T5 // i
+    T5 = 0
+    T4 = 0
+l5:
+    var t7
+    t7 = T4 != 10
+    if t7==0 goto l6
+    var t8
+    t8 = call f_getchar
+    T4 = t8
+    var t9
+    t9 = 4 * T5
+    T3[t9] = T4
+    var t10
+    t10 = T5 + 1
+    T5 = t10
+    goto l5
+l6:
+    var t11
+    param T3
+    param T5
+    t11 = call f_wc
+    T4 = t11
+    var t12
+    param T4
+    t12 = call f_putint
+    T4 = t12
+    return 0
+end f_main

@@ -1,0 +1,105 @@
+f_main [0]
+    var T0 // i
+    var T1 // sum
+    var 40 T2 // a[10]
+    T1 = 0
+    T0 = 0
+l0:
+    var t0
+    t0 = T0 < 10
+    if t0==0 goto l1
+    var t1
+    t1 = T0 + 1
+    var t2
+    t2 = 4 * T0
+    T2[t2] = t1
+    var t3
+    t3 = T0 + 1
+    T0 = t3
+    goto l0
+l1:
+    var T3 // x
+    var T4 // high
+    var T5 // low
+    var T6 // mid
+    var T7 // n
+    T7 = 10
+    var t4
+    t4 = call f_getint
+    T3 = t4
+    var t5
+    t5 = T7 - 1
+    T4 = t5
+    T5 = 0
+    var t6
+    t6 = T4 + T5
+    var t7
+    t7 = t6 / 2
+    T6 = t7
+l2:
+    var t8
+    t8 = 4 * T6
+    var t9
+    t9 = T2[t8]
+    var t10
+    t10 = t9 != T3
+    var t11
+    if t10==0 goto l4
+    var t12
+    t12 = T5 < T4
+    if t12==0 goto l4
+    t11 = 1
+    goto l5
+l4:
+    t11 = 0
+l5:
+    if t11==0 goto l3
+    var t13
+    t13 = T4 + T5
+    var t14
+    t14 = t13 / 2
+    T6 = t14
+    var t15
+    t15 = 4 * T6
+    var t16
+    t16 = T2[t15]
+    var t17
+    t17 = T3 < t16
+    if t17==0 goto l6
+    var t18
+    t18 = T6 - 1
+    T4 = t18
+    goto l7
+l6:
+    var t19
+    t19 = T6 + 1
+    T5 = t19
+l7:
+    goto l2
+l3:
+    var t20
+    t20 = 4 * T6
+    var t21
+    t21 = T2[t20]
+    var t22
+    t22 = T3 == t21
+    if t22==0 goto l8
+    var t23
+    param T3
+    t23 = call f_putint
+    T3 = t23
+    goto l9
+l8:
+    T3 = 0
+    var t24
+    param T3
+    t24 = call f_putint
+    T3 = t24
+l9:
+    T3 = 10
+    var t25
+    param T3
+    t25 = call f_putchar
+    T3 = t25
+    return 0
+end f_main

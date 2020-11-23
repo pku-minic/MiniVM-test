@@ -1,0 +1,67 @@
+v0 = malloc 20
+f_main [0] [17]
+    call f_getint
+    load 1 t0
+    t0 = 0
+    loadaddr v0 t1
+    t2 = t1 + t0
+    t2 [0] = a0
+    call f_getint
+    load 3 t0
+    t0 = 4
+    loadaddr v0 t1
+    t3 = t1 + t0
+    t3 [0] = a0
+    call f_getint
+    load 5 t0
+    t0 = 8
+    loadaddr v0 t1
+    t4 = t1 + t0
+    t4 [0] = a0
+    call f_getint
+    load 7 t0
+    t0 = 12
+    loadaddr v0 t1
+    t5 = t1 + t0
+    t5 [0] = a0
+    call f_getint
+    load 9 t0
+    t0 = 16
+    loadaddr v0 t1
+    t6 = t1 + t0
+    t6 [0] = a0
+    load 10 s1
+    s1 = 4
+    load 11 s2
+    s2 = 0
+    store s1 10
+    store s2 11
+l0:
+    load 12 t0
+    load 10 t1
+    t2 = 1
+    t0 = t1 > t2
+    store t0 12
+    if t0 == x0 goto l1
+    load 13 t0
+    load 10 t1
+    t2 = 4
+    t0 = t2 * t1
+    load 14 t3
+    loadaddr v0 t4
+    t5 = t4 + t0
+    t3 = t5 [0]
+    load 15 t6
+    load 11 s1
+    t6 = s1 + t3
+    s1 = t6
+    load 16 s2
+    s2 = t1 + -1
+    t1 = s2
+    store s1 11
+    store t1 10
+    goto l0
+l1:
+    load 11 a0
+    return
+end f_main

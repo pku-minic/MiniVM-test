@@ -1,0 +1,90 @@
+f_climbStairs [1] [29]
+    load 1 t0
+    t0 = a0 < 4
+    store t0 1
+    store a0 0
+    if t0 == x0 goto l0
+    load 0 a0
+    return
+l0:
+    load 12 t0
+    t0 = 0
+    loadaddr 2 t1
+    t2 = t1 + t0
+    t2 [0] = x0
+    load 13 t3
+    t3 = 4
+    t4 = 1
+    t5 = t1 + t3
+    t5 [0] = t4
+    load 14 t6
+    t6 = 8
+    s1 = 2
+    s2 = t1 + t6
+    s2 [0] = s1
+    load 15 s3
+    s3 = 3
+    store s3 15
+l1:
+    load 16 t0
+    load 0 t1
+    t0 = t1 + 1
+    load 17 t2
+    load 15 t3
+    t2 = t3 < t0
+    store t2 17
+    if t2 == x0 goto l2
+    load 18 t0
+    load 15 t1
+    t0 = t1 + -1
+    load 19 t2
+    t3 = 4
+    t2 = t3 * t0
+    load 20 t4
+    loadaddr 2 t5
+    t6 = t5 + t2
+    t4 = t6 [0]
+    load 21 s1
+    s1 = t1 + -2
+    load 22 s2
+    s3 = 4
+    s2 = s3 * s1
+    load 23 s4
+    s5 = t5 + s2
+    s4 = s5 [0]
+    load 24 s6
+    s6 = t4 + s4
+    load 25 s7
+    s8 = 4
+    s7 = s8 * t1
+    s9 = t5 + s7
+    s9 [0] = s6
+    load 26 s10
+    s10 = t1 + 1
+    t1 = s10
+    store t1 15
+    goto l1
+l2:
+    load 27 t0
+    load 0 t1
+    t2 = 4
+    t0 = t2 * t1
+    load 28 t3
+    loadaddr 2 t4
+    t5 = t4 + t0
+    t3 = t5 [0]
+    a0 = t3
+    store t3 28
+    return
+end f_climbStairs
+f_main [0] [3]
+    load 1 t0
+    t0 = 5
+    a0 = t0
+    call f_climbStairs
+    load 0 t0
+    t0 = a0
+    a0 = t0
+    store t0 0
+    return
+end f_main

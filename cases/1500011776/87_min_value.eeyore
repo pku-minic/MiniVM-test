@@ -1,0 +1,75 @@
+var T0 // n
+f_minvalue [2]
+    var T1 // i
+    var T2 // min
+    var t0
+    t0 = 4 * 0
+    var t1
+    t1 = p0[t0]
+    T2 = t1
+    T1 = 0
+l0:
+    var t2
+    t2 = T1 < p1
+    if t2==0 goto l1
+    var t3
+    t3 = 4 * T1
+    var t4
+    t4 = p0[t3]
+    var t5
+    t5 = t4 < T2
+    if t5==0 goto l2
+    var t6
+    t6 = 4 * T1
+    var t7
+    t7 = p0[t6]
+    T2 = t7
+l2:
+    var t8
+    t8 = T1 + 1
+    T1 = t8
+    goto l0
+l1:
+    return T2
+end f_minvalue
+f_main [0]
+    var 40 T3 // a[10]
+    var t9
+    t9 = 4 * 0
+    T3[t9] = 12
+    var t10
+    t10 = 4 * 1
+    T3[t10] = 45
+    var t11
+    t11 = 4 * 2
+    T3[t11] = 7
+    var t12
+    t12 = 4 * 3
+    T3[t12] = 8
+    var t13
+    t13 = 4 * 4
+    T3[t13] = 96
+    var t14
+    t14 = 4 * 5
+    T3[t14] = 4
+    var t15
+    t15 = 4 * 6
+    T3[t15] = 10
+    var t16
+    t16 = 4 * 7
+    T3[t16] = 48
+    var t17
+    t17 = 4 * 8
+    T3[t17] = 2
+    var t18
+    t18 = 4 * 9
+    T3[t18] = 46
+    var T4 // i
+    var T5 // min
+    var t19
+    param T3
+    param 10
+    t19 = call f_minvalue
+    T5 = t19
+    return T5
+end f_main

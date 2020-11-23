@@ -1,0 +1,189 @@
+f_maxArea [2] [30]
+    load 2 t0
+    t0 = 0
+    load 4 t1
+    t1 = a1 + -1
+    load 3 t2
+    t2 = t1
+    load 6 t3
+    t3 = -1
+    load 5 t4
+    t4 = t3
+    store t0 2
+    store t2 3
+    store t3 6
+    store t4 5
+    store a0 0
+l0:
+    load 7 t0
+    load 2 t1
+    load 3 t2
+    t0 = t1 < t2
+    store t0 7
+    if t0 == x0 goto l1
+    load 9 t0
+    load 2 t1
+    t2 = 4
+    t0 = t2 * t1
+    load 10 t3
+    load 0 t4
+    t5 = t4 + t0
+    t3 = t5 [0]
+    load 11 t6
+    load 3 s1
+    s2 = 4
+    t6 = s2 * s1
+    load 12 s3
+    s4 = t4 + t6
+    s3 = s4 [0]
+    load 13 s5
+    s5 = t3 < s3
+    store s5 13
+    if s5 == x0 goto l2
+    load 14 t0
+    load 3 t1
+    load 2 t2
+    t0 = t1 - t2
+    load 15 t3
+    t4 = 4
+    t3 = t4 * t2
+    load 16 t5
+    load 0 t6
+    s1 = t6 + t3
+    t5 = s1 [0]
+    load 17 s2
+    s2 = t0 * t5
+    load 8 s3
+    s3 = s2
+    store s3 8
+    goto l3
+l2:
+    load 18 t0
+    load 3 t1
+    load 2 t2
+    t0 = t1 - t2
+    load 19 t3
+    t4 = 4
+    t3 = t4 * t1
+    load 20 t5
+    load 0 t6
+    s1 = t6 + t3
+    t5 = s1 [0]
+    load 21 s2
+    s2 = t0 * t5
+    load 8 s3
+    s3 = s2
+    store s2 21
+    store s3 8
+l3:
+    load 22 t0
+    load 8 t1
+    load 5 t2
+    t0 = t1 > t2
+    store t0 22
+    if t0 == x0 goto l4
+    load 5 t0
+    load 8 t1
+    t0 = t1
+    store t0 5
+l4:
+    load 23 t0
+    load 2 t1
+    t2 = 4
+    t0 = t2 * t1
+    load 24 t3
+    load 0 t4
+    t5 = t4 + t0
+    t3 = t5 [0]
+    load 25 t6
+    load 3 s1
+    s2 = 4
+    t6 = s2 * s1
+    load 26 s3
+    s4 = t4 + t6
+    s3 = s4 [0]
+    load 27 s5
+    s5 = t3 > s3
+    store s5 27
+    if s5 == x0 goto l5
+    load 28 t0
+    load 3 t1
+    t0 = t1 + -1
+    t1 = t0
+    store t1 3
+    goto l6
+l5:
+    load 29 t0
+    load 2 t1
+    t0 = t1 + 1
+    t1 = t0
+    store t0 29
+    store t1 2
+l6:
+    goto l0
+l1:
+    load 5 a0
+    return
+end f_maxArea
+f_main [0] [22]
+    load 11 t0
+    t0 = 0
+    loadaddr 1 t1
+    t2 = 3
+    t3 = t1 + t0
+    t3 [0] = t2
+    load 12 t4
+    t4 = 4
+    t5 = 3
+    t6 = t1 + t4
+    t6 [0] = t5
+    load 13 s1
+    s1 = 8
+    s2 = 9
+    s3 = t1 + s1
+    s3 [0] = s2
+    load 14 s4
+    s4 = 12
+    s5 = t1 + s4
+    s5 [0] = x0
+    load 15 s6
+    s6 = 16
+    s7 = t1 + s6
+    s7 [0] = x0
+    load 16 s8
+    s8 = 20
+    s9 = 1
+    s10 = t1 + s8
+    s10 [0] = s9
+    load 17 s11
+    s11 = 24
+    a0 = 1
+    a1 = t1 + s11
+    a1 [0] = a0
+    load 18 a2
+    a2 = 28
+    a3 = 5
+    a4 = t1 + a2
+    a4 [0] = a3
+    load 19 a5
+    a5 = 32
+    a6 = 7
+    a7 = t1 + a5
+    a7 [0] = a6
+    load 20 t0
+    t0 = 36
+    t2 = 8
+    t3 = t1 + t0
+    t3 [0] = t2
+    load 0 t0
+    t0 = 10
+    a0 = t1
+    a1 = t0
+    store t0 0
+    call f_maxArea
+    load 0 t0
+    t0 = a0
+    a0 = t0
+    store t0 0
+    return
+end f_main

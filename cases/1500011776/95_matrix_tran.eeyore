@@ -1,0 +1,199 @@
+var T0 // M
+var T1 // L
+var T2 // N
+f_tran [9]
+    var T3 // i
+    T3 = 0
+    var t0
+    t0 = 4 * 1
+    var t1
+    t1 = p2[t0]
+    var t2
+    t2 = 4 * 2
+    p7[t2] = t1
+    var t3
+    t3 = 4 * 2
+    var t4
+    t4 = p1[t3]
+    var t5
+    t5 = 4 * 1
+    p8[t5] = t4
+    var t6
+    t6 = 4 * 0
+    var t7
+    t7 = p1[t6]
+    var t8
+    t8 = 4 * 1
+    p6[t8] = t7
+    var t9
+    t9 = 4 * 0
+    var t10
+    t10 = p2[t9]
+    var t11
+    t11 = 4 * 2
+    p6[t11] = t10
+    var t12
+    t12 = 4 * 1
+    var t13
+    t13 = p0[t12]
+    var t14
+    t14 = 4 * 0
+    p7[t14] = t13
+    var t15
+    t15 = 4 * 2
+    var t16
+    t16 = p0[t15]
+    var t17
+    t17 = 4 * 0
+    p8[t17] = t16
+    var t18
+    t18 = 4 * 1
+    var t19
+    t19 = p1[t18]
+    var t20
+    t20 = 4 * 1
+    p7[t20] = t19
+    var t21
+    t21 = 4 * 2
+    var t22
+    t22 = p2[t21]
+    var t23
+    t23 = 4 * 2
+    p8[t23] = t22
+    var t24
+    t24 = 4 * 0
+    var t25
+    t25 = p0[t24]
+    var t26
+    t26 = 4 * 0
+    p6[t26] = t25
+    return 0
+end f_tran
+f_main [0]
+    T2 = 3
+    T0 = 3
+    T1 = 3
+    var 12 T4 // a0[3]
+    var 12 T5 // a1[3]
+    var 12 T6 // a2[3]
+    var 12 T7 // b0[3]
+    var 12 T8 // b1[3]
+    var 12 T9 // b2[3]
+    var 24 T10 // c0[6]
+    var 12 T11 // c1[3]
+    var 12 T12 // c2[3]
+    var T13 // i
+    T13 = 0
+l0:
+    var t27
+    t27 = T13 < T0
+    if t27==0 goto l1
+    var t28
+    t28 = 4 * T13
+    T4[t28] = T13
+    var t29
+    t29 = 4 * T13
+    T5[t29] = T13
+    var t30
+    t30 = 4 * T13
+    T6[t30] = T13
+    var t31
+    t31 = 4 * T13
+    T7[t31] = T13
+    var t32
+    t32 = 4 * T13
+    T8[t32] = T13
+    var t33
+    t33 = 4 * T13
+    T9[t33] = T13
+    var t34
+    t34 = T13 + 1
+    T13 = t34
+    goto l0
+l1:
+    var t35
+    param T4
+    param T5
+    param T6
+    param T7
+    param T8
+    param T9
+    param T10
+    param T11
+    param T12
+    t35 = call f_tran
+    T13 = t35
+    var T14 // x
+l2:
+    var t36
+    t36 = T13 < T2
+    if t36==0 goto l3
+    var t37
+    t37 = 4 * T13
+    var t38
+    t38 = T10[t37]
+    T14 = t38
+    var t39
+    param T14
+    t39 = call f_putint
+    T14 = t39
+    var t40
+    t40 = T13 + 1
+    T13 = t40
+    goto l2
+l3:
+    T14 = 10
+    var t41
+    param T14
+    t41 = call f_putchar
+    T14 = t41
+    T13 = 0
+l4:
+    var t42
+    t42 = T13 < T2
+    if t42==0 goto l5
+    var t43
+    t43 = 4 * T13
+    var t44
+    t44 = T11[t43]
+    T14 = t44
+    var t45
+    param T14
+    t45 = call f_putint
+    T14 = t45
+    var t46
+    t46 = T13 + 1
+    T13 = t46
+    goto l4
+l5:
+    T14 = 10
+    T13 = 0
+    var t47
+    param T14
+    t47 = call f_putchar
+    T14 = t47
+l6:
+    var t48
+    t48 = T13 < T2
+    if t48==0 goto l7
+    var t49
+    t49 = 4 * T13
+    var t50
+    t50 = T12[t49]
+    T14 = t50
+    var t51
+    param T14
+    t51 = call f_putint
+    T14 = t51
+    var t52
+    t52 = T13 + 1
+    T13 = t52
+    goto l6
+l7:
+    T14 = 10
+    var t53
+    param T14
+    t53 = call f_putchar
+    T14 = t53
+    return 0
+end f_main

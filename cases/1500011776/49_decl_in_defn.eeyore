@@ -1,0 +1,10 @@
+f_main [0]
+    var T0 // a
+    T0 = 12
+    var T1 // t
+    var t0
+    param T0
+    t0 = call f_putint
+    T1 = t0
+    return 0
+end f_main

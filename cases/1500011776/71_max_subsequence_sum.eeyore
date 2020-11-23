@@ -1,0 +1,100 @@
+f_maxSubArray [2]
+    var t0
+    t0 = p1 == 0
+    if t0==0 goto l0
+    return 0
+l0:
+    var t1
+    t1 = p1 == 1
+    if t1==0 goto l1
+    var t2
+    t2 = 4 * 0
+    var t3
+    t3 = p0[t2]
+    return t3
+l1:
+    var T0 // sum
+    var t4
+    t4 = 4 * 0
+    var t5
+    t5 = p0[t4]
+    T0 = t5
+    var T1 // max
+    T1 = T0
+    var T2 // i
+    T2 = 1
+l2:
+    var t6
+    t6 = T2 < p1
+    if t6==0 goto l3
+    var t7
+    t7 = T0 < 0
+    if t7==0 goto l4
+    T0 = 0
+l4:
+    var t8
+    t8 = 4 * T2
+    var t9
+    t9 = p0[t8]
+    var t10
+    t10 = T0 + t9
+    T0 = t10
+    var t11
+    t11 = T1 < T0
+    if t11==0 goto l5
+    T1 = T0
+l5:
+    var t12
+    t12 = T2 + 1
+    T2 = t12
+    goto l2
+l3:
+    return T1
+end f_maxSubArray
+f_main [0]
+    var T3 // res
+    var 40 T4 // a[10]
+    var t13
+    t13 = - 4
+    var t14
+    t14 = 4 * 0
+    T4[t14] = t13
+    var t15
+    t15 = 4 * 1
+    T4[t15] = 3
+    var t16
+    t16 = 4 * 2
+    T4[t16] = 9
+    var t17
+    t17 = - 2
+    var t18
+    t18 = 4 * 3
+    T4[t18] = t17
+    var t19
+    t19 = 4 * 4
+    T4[t19] = 0
+    var t20
+    t20 = 4 * 5
+    T4[t20] = 1
+    var t21
+    t21 = - 6
+    var t22
+    t22 = 4 * 6
+    T4[t22] = t21
+    var t23
+    t23 = 4 * 7
+    T4[t23] = 5
+    var t24
+    t24 = 4 * 8
+    T4[t24] = 7
+    var t25
+    t25 = 4 * 9
+    T4[t25] = 8
+    T3 = 10
+    var t26
+    param T4
+    param T3
+    t26 = call f_maxSubArray
+    T3 = t26
+    return T3
+end f_main

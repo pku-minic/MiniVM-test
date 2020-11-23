@@ -1,0 +1,33 @@
+f_doubleWhile [0]
+    var T0 // i
+    T0 = 5
+    var T1 // j
+    T1 = 7
+l0:
+    var t0
+    t0 = T0 < 100
+    if t0==0 goto l1
+    var t1
+    t1 = T0 + 30
+    T0 = t1
+l2:
+    var t2
+    t2 = T1 < 100
+    if t2==0 goto l3
+    var t3
+    t3 = T1 + 6
+    T1 = t3
+    goto l2
+l3:
+    var t4
+    t4 = T1 - 100
+    T1 = t4
+    goto l0
+l1:
+    return T1
+end f_doubleWhile
+f_main [0]
+    var t5
+    t5 = call f_doubleWhile
+    return t5
+end f_main

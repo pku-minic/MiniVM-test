@@ -1,0 +1,27 @@
+var T0 // a
+var T1 // b
+f_main [0]
+    var t0
+    t0 = call f_getint
+    T0 = t0
+    var t1
+    t1 = call f_getint
+    T1 = t1
+    var t2
+    if T0==0 goto l0
+    t2 = 1
+    goto l2
+l0:
+    if T1==0 goto l1
+    t2 = 1
+    goto l2
+l1:
+    t2 = 0
+l2:
+    if t2==0 goto l3
+    return 1
+    goto l4
+l3:
+    return 0
+l4:
+end f_main

@@ -1,0 +1,110 @@
+var T0 // N
+f_exchange [2]
+    var T1 // i
+    var T2 // t
+    T1 = 0
+l0:
+    var t0
+    t0 = p1 / 2
+    var t1
+    t1 = T1 < t0
+    if t1==0 goto l1
+    var t2
+    t2 = 4 * T1
+    var t3
+    t3 = p0[t2]
+    T2 = t3
+    var t4
+    t4 = p1 - T1
+    var t5
+    t5 = t4 - 1
+    var t6
+    t6 = 4 * t5
+    var t7
+    t7 = p0[t6]
+    var t8
+    t8 = 4 * T1
+    p0[t8] = t7
+    var t9
+    t9 = p1 - T1
+    var t10
+    t10 = t9 - 1
+    var t11
+    t11 = 4 * t10
+    p0[t11] = T2
+    var t12
+    t12 = T1 + 1
+    T1 = t12
+    goto l0
+l1:
+    return 0
+end f_exchange
+f_main [0]
+    T0 = 9
+    var 40 T3 // a[10]
+    var t13
+    t13 = 4 * 0
+    T3[t13] = 1
+    var t14
+    t14 = 4 * 1
+    T3[t14] = 3
+    var t15
+    t15 = 4 * 2
+    T3[t15] = 4
+    var t16
+    t16 = 4 * 3
+    T3[t16] = 7
+    var t17
+    t17 = 4 * 4
+    T3[t17] = 8
+    var t18
+    t18 = 4 * 5
+    T3[t18] = 11
+    var t19
+    t19 = 4 * 6
+    T3[t19] = 13
+    var t20
+    t20 = 4 * 7
+    T3[t20] = 18
+    var t21
+    t21 = 4 * 8
+    T3[t21] = 56
+    var t22
+    t22 = 4 * 9
+    T3[t22] = 78
+    var T4 // x
+    var T5 // i
+    T5 = 0
+    T4 = 10
+    var t23
+    param T3
+    param T4
+    t23 = call f_exchange
+    T4 = t23
+l2:
+    var t24
+    t24 = T0 + 1
+    var t25
+    t25 = T5 < t24
+    if t25==0 goto l3
+    var t26
+    t26 = 4 * T5
+    var t27
+    t27 = T3[t26]
+    T4 = t27
+    var t28
+    param T4
+    t28 = call f_putint
+    T4 = t28
+    T4 = 10
+    var t29
+    param T4
+    t29 = call f_putchar
+    T4 = t29
+    var t30
+    t30 = T5 + 1
+    T5 = t30
+    goto l2
+l3:
+    return 0
+end f_main

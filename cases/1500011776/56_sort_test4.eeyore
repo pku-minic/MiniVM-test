@@ -1,0 +1,131 @@
+var T0 // n
+f_select_sort [2]
+    var T1 // i
+    var T2 // j
+    var T3 // min
+    T1 = 0
+l0:
+    var t0
+    t0 = p1 - 1
+    var t1
+    t1 = T1 < t0
+    if t1==0 goto l1
+    T3 = T1
+    var t2
+    t2 = T1 + 1
+    T2 = t2
+l2:
+    var t3
+    t3 = T2 < p1
+    if t3==0 goto l3
+    var t4
+    t4 = 4 * T3
+    var t5
+    t5 = p0[t4]
+    var t6
+    t6 = 4 * T2
+    var t7
+    t7 = p0[t6]
+    var t8
+    t8 = t5 > t7
+    if t8==0 goto l4
+    T3 = T2
+l4:
+    var t9
+    t9 = T2 + 1
+    T2 = t9
+    goto l2
+l3:
+    var t10
+    t10 = T3 != T1
+    if t10==0 goto l5
+    var T4 // tmp
+    var t11
+    t11 = 4 * T3
+    var t12
+    t12 = p0[t11]
+    T4 = t12
+    var t13
+    t13 = 4 * T1
+    var t14
+    t14 = p0[t13]
+    var t15
+    t15 = 4 * T3
+    p0[t15] = t14
+    var t16
+    t16 = 4 * T1
+    p0[t16] = T4
+l5:
+    var t17
+    t17 = T1 + 1
+    T1 = t17
+    goto l0
+l1:
+    return 0
+end f_select_sort
+f_main [0]
+    T0 = 10
+    var 40 T5 // a[10]
+    var t18
+    t18 = 4 * 0
+    T5[t18] = 4
+    var t19
+    t19 = 4 * 1
+    T5[t19] = 3
+    var t20
+    t20 = 4 * 2
+    T5[t20] = 9
+    var t21
+    t21 = 4 * 3
+    T5[t21] = 2
+    var t22
+    t22 = 4 * 4
+    T5[t22] = 0
+    var t23
+    t23 = 4 * 5
+    T5[t23] = 1
+    var t24
+    t24 = 4 * 6
+    T5[t24] = 6
+    var t25
+    t25 = 4 * 7
+    T5[t25] = 5
+    var t26
+    t26 = 4 * 8
+    T5[t26] = 7
+    var t27
+    t27 = 4 * 9
+    T5[t27] = 8
+    var T6 // i
+    T6 = 0
+    var t28
+    param T5
+    param T0
+    t28 = call f_select_sort
+    T6 = t28
+l6:
+    var t29
+    t29 = T6 < T0
+    if t29==0 goto l7
+    var T7 // tmp
+    var t30
+    t30 = 4 * T6
+    var t31
+    t31 = T5[t30]
+    T7 = t31
+    var t32
+    param T7
+    t32 = call f_putint
+    T7 = t32
+    T7 = 10
+    var t33
+    param T7
+    t33 = call f_putchar
+    T7 = t33
+    var t34
+    t34 = T6 + 1
+    T6 = t34
+    goto l6
+l7:
+    return 0
+end f_main

@@ -1,0 +1,125 @@
+f_lengthOfLastWord [2]
+    var t0
+    t0 = p1 == 0
+    if t0==0 goto l0
+    return 0
+l0:
+    var T0 // c
+    var t1
+    t1 = p1 - 1
+    T0 = t1
+l1:
+    var t2
+    t2 = - 1
+    var t3
+    t3 = T0 > t2
+    var t4
+    if t3==0 goto l3
+    var t5
+    t5 = 4 * T0
+    var t6
+    t6 = p0[t5]
+    var t7
+    t7 = t6 == 0
+    if t7==0 goto l3
+    t4 = 1
+    goto l4
+l3:
+    t4 = 0
+l4:
+    if t4==0 goto l2
+    var t8
+    t8 = T0 - 1
+    T0 = t8
+    goto l1
+l2:
+    var t9
+    t9 = - 1
+    var t10
+    t10 = T0 == t9
+    if t10==0 goto l5
+    return 0
+l5:
+    var T1 // i
+    T1 = T0
+l6:
+    var t11
+    t11 = - 1
+    var t12
+    t12 = T1 > t11
+    if t12==0 goto l7
+    var t13
+    t13 = 4 * T1
+    var t14
+    t14 = p0[t13]
+    var t15
+    t15 = t14 == 0
+    if t15==0 goto l8
+    var t16
+    t16 = p1 - T1
+    var t17
+    t17 = t16 - 1
+    var t18
+    t18 = p1 - 1
+    var t19
+    t19 = t18 - T0
+    var t20
+    t20 = t17 - t19
+    return t20
+l8:
+    var t21
+    t21 = T1 - 1
+    T1 = t21
+    goto l6
+l7:
+    var t22
+    t22 = T0 - T1
+    return t22
+end f_lengthOfLastWord
+f_main [0]
+    var T2 // res
+    var 40 T3 // a[10]
+    var t23
+    t23 = - 4
+    var t24
+    t24 = 4 * 0
+    T3[t24] = t23
+    var t25
+    t25 = 4 * 1
+    T3[t25] = 3
+    var t26
+    t26 = 4 * 2
+    T3[t26] = 9
+    var t27
+    t27 = - 2
+    var t28
+    t28 = 4 * 3
+    T3[t28] = t27
+    var t29
+    t29 = 4 * 4
+    T3[t29] = 0
+    var t30
+    t30 = 4 * 5
+    T3[t30] = 1
+    var t31
+    t31 = - 6
+    var t32
+    t32 = 4 * 6
+    T3[t32] = t31
+    var t33
+    t33 = 4 * 7
+    T3[t33] = 5
+    var t34
+    t34 = 4 * 8
+    T3[t34] = 7
+    var t35
+    t35 = 4 * 9
+    T3[t35] = 8
+    T2 = 10
+    var t36
+    param T3
+    param T2
+    t36 = call f_lengthOfLastWord
+    T2 = t36
+    return T2
+end f_main

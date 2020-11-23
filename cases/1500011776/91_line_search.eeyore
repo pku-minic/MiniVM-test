@@ -1,0 +1,94 @@
+f_main [0]
+    var T0 // i
+    var T1 // sum
+    var 40 T2 // a[10]
+    T1 = 0
+    T0 = 0
+l0:
+    var t0
+    t0 = T0 < 10
+    if t0==0 goto l1
+    var t1
+    t1 = T0 + 1
+    var t2
+    t2 = 4 * T0
+    T2[t2] = t1
+    var t3
+    t3 = T0 + 1
+    T0 = t3
+    goto l0
+l1:
+    var T3 // x
+    var T4 // high
+    var T5 // low
+    var T6 // mid
+    var T7 // n
+    T7 = 10
+    var t4
+    t4 = call f_getint
+    T3 = t4
+    var t5
+    t5 = T7 - 1
+    T4 = t5
+    T5 = 0
+    var t6
+    t6 = T4 + T5
+    var t7
+    t7 = t6 / 2
+    T6 = t7
+    var T8 // flag
+    T8 = 0
+    T0 = 0
+    var T9 // j
+    T9 = 0
+l2:
+    var t8
+    t8 = T0 < 10
+    var t9
+    if t8==0 goto l4
+    var t10
+    t10 = T8 == 0
+    if t10==0 goto l4
+    t9 = 1
+    goto l5
+l4:
+    t9 = 0
+l5:
+    if t9==0 goto l3
+    var t11
+    t11 = 4 * T0
+    var t12
+    t12 = T2[t11]
+    var t13
+    t13 = t12 == T3
+    if t13==0 goto l6
+    T8 = 1
+    T9 = T0
+l6:
+    var t14
+    t14 = T0 + 1
+    T0 = t14
+    goto l2
+l3:
+    var t15
+    t15 = T8 == 1
+    if t15==0 goto l7
+    var t16
+    param T9
+    t16 = call f_putint
+    T3 = t16
+    goto l8
+l7:
+    T3 = 0
+    var t17
+    param T3
+    t17 = call f_putint
+    T3 = t17
+l8:
+    T3 = 10
+    var t18
+    param T3
+    t18 = call f_putchar
+    T3 = t18
+    return 0
+end f_main

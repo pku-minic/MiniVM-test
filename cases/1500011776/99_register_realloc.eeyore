@@ -1,0 +1,343 @@
+f_func [2]
+    var T0 // i
+    var t0
+    t0 = p0 + p1
+    T0 = t0
+    var T1 // c1
+    var T2 // c2
+    var T3 // c3
+    var T4 // c4
+    var T5 // d1
+    var T6 // d2
+    var T7 // d3
+    var T8 // d4
+    var T9 // e1
+    var T10 // e2
+    var T11 // e3
+    var T12 // e4
+    var T13 // f1
+    var T14 // f2
+    var T15 // f3
+    var T16 // f4
+    var T17 // g1
+    var T18 // g2
+    var T19 // g3
+    var T20 // g4
+    var T21 // h1
+    var T22 // h2
+    var T23 // h3
+    var T24 // h4
+    var T25 // i1
+    var T26 // i2
+    var T27 // i3
+    var T28 // i4
+    var T29 // j1
+    var T30 // j2
+    var T31 // j3
+    var T32 // j4
+    var T33 // k1
+    var T34 // k2
+    var T35 // k3
+    var T36 // k4
+    T1 = 1
+    T2 = 2
+    T3 = 3
+    T4 = 4
+    var t1
+    t1 = 1 + T1
+    T5 = t1
+    var t2
+    t2 = 2 + T2
+    T6 = t2
+    var t3
+    t3 = 3 + T3
+    T7 = t3
+    var t4
+    t4 = 4 + T4
+    T8 = t4
+    var t5
+    t5 = 1 + T5
+    T9 = t5
+    var t6
+    t6 = 2 + T6
+    T10 = t6
+    var t7
+    t7 = 3 + T7
+    T11 = t7
+    var t8
+    t8 = 4 + T8
+    T12 = t8
+    var t9
+    t9 = 1 + T9
+    T13 = t9
+    var t10
+    t10 = 2 + T10
+    T14 = t10
+    var t11
+    t11 = 3 + T11
+    T15 = t11
+    var t12
+    t12 = 4 + T12
+    T16 = t12
+    var t13
+    t13 = 1 + T13
+    T17 = t13
+    var t14
+    t14 = 2 + T14
+    T18 = t14
+    var t15
+    t15 = 3 + T15
+    T19 = t15
+    var t16
+    t16 = 4 + T16
+    T20 = t16
+    var t17
+    t17 = 1 + T17
+    T21 = t17
+    var t18
+    t18 = 2 + T18
+    T22 = t18
+    var t19
+    t19 = 3 + T19
+    T23 = t19
+    var t20
+    t20 = 4 + T20
+    T24 = t20
+    var t21
+    t21 = 1 + T21
+    T25 = t21
+    var t22
+    t22 = 2 + T22
+    T26 = t22
+    var t23
+    t23 = 3 + T23
+    T27 = t23
+    var t24
+    t24 = 4 + T24
+    T28 = t24
+    var t25
+    t25 = 1 + T25
+    T29 = t25
+    var t26
+    t26 = 2 + T26
+    T30 = t26
+    var t27
+    t27 = 3 + T27
+    T31 = t27
+    var t28
+    t28 = 4 + T28
+    T32 = t28
+    var t29
+    t29 = 1 + T29
+    T33 = t29
+    var t30
+    t30 = 2 + T30
+    T34 = t30
+    var t31
+    t31 = 3 + T31
+    T35 = t31
+    var t32
+    t32 = 4 + T32
+    T36 = t32
+    var t33
+    t33 = p0 - p1
+    var t34
+    t34 = t33 + 10
+    T0 = t34
+    var t35
+    t35 = 1 + T29
+    T33 = t35
+    var t36
+    t36 = 2 + T30
+    T34 = t36
+    var t37
+    t37 = 3 + T31
+    T35 = t37
+    var t38
+    t38 = 4 + T32
+    T36 = t38
+    var t39
+    t39 = 1 + T25
+    T29 = t39
+    var t40
+    t40 = 2 + T26
+    T30 = t40
+    var t41
+    t41 = 3 + T27
+    T31 = t41
+    var t42
+    t42 = 4 + T28
+    T32 = t42
+    var t43
+    t43 = 1 + T21
+    T25 = t43
+    var t44
+    t44 = 2 + T22
+    T26 = t44
+    var t45
+    t45 = 3 + T23
+    T27 = t45
+    var t46
+    t46 = 4 + T24
+    T28 = t46
+    var t47
+    t47 = 1 + T17
+    T21 = t47
+    var t48
+    t48 = 2 + T18
+    T22 = t48
+    var t49
+    t49 = 3 + T19
+    T23 = t49
+    var t50
+    t50 = 4 + T20
+    T24 = t50
+    var t51
+    t51 = 1 + T13
+    T17 = t51
+    var t52
+    t52 = 2 + T14
+    T18 = t52
+    var t53
+    t53 = 3 + T15
+    T19 = t53
+    var t54
+    t54 = 4 + T16
+    T20 = t54
+    var t55
+    t55 = 1 + T9
+    T13 = t55
+    var t56
+    t56 = 2 + T10
+    T14 = t56
+    var t57
+    t57 = 3 + T11
+    T15 = t57
+    var t58
+    t58 = 4 + T12
+    T16 = t58
+    var t59
+    t59 = 1 + T5
+    T9 = t59
+    var t60
+    t60 = 2 + T6
+    T10 = t60
+    var t61
+    t61 = 3 + T7
+    T11 = t61
+    var t62
+    t62 = 4 + T8
+    T12 = t62
+    var t63
+    t63 = 1 + T1
+    T5 = t63
+    var t64
+    t64 = 2 + T2
+    T6 = t64
+    var t65
+    t65 = 3 + T3
+    T7 = t65
+    var t66
+    t66 = 4 + T4
+    T8 = t66
+    var t67
+    t67 = 1 + T33
+    T1 = t67
+    var t68
+    t68 = 2 + T34
+    T2 = t68
+    var t69
+    t69 = 3 + T35
+    T3 = t69
+    var t70
+    t70 = 4 + T36
+    T4 = t70
+    var t71
+    t71 = T0 + T1
+    var t72
+    t72 = t71 + T2
+    var t73
+    t73 = t72 + T3
+    var t74
+    t74 = t73 + T4
+    var t75
+    t75 = t74 - T5
+    var t76
+    t76 = t75 - T6
+    var t77
+    t77 = t76 - T7
+    var t78
+    t78 = t77 - T8
+    var t79
+    t79 = t78 + T9
+    var t80
+    t80 = t79 + T10
+    var t81
+    t81 = t80 + T11
+    var t82
+    t82 = t81 + T12
+    var t83
+    t83 = t82 - T13
+    var t84
+    t84 = t83 - T14
+    var t85
+    t85 = t84 - T15
+    var t86
+    t86 = t85 - T16
+    var t87
+    t87 = t86 + T17
+    var t88
+    t88 = t87 + T18
+    var t89
+    t89 = t88 + T19
+    var t90
+    t90 = t89 + T20
+    var t91
+    t91 = t90 - T21
+    var t92
+    t92 = t91 - T22
+    var t93
+    t93 = t92 - T23
+    var t94
+    t94 = t93 - T24
+    var t95
+    t95 = t94 + T25
+    var t96
+    t96 = t95 + T26
+    var t97
+    t97 = t96 + T27
+    var t98
+    t98 = t97 + T28
+    var t99
+    t99 = t98 - T29
+    var t100
+    t100 = t99 - T30
+    var t101
+    t101 = t100 - T31
+    var t102
+    t102 = t101 - T32
+    var t103
+    t103 = t102 + T33
+    var t104
+    t104 = t103 + T34
+    var t105
+    t105 = t104 + T35
+    var t106
+    t106 = t105 + T36
+    return t106
+end f_func
+f_main [0]
+    var T37 // a
+    var T38 // b
+    T37 = 1
+    var t107
+    t107 = 2 * 9
+    var t108
+    t108 = T37 + t107
+    T38 = t108
+    var t109
+    param T37
+    param T38
+    t109 = call f_func
+    return t109
+end f_main

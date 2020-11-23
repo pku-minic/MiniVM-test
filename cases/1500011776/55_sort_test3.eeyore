@@ -1,0 +1,191 @@
+var T0 // n
+f_QuickSort [3]
+    var t0
+    t0 = p1 < p2
+    if t0==0 goto l0
+    var T1 // i
+    T1 = p1
+    var T2 // j
+    T2 = p2
+    var T3 // k
+    var t1
+    t1 = 4 * p1
+    var t2
+    t2 = p0[t1]
+    T3 = t2
+l1:
+    var t3
+    t3 = T1 < T2
+    if t3==0 goto l2
+l3:
+    var t4
+    t4 = T1 < T2
+    var t5
+    if t4==0 goto l5
+    var t6
+    t6 = 4 * T2
+    var t7
+    t7 = p0[t6]
+    var t8
+    t8 = T3 - 1
+    var t9
+    t9 = t7 > t8
+    if t9==0 goto l5
+    t5 = 1
+    goto l6
+l5:
+    t5 = 0
+l6:
+    if t5==0 goto l4
+    var t10
+    t10 = T2 - 1
+    T2 = t10
+    goto l3
+l4:
+    var t11
+    t11 = T1 < T2
+    if t11==0 goto l7
+    var t12
+    t12 = 4 * T2
+    var t13
+    t13 = p0[t12]
+    var t14
+    t14 = 4 * T1
+    p0[t14] = t13
+    var t15
+    t15 = T1 + 1
+    T1 = t15
+l7:
+l8:
+    var t16
+    t16 = T1 < T2
+    var t17
+    if t16==0 goto l10
+    var t18
+    t18 = 4 * T1
+    var t19
+    t19 = p0[t18]
+    var t20
+    t20 = t19 < T3
+    if t20==0 goto l10
+    t17 = 1
+    goto l11
+l10:
+    t17 = 0
+l11:
+    if t17==0 goto l9
+    var t21
+    t21 = T1 + 1
+    T1 = t21
+    goto l8
+l9:
+    var t22
+    t22 = T1 < T2
+    if t22==0 goto l12
+    var t23
+    t23 = 4 * T1
+    var t24
+    t24 = p0[t23]
+    var t25
+    t25 = 4 * T2
+    p0[t25] = t24
+    var t26
+    t26 = T2 - 1
+    T2 = t26
+l12:
+    goto l1
+l2:
+    var t27
+    t27 = 4 * T1
+    p0[t27] = T3
+    var T4 // tmp
+    var t28
+    t28 = T1 - 1
+    T4 = t28
+    var t29
+    param p0
+    param p1
+    param T4
+    t29 = call f_QuickSort
+    T4 = t29
+    var t30
+    t30 = T1 + 1
+    T4 = t30
+    var t31
+    param p0
+    param T4
+    param p2
+    t31 = call f_QuickSort
+    T4 = t31
+l0:
+    return 0
+end f_QuickSort
+f_main [0]
+    T0 = 10
+    var 40 T5 // a[10]
+    var t32
+    t32 = 4 * 0
+    T5[t32] = 4
+    var t33
+    t33 = 4 * 1
+    T5[t33] = 3
+    var t34
+    t34 = 4 * 2
+    T5[t34] = 9
+    var t35
+    t35 = 4 * 3
+    T5[t35] = 2
+    var t36
+    t36 = 4 * 4
+    T5[t36] = 0
+    var t37
+    t37 = 4 * 5
+    T5[t37] = 1
+    var t38
+    t38 = 4 * 6
+    T5[t38] = 6
+    var t39
+    t39 = 4 * 7
+    T5[t39] = 5
+    var t40
+    t40 = 4 * 8
+    T5[t40] = 7
+    var t41
+    t41 = 4 * 9
+    T5[t41] = 8
+    var T6 // i
+    T6 = 0
+    var T7 // tmp
+    T7 = 9
+    var t42
+    param T5
+    param T6
+    param T7
+    t42 = call f_QuickSort
+    T6 = t42
+l13:
+    var t43
+    t43 = T6 < T0
+    if t43==0 goto l14
+    var T8 // tmp
+    var t44
+    t44 = 4 * T6
+    var t45
+    t45 = T5[t44]
+    T8 = t45
+    var t46
+    param T8
+    t46 = call f_putint
+    T8 = t46
+    T8 = 10
+    var t47
+    param T8
+    t47 = call f_putchar
+    T8 = t47
+    var t48
+    t48 = T6 + 1
+    T6 = t48
+    goto l13
+l14:
+    return 0
+end f_main

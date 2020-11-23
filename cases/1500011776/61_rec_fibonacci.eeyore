@@ -1,0 +1,54 @@
+var T0 // n
+f_f [1]
+    var t0
+    t0 = p0 == 1
+    if t0==0 goto l0
+    return 1
+l0:
+    var t1
+    t1 = p0 == 2
+    if t1==0 goto l1
+    return 1
+l1:
+    var T1 // a
+    var T2 // b
+    var t2
+    t2 = p0 - 1
+    T1 = t2
+    var t3
+    t3 = p0 - 2
+    T2 = t3
+    var T3 // c
+    var t4
+    param T1
+    t4 = call f_f
+    var t5
+    param T2
+    t5 = call f_f
+    var t6
+    t6 = t4 + t5
+    T3 = t6
+    return T3
+end f_f
+f_main [0]
+    var t7
+    t7 = call f_getint
+    T0 = t7
+    var T4 // t
+    var T5 // xx
+    var t8
+    param T0
+    t8 = call f_f
+    T4 = t8
+    var t9
+    param T4
+    t9 = call f_putint
+    T0 = t9
+    var T6 // newline
+    T6 = 10
+    var t10
+    param T6
+    t10 = call f_putchar
+    T0 = t10
+    return T4
+end f_main

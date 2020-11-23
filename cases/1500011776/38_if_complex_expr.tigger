@@ -1,0 +1,145 @@
+f_main [0] [28]
+    load 0 t0
+    t0 = 5
+    load 1 t1
+    t1 = 5
+    load 2 t2
+    t2 = 1
+    load 5 t3
+    t3 = -2
+    load 3 t4
+    t4 = t3
+    load 4 t5
+    t5 = 2
+    load 6 t6
+    s1 = 1
+    t6 = t4 * s1
+    load 7 s2
+    s3 = 2
+    s2 = t6 / s3
+    load 8 s4
+    s4 = s2 < 0
+    store s4 8
+    store t0 0
+    store t1 1
+    store t2 2
+    store t4 3
+    store t5 4
+    if s4 == x0 goto l0
+    load 9 t0
+    t0 = 1
+    store t0 9
+    goto l2
+l0:
+    load 10 t0
+    load 0 t1
+    load 1 t2
+    t0 = t1 - t2
+    load 11 t3
+    t3 = t0 != x0
+    store t3 11
+    if t3 == x0 goto l3
+    load 13 t0
+    load 2 t1
+    t0 = t1 + 3
+    load 14 t2
+    t3 = 2
+    t2 = t0 % t3
+    load 15 t4
+    t4 = t2 != x0
+    store t4 15
+    if t4 == x0 goto l3
+    load 12 t0
+    t0 = 1
+    store t0 12
+    goto l4
+l3:
+    load 12 t0
+    t0 = 0
+    store t0 12
+l4:
+    load 12 t0
+    if t0 == x0 goto l1
+    load 9 t0
+    t0 = 1
+    store t0 9
+    goto l2
+l1:
+    load 9 t0
+    t0 = 0
+    store t0 9
+l2:
+    load 9 t0
+    if t0 == x0 goto l5
+    load 4 a0
+    call f_putint
+    load 4 t0
+    t0 = a0
+    store t0 4
+    store a0 16
+l5:
+    load 17 t0
+    load 3 t1
+    t2 = 2
+    t0 = t1 % t2
+    load 18 t3
+    t3 = t0 + 67
+    load 19 t4
+    t4 = t3 < 0
+    store t4 19
+    if t4 == x0 goto l6
+    load 20 t0
+    t0 = 1
+    store t0 20
+    goto l8
+l6:
+    load 21 t0
+    load 0 t1
+    load 1 t2
+    t0 = t1 - t2
+    load 22 t3
+    t3 = t0 != x0
+    store t3 22
+    if t3 == x0 goto l9
+    load 24 t0
+    load 2 t1
+    t0 = t1 + 2
+    load 25 t2
+    t3 = 2
+    t2 = t0 % t3
+    load 26 t4
+    t4 = t2 != x0
+    store t4 26
+    if t4 == x0 goto l9
+    load 23 t0
+    t0 = 1
+    store t0 23
+    goto l10
+l9:
+    load 23 t0
+    t0 = 0
+    store t0 23
+l10:
+    load 23 t0
+    if t0 == x0 goto l7
+    load 20 t0
+    t0 = 1
+    store t0 20
+    goto l8
+l7:
+    load 20 t0
+    t0 = 0
+    store t0 20
+l8:
+    load 20 t0
+    if t0 == x0 goto l11
+    load 4 t0
+    t0 = 4
+    a0 = t0
+    call f_putint
+    t0 = a0
+    store a0 27
+l11:
+    a0 = 0
+    return
+end f_main
