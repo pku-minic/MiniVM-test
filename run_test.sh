@@ -23,10 +23,8 @@ pass=0
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # define 'timeout' command on macOS
   function timeout { perl -e 'alarm shift; exec @ARGV' "$@"; }
-  run="timeout 120"
-else
-  run="timeout -v 120"
 fi
+run="timeout 120"
 
 
 # run the specific test case
