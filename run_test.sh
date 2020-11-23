@@ -7,7 +7,7 @@
 # https://github.com/TrivialCompiler/TrivialCompiler/blob/master/utils/run_case.sh
 
 
-# test case directories
+# test case directories (relative to script directory)
 test_case_dirs=(
   "cases/1500011776"
 )
@@ -77,11 +77,12 @@ function run_case {
 
 
 # run all test cases
+base_dir=`dirname $0`
 for dir in ${test_case_dirs[@]}; do
-  for f in $dir/*.eeyore; do
+  for f in $base_dir/$dir/*.eeyore; do
     run_case "$1" $f
   done
-  for f in $dir/*.tigger; do
+  for f in $base_dir/$dir/*.tigger; do
     run_case "$1 -t" $f
   done
 done
