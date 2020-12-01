@@ -60,7 +60,7 @@ l9:
 l1:
     var t11
     param T3
-    t11 = call f_putint
+    call f_putint
     T2 = t11
     return 0
 end f_main

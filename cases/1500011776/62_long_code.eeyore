@@ -658,7 +658,7 @@ l47:
     T28 = t190
     var t191
     param T28
-    t191 = call f_putint
+    call f_putint
     T28 = t191
     var t192
     t192 = T29 + 1
@@ -681,7 +681,7 @@ l49:
     T28 = t196
     var t197
     param T28
-    t197 = call f_putint
+    call f_putint
     T28 = t197
     var t198
     t198 = T29 + 1
@@ -694,7 +694,7 @@ l50:
     T28 = t199
     var t200
     param T28
-    t200 = call f_putint
+    call f_putint
     T28 = t200
     var t201
     param T27
@@ -702,7 +702,7 @@ l50:
     T28 = t201
     var t202
     param T28
-    t202 = call f_putint
+    call f_putint
     T28 = t202
     var t203
     param T26
@@ -725,7 +725,7 @@ l51:
     T28 = t207
     var t208
     param T28
-    t208 = call f_putint
+    call f_putint
     T28 = t208
     var t209
     t209 = T29 + 1
@@ -753,7 +753,7 @@ l53:
     T28 = t214
     var t215
     param T28
-    t215 = call f_putint
+    call f_putint
     T28 = t215
     var t216
     t216 = T29 + 1
@@ -784,7 +784,7 @@ l55:
     T28 = t221
     var t222
     param T28
-    t222 = call f_putint
+    call f_putint
     T28 = t222
     var t223
     t223 = T29 + 1
@@ -813,7 +813,7 @@ l57:
     T28 = t228
     var t229
     param T28
-    t229 = call f_putint
+    call f_putint
     T28 = t229
     var t230
     t230 = T29 + 1
@@ -842,7 +842,7 @@ l59:
     T28 = t235
     var t236
     param T28
-    t236 = call f_putint
+    call f_putint
     T28 = t236
     var t237
     t237 = T29 + 1

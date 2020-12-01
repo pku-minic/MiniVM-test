@@ -38,12 +38,12 @@ f_main [0]
     T5 = t6
     var t7
     param T5
-    t7 = call f_putint
+    call f_putint
     T5 = t7
     T5 = 10
     var t8
     param T5
-    t8 = call f_putchar
+    call f_putch
     T5 = t8
     return 0
 end f_main

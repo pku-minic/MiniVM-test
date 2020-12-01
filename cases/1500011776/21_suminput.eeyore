@@ -36,13 +36,13 @@ l1:
 l2:
     var t9
     param T2
-    t9 = call f_putint
+    call f_putint
     T0 = t9
     var T4 // newline
     T4 = 10
     var t10
     param T4
-    t10 = call f_putchar
+    call f_putch
     T0 = t10
     return T2
 end f_main

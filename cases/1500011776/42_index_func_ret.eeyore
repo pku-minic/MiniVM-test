@@ -59,7 +59,7 @@ f_main [0]
     T2 = t17
     var t18
     param T2
-    t18 = call f_putint
+    call f_putint
     var t19
     t19 = 4 * 0
     T1[t19] = t18

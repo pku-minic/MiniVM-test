@@ -191,7 +191,7 @@ f_main [0]
     T0 = t53
     var t54
     param T0
-    t54 = call f_putint
+    call f_putint
     T0 = t54
     var t55
     param T0
@@ -214,7 +214,7 @@ f_main [0]
     T0 = t55
     var t56
     param T0
-    t56 = call f_putint
+    call f_putint
     T0 = t56
     var t57
     param T0
@@ -253,7 +253,7 @@ f_main [0]
     T0 = t57
     var t58
     param T0
-    t58 = call f_putint
+    call f_putint
     T0 = t58
     return 0
 end f_main

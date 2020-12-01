@@ -97,7 +97,7 @@ l6:
     T12 = t22
     var t23
     param T12
-    t23 = call f_putint
+    call f_putint
     T12 = t23
     var t24
     t24 = T11 + 1
@@ -107,7 +107,7 @@ l7:
     T12 = 10
     var t25
     param T12
-    t25 = call f_putchar
+    call f_putch
     T12 = t25
     return 0
 end f_main

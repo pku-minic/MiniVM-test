@@ -14,21 +14,21 @@ f_main [0]
     T2 = T3
     var t2
     param T1
-    t2 = call f_putint
+    call f_putint
     T3 = t2
     T3 = 10
     var t3
     param T3
-    t3 = call f_putchar
+    call f_putch
     T3 = t3
     var t4
     param T2
-    t4 = call f_putint
+    call f_putint
     T3 = t4
     T3 = 10
     var t5
     param T3
-    t5 = call f_putchar
+    call f_putch
     T3 = t5
     return 0
 end f_main

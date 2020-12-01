@@ -24,7 +24,7 @@ f_main [0]
     T0 = t8
     var t9
     param T0
-    t9 = call f_putint
+    call f_putint
     T0 = t9
     return 0
 end f_main

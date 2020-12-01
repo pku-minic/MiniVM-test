@@ -115,12 +115,12 @@ l6:
     T7 = t31
     var t32
     param T7
-    t32 = call f_putint
+    call f_putint
     T7 = t32
     T7 = 10
     var t33
     param T7
-    t33 = call f_putchar
+    call f_putch
     T7 = t33
     var t34
     t34 = T6 + 1

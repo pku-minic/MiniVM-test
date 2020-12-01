@@ -202,12 +202,12 @@ l11:
     T9 = t53
     var t54
     param T9
-    t54 = call f_putint
+    call f_putint
     T9 = t54
     T9 = 10
     var t55
     param T9
-    t55 = call f_putchar
+    call f_putch
     T9 = t55
     var t56
     t56 = T8 + 1

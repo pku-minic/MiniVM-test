@@ -69,20 +69,20 @@ f_main [0]
     if t17==0 goto l6
     var t18
     param T3
-    t18 = call f_putint
+    call f_putint
     T4 = t18
     goto l7
 l6:
     T4 = 0
     var t19
     param T4
-    t19 = call f_putint
+    call f_putint
     T4 = t19
 l7:
     T4 = 10
     var t20
     param T4
-    t20 = call f_putchar
+    call f_putch
     T4 = t20
     return 0
 end f_main

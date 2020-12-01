@@ -175,12 +175,12 @@ l13:
     T8 = t45
     var t46
     param T8
-    t46 = call f_putint
+    call f_putint
     T8 = t46
     T8 = 10
     var t47
     param T8
-    t47 = call f_putchar
+    call f_putch
     T8 = t47
     var t48
     t48 = T6 + 1

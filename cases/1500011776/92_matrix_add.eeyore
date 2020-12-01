@@ -120,7 +120,7 @@ l4:
     T14 = t31
     var t32
     param T14
-    t32 = call f_putint
+    call f_putint
     T14 = t32
     var t33
     t33 = T13 + 1
@@ -130,7 +130,7 @@ l5:
     T14 = 10
     var t34
     param T14
-    t34 = call f_putchar
+    call f_putch
     T14 = t34
     T13 = 0
 l6:
@@ -144,7 +144,7 @@ l6:
     T14 = t37
     var t38
     param T14
-    t38 = call f_putint
+    call f_putint
     T14 = t38
     var t39
     t39 = T13 + 1
@@ -154,7 +154,7 @@ l7:
     T14 = 10
     var t40
     param T14
-    t40 = call f_putchar
+    call f_putch
     T14 = t40
     T13 = 0
 l8:
@@ -168,7 +168,7 @@ l8:
     T14 = t43
     var t44
     param T14
-    t44 = call f_putint
+    call f_putint
     T14 = t44
     var t45
     t45 = T13 + 1
@@ -178,7 +178,7 @@ l9:
     T14 = 10
     var t46
     param T14
-    t46 = call f_putchar
+    call f_putch
     T14 = t46
     return 0
 end f_main

@@ -4,7 +4,7 @@ f_main [0]
     var T1 // t
     var t0
     param T0
-    t0 = call f_putint
+    call f_putint
     T1 = t0
     return 0
 end f_main

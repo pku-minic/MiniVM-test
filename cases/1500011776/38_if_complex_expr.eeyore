@@ -49,7 +49,7 @@ l2:
     if t4==0 goto l5
     var t11
     param T4
-    t11 = call f_putint
+    call f_putint
     T4 = t11
 l5:
     var t12
@@ -91,7 +91,7 @@ l8:
     T4 = 4
     var t22
     param T4
-    t22 = call f_putint
+    call f_putint
     T4 = t22
 l11:
     return 0

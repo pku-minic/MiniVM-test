@@ -61,7 +61,7 @@ l4:
     T4 = t13
     var t14
     param T4
-    t14 = call f_putint
+    call f_putint
     T4 = t14
 l7:
     return 0

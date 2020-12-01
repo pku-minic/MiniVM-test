@@ -94,12 +94,12 @@ l2:
     T4 = t27
     var t28
     param T4
-    t28 = call f_putint
+    call f_putint
     T4 = t28
     T4 = 10
     var t29
     param T4
-    t29 = call f_putchar
+    call f_putch
     T4 = t29
     var t30
     t30 = T5 + 1

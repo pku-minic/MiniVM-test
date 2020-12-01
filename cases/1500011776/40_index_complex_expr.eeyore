@@ -53,7 +53,7 @@ f_main [0]
     T5 = t17
     var t18
     param T5
-    t18 = call f_putint
+    call f_putint
     T5 = t18
     var t19
     t19 = T2 % 2
@@ -80,7 +80,7 @@ f_main [0]
     T5 = t29
     var t30
     param T5
-    t30 = call f_putint
+    call f_putint
     T5 = t30
     return 0
 end f_main

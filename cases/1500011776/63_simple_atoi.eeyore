@@ -172,7 +172,7 @@ l19:
     T5 = t46
     var t47
     param T5
-    t47 = call f_putint
+    call f_putint
     T5 = t47
     return 0
 end f_main

@@ -60,13 +60,13 @@ l4:
     if t6==0 goto l7
     var t15
     param T2
-    t15 = call f_putint
+    call f_putint
     T3 = t15
     goto l8
 l7:
     var t16
     param T1
-    t16 = call f_putint
+    call f_putint
     T3 = t16
 l8:
     return 0
