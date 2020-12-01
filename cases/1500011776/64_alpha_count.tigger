@@ -15,7 +15,7 @@ l0:
     t0 = t1 != t2
     store t0 503
     if t0 == x0 goto l1
-    call f_getchar
+    call f_getch
     load 500 t0
     t0 = a0
     load 505 t1

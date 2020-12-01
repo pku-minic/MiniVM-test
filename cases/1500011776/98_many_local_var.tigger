@@ -261,13 +261,13 @@ l1:
     t1 = 10
     a0 = t1
     store t1 94
-    call f_putchar
+    call f_putch
     t0 = a0
     load 30 a0
     call f_putint
     t0 = a0
     load 94 a0
-    call f_putchar
+    call f_putch
     t0 = a0
     load 25 a0
     return

@@ -280,7 +280,7 @@ l8:
     t0 = a0
     t0 = 10
     a0 = t0
-    call f_putchar
+    call f_putch
     t0 = a0
     load 38 t1
     load 20 t3

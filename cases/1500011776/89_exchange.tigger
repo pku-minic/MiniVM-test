@@ -154,7 +154,7 @@ l2:
     t0 = a0
     t0 = 10
     a0 = t0
-    call f_putchar
+    call f_putch
     t0 = a0
     load 29 t1
     load 21 t3

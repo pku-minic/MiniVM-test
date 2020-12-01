@@ -46,7 +46,7 @@ l5:
     t7 = T4 != 10
     if t7==0 goto l6
     var t8
-    t8 = call f_getchar
+    t8 = call f_getch
     T4 = t8
     var t9
     t9 = 4 * T5

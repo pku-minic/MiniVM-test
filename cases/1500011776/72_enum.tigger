@@ -68,7 +68,7 @@ l2:
     t0 = a0
     t0 = 10
     a0 = t0
-    call f_putchar
+    call f_putch
     t0 = a0
     store a0 18
 l4:

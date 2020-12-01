@@ -11,7 +11,7 @@ l0:
     t0 = T1 != 10
     if t0==0 goto l1
     var t1
-    t1 = call f_getchar
+    t1 = call f_getch
     T1 = t1
     var t2
     t2 = T1 > 40

@@ -153,7 +153,7 @@ l18:
     t41 = T4 != 10
     if t41==0 goto l19
     var t42
-    t42 = call f_getchar
+    t42 = call f_getch
     T4 = t42
     var t43
     t43 = 4 * T5

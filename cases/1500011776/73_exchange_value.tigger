@@ -21,7 +21,7 @@ f_main [0] [9]
     t0 = 10
     a0 = t0
     store t0 4
-    call f_putchar
+    call f_putch
     load 4 t0
     t0 = a0
     load 1 a0
@@ -31,7 +31,7 @@ f_main [0] [9]
     t0 = a0
     t0 = 10
     a0 = t0
-    call f_putchar
+    call f_putch
     t0 = a0
     a0 = 0
     return

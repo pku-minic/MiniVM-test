@@ -62,7 +62,7 @@ f_main [0] [7]
     a0 = t1
     loadaddr v0 s0
     s0 [0] = t0
-    call f_putchar
+    call f_putch
     load v0 t0
     t0 = a0
     load 1 a0
