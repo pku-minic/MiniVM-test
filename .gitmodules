@@ -1,0 +1,3 @@
+[submodule "cases/open-test-cases"]
+	path = cases/open-test-cases
+	url = https://github.com/pku-minic/open-test-cases
