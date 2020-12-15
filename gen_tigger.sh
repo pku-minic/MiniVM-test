@@ -1,11 +1,15 @@
 #!/bin/bash
 
-base=`dirname $0`
+# usage: ./gen_tigger.sh <compiler> <cases> <output>
 
-for f in $1/*.eeyore; do
+compiler="$1"
+cases="$2"
+output="$3"
+
+for f in $cases/*.eeyore; do
   name=`basename $f`
-  out=$3/${name%.eeyore}.tigger
-  $2 < $f > $out 2> /dev/null
+  out=$output/${name%.eeyore}.tigger
+  $compiler -S -t $f -o $out 2> /dev/null
   if [ $? -ne 0 ]; then
     echo "failed on $f"
     rm $out
