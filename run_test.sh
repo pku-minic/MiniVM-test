@@ -33,6 +33,8 @@ run="timeout 120"
 #   arg1: command line for running MiniVM
 #   arg2: path to test case
 function run_case {
+  echo "running testcase $2"
+
   # get name of test case
   local case_name="$2"
   local case_name=${case_name%.eeyore}
