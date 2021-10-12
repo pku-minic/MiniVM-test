@@ -1,7 +1,0 @@
-var 40 T0 // a[10]
-f_main [0]
-    var t0
-    t0 = 4 * 0
-    T0[t0] = 1
-    return 0
-end f_main

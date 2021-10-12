@@ -1,8 +1,0 @@
-var T0 // a
-var T1 // b
-f_main [0]
-    T0 = 10
-    var T2 // c
-    T2 = 10
-    return 0
-end f_main
