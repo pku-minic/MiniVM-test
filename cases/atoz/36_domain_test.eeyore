@@ -1,0 +1,43 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+var 8 T0 // global: a
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_func [1]
+var t0
+var t1
+var t2
+var t3
+var t4
+    T0 [0] = 1
+    t3 = T0 [0]
+    t2 = 3 - t3
+    t1 = 4 * t2
+    t4 = p0 + t1
+    t0 = t4 [0]
+    return t0
+    return 0 // stmt: func epilog
+end f_func
+
+f_main [0]
+var T1 // local: a
+var 12 T2 // local: array
+var t5
+var t6
+var t7
+var t8
+    T2 [0] = -1
+    T2 [4] = 4
+    T2 [8] = 8
+    t6 = T2 + 0 // stmt: param array access
+    param t6 // #0
+    T1 = call f_func
+    t8 = T2 [4]
+    t7 = T1 + t8
+    return t7
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

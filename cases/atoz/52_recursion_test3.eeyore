@@ -1,0 +1,35 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+var T0 // global: a
+var T1 // global: r
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_fac [1]
+var t0
+var t1
+var t2
+var t3
+    if p0 >= 2 goto l0 // stmt: ifonly
+    return 1
+    l0: // stmt: ifonly - lskip
+    T0 = p0 - 1
+    param T0 // #0
+    T1 = call f_fac
+    T1 = p0 * T1
+    return T1
+    return 0 // stmt: func epilog
+end f_fac
+
+f_main [0]
+var T2 // local: a
+var t4
+    T2 = 5
+    param T2 // #0
+    t4 = call f_fac
+    return t4
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

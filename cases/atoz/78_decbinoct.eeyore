@@ -1,0 +1,50 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_dec2bin [1]
+var T0 // local: res
+var T1 // local: k
+var T2 // local: i
+var T3 // local: temp
+var t0
+var t1
+var t2
+var t3
+var t4
+var t5
+    T0 = 0
+    T1 = 1
+    T3 = p0
+    l0: // stmt: while - ltest
+    if T3 == 0 goto l1 // stmt: while - done
+    T2 = T3 % 2
+    t3 = T1 * T2
+    T0 = t3 + T0
+    T1 = T1 * 10
+    T3 = T3 / 2
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    return T0
+    return 0 // stmt: func epilog
+end f_dec2bin
+
+f_main [0]
+var T4 // local: a
+var T5 // local: res
+var t6
+    T4 = 400
+    param T4 // #0
+    T5 = call f_dec2bin
+    param T5 // #0
+    call f_putint
+    T5 = 10
+    param T5 // #0
+    call f_putch
+    return 0
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

@@ -1,0 +1,40 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+var T0 // global: a
+var 40 T1 // global: s
+
+//--- GLOBAL INIT
+T0 = 5 // init: a
+T1 [0] = 0 // init: s
+T1 [4] = 1 // init: s
+T1 [8] = 2 // init: s
+T1 [12] = 3 // init: s
+T1 [16] = 4 // init: s
+T1 [20] = 5 // init: s
+T1 [24] = 6 // init: s
+T1 [28] = 7 // init: s
+T1 [32] = 8 // init: s
+T1 [36] = 9 // init: s
+
+//--- FUNCTIONS
+f_main [0]
+var T2 // local: i
+var t0
+var t1
+var t2
+var t3
+var t4
+    T2 = 0 // stmt: i
+    l0: // stmt: while - ltest
+    t2 = 4 * T2
+    t3 = T1 + t2
+    t1 = t3 [0]
+    if t1 > 5 goto l1 // stmt: while - done
+    T2 = T2 + 1
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    return T2
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

@@ -1,0 +1,44 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_whileIf [0]
+var T0 // local: a
+var T1 // local: b
+var t0
+var t1
+var t2
+var t3
+var t4
+    T0 = 0
+    T1 = 0
+    l0: // stmt: while - ltest
+    if T0 >= 100 goto l1 // stmt: while - done
+    if T0 != 5 goto l2 // stmt: ifelse
+    T1 = 25
+    goto l3 // stmt: ifelse - true done
+    l2: // stmt: ifelse - lfalse
+    if T0 != 10 goto l4 // stmt: ifelse
+    T1 = 42
+    goto l5 // stmt: ifelse - true done
+    l4: // stmt: ifelse - lfalse
+    T1 = T0 * 2
+    l5: // stmt: ifelse - ldone
+    l3: // stmt: ifelse - ldone
+    T0 = T0 + 1
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    return T1
+    return 0 // stmt: func epilog
+end f_whileIf
+
+f_main [0]
+var t5
+    t5 = call f_whileIf
+    return t5
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

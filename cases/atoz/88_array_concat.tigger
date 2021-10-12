@@ -1,0 +1,250 @@
+// BEGIN TIGGER
+//--- SCALAR DECL
+
+//--- ARRAY DECL
+
+//--- FUNCTIONS
+f_concat [3] [0]
+// DESTROYS: s4 a2 a1 a3 t6 a0 t5
+
+//     {reg: t5}T0 = 0
+    t5 = 0
+
+//     l0:
+    l0:
+
+//     if {reg: t5}T0 >= 3 goto l1
+    t1 = 3
+    if t5 >= t1 goto l1
+
+//     {reg: a3}t2 = 4 * {reg: t5}T0
+    a3 = t5 * 4 // shift left
+
+//     {reg: s4}t3 = {reg: a0}p0 + {reg: a3}t2
+    s4 = a0 + a3
+
+//     {reg: a3}t1 = {reg: s4}t3 [0]
+    a3 = s4 [0]
+
+//     {reg: s4}t4 = 4 * {reg: t5}T0
+    s4 = t5 * 4 // shift left
+
+//     {reg: t6}t5 = {reg: a2}p2 + {reg: s4}t4
+    t6 = a2 + s4
+
+//     {reg: t6}t5 [0] = {reg: a3}t1
+    t6 [0] = a3
+
+//     {reg: t5}T0 = {reg: t5}T0 + 1
+    t5 = t5 + 1
+
+//     goto l0
+    goto l0
+
+//     l1:
+    l1:
+
+//     {reg: a3}T1 = 0
+    a3 = 0
+
+//     l2:
+    l2:
+
+//     if {reg: a3}T1 >= 3 goto l3
+    t1 = 3
+    if a3 >= t1 goto l3
+
+//     {reg: t6}t9 = 4 * {reg: a3}T1
+    t6 = a3 * 4 // shift left
+
+//     {reg: s4}t10 = {reg: a1}p1 + {reg: t6}t9
+    s4 = a1 + t6
+
+//     {reg: t6}t8 = {reg: s4}t10 [0]
+    t6 = s4 [0]
+
+//     {reg: a0}t11 = 4 * {reg: t5}T0
+    a0 = t5 * 4 // shift left
+
+//     {reg: a0}t12 = {reg: a2}p2 + {reg: a0}t11
+    a0 = a2 + a0
+
+//     {reg: a0}t12 [0] = {reg: t6}t8
+    a0 [0] = t6
+
+//     {reg: t5}T0 = {reg: t5}T0 + 1
+    t5 = t5 + 1
+
+//     {reg: a3}T1 = {reg: a3}T1 + 1
+    a3 = a3 + 1
+
+//     goto l2
+    goto l2
+
+//     l3:
+    l3:
+
+//     return 0
+    a0 = 0
+    return
+end f_concat
+
+f_main [0] [33]
+// DESTROYS: a5 t0 t1 a7 s3 t2 t3 t4 a4 t5 a1 s4 a3 a0 t6 a2 a6
+
+//     {reg: a3}T11 = 0
+    a3 = 0
+
+//     l4:
+    l4:
+
+//     if {reg: a3}T11 >= 3 goto l5
+    t1 = 3
+    if a3 >= t1 goto l5
+
+//     {reg: s4}t16 = 4 * {reg: a3}T11
+    s4 = a3 * 4 // shift left
+
+//     {reg: s4}t17 = {stk #0 +3}T2 + {reg: s4}t16
+    loadaddr 0 t0
+    s4 = t0 + s4
+
+//     {reg: s4}t17 [0] = {reg: a3}T11
+    s4 [0] = a3
+
+//     {reg: s3}t18 = 4 * {reg: a3}T11
+    s3 = a3 * 4 // shift left
+
+//     {reg: s4}t19 = {stk #3 +3}T3 + {reg: s3}t18
+    loadaddr 3 t0
+    s4 = t0 + s3
+
+//     {reg: s4}t19 [0] = {reg: a3}T11
+    s4 [0] = a3
+
+//     {reg: s4}t20 = 4 * {reg: a3}T11
+    s4 = a3 * 4 // shift left
+
+//     {reg: s3}t21 = {stk #6 +3}T4 + {reg: s4}t20
+    loadaddr 6 t0
+    s3 = t0 + s4
+
+//     {reg: s3}t21 [0] = {reg: a3}T11
+    s3 [0] = a3
+
+//     {reg: s3}t22 = 4 * {reg: a3}T11
+    s3 = a3 * 4 // shift left
+
+//     {reg: s3}t23 = {stk #9 +3}T5 + {reg: s3}t22
+    loadaddr 9 t0
+    s3 = t0 + s3
+
+//     {reg: s3}t23 [0] = {reg: a3}T11
+    s3 [0] = a3
+
+//     {reg: s3}t24 = 4 * {reg: a3}T11
+    s3 = a3 * 4 // shift left
+
+//     {reg: s3}t25 = {stk #12 +3}T6 + {reg: s3}t24
+    loadaddr 12 t0
+    s3 = t0 + s3
+
+//     {reg: s3}t25 [0] = {reg: a3}T11
+    s3 [0] = a3
+
+//     {reg: s3}t26 = 4 * {reg: a3}T11
+    s3 = a3 * 4 // shift left
+
+//     {reg: s3}t27 = {stk #15 +3}T7 + {reg: s3}t26
+    loadaddr 15 t0
+    s3 = t0 + s3
+
+//     {reg: s3}t27 [0] = {reg: a3}T11
+    s3 [0] = a3
+
+//     {reg: a3}T11 = {reg: a3}T11 + 1
+    a3 = a3 + 1
+
+//     goto l4
+    goto l4
+
+//     l5:
+    l5:
+
+//     {reg: a0}t30 = {stk #0 +3}T2 + 0
+    loadaddr 0 t0
+    a0 = t0 + 0
+
+//     {reg: a1}t31 = {stk #9 +3}T5 + 0
+    loadaddr 9 t0
+    a1 = t0 + 0
+
+//     {reg: a2}t32 = {stk #18 +6}T8 + 0
+    loadaddr 18 t0
+    a2 = t0 + 0
+
+
+
+
+//     param {reg: a0}t30 // #0
+//     param {reg: a1}t31 // #1
+//     param {reg: a2}t32 // #2
+//     {reg: a3}T11 = call f_concat
+    a0 = a0
+    a1 = a1
+    a2 = a2
+    call f_concat
+    a3 = a0
+
+//     l6:
+    l6:
+
+//     if {reg: a3}T11 >= 6 goto l7
+    t1 = 6
+    if a3 >= t1 goto l7
+
+//     {reg: s3}t35 = 4 * {reg: a3}T11
+    s3 = a3 * 4 // shift left
+
+//     {reg: s3}t36 = {stk #18 +6}T8 + {reg: s3}t35
+    loadaddr 18 t0
+    s3 = t0 + s3
+
+//     {reg: a0}t34 = {reg: s3}t36 [0]
+    a0 = s3 [0]
+
+//     {reg: a0}T12 = {reg: a0}t34
+    a0 = a0
+
+
+//     param {reg: a0}T12 // #0
+//     call f_putint
+    store a3 30
+    a0 = a0
+    call f_putint
+    load 30 a3
+
+//     {reg: a3}T11 = {reg: a3}T11 + 1
+    a3 = a3 + 1
+
+//     goto l6
+    goto l6
+
+//     l7:
+    l7:
+
+//     {reg: a0}T12 = 10
+    a0 = 10
+
+
+//     param {reg: a0}T12 // #0
+//     call f_putch
+    a0 = a0
+    call f_putch
+
+//     return 0
+    a0 = 0
+    return
+end f_main
+
+// END TIGGER

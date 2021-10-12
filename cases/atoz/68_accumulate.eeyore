@@ -1,0 +1,27 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_main [0]
+var T0 // local: i
+var T1 // local: sum
+var t0
+var t1
+var t2
+    T1 = 0
+    T0 = 0
+    l0: // stmt: while - ltest
+    if T0 >= 21 goto l1 // stmt: while - done
+    T1 = T1 + T0
+    T0 = T0 + 1
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    param T1 // #0
+    call f_putint
+    return 0
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

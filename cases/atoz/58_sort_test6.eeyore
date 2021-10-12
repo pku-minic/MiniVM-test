@@ -1,0 +1,206 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+var T0 // global: n
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_counting_sort [3]
+var 40 T1 // local: count_arr
+var T2 // local: i
+var T3 // local: j
+var T4 // local: k
+var t0
+var t1
+var t2
+var t3
+var t4
+var t5
+var t6
+var t7
+var t8
+var t9
+var t10
+var t11
+var t12
+var t13
+var t14
+var t15
+var t16
+var t17
+var t18
+var t19
+var t20
+var t21
+var t22
+var t23
+var t24
+var t25
+var t26
+var t27
+var t28
+var t29
+var t30
+var t31
+var t32
+var t33
+var t34
+var t35
+var t36
+var t37
+var t38
+var t39
+var t40
+var t41
+var t42
+var t43
+var t44
+var t45
+var t46
+var t47
+var t48
+var t49
+var t50
+var t51
+var t52
+var t53
+var t54
+var t55
+var t56
+var t57
+var t58
+    T4 = 0
+    T2 = 0
+    T3 = 0
+    l0: // stmt: while - ltest
+    if T4 >= 10 goto l1 // stmt: while - done
+    t1 = 4 * T4
+    t2 = T1 + t1
+    t2 [0] = 0
+    T4 = T4 + 1
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    l2: // stmt: while - ltest
+    if T2 >= p2 goto l3 // stmt: while - done
+    t9 = 4 * T2
+    t10 = p0 + t9
+    t8 = t10 [0]
+    t7 = 4 * t8
+    t11 = T1 + t7
+    t6 = t11 [0]
+    t5 = t6 + 1
+    t14 = 4 * T2
+    t15 = p0 + t14
+    t13 = t15 [0]
+    t12 = 4 * t13
+    t16 = T1 + t12
+    t16 [0] = t5
+    T2 = T2 + 1
+    goto l2 // stmt: while - to test
+    l3: // stmt: while - ldone
+    T4 = 1
+    l4: // stmt: while - ltest
+    if T4 >= 10 goto l5 // stmt: while - done
+    t21 = 4 * T4
+    t22 = T1 + t21
+    t20 = t22 [0]
+    t25 = T4 - 1
+    t24 = 4 * t25
+    t26 = T1 + t24
+    t23 = t26 [0]
+    t19 = t20 + t23
+    t27 = 4 * T4
+    t28 = T1 + t27
+    t28 [0] = t19
+    T4 = T4 + 1
+    goto l4 // stmt: while - to test
+    l5: // stmt: while - ldone
+    T3 = p2
+    l6: // stmt: while - ltest
+    if T3 <= 0 goto l7 // stmt: while - done
+    t36 = T3 - 1
+    t35 = 4 * t36
+    t37 = p0 + t35
+    t34 = t37 [0]
+    t33 = 4 * t34
+    t38 = T1 + t33
+    t32 = t38 [0]
+    t31 = t32 - 1
+    t42 = T3 - 1
+    t41 = 4 * t42
+    t43 = p0 + t41
+    t40 = t43 [0]
+    t39 = 4 * t40
+    t44 = T1 + t39
+    t44 [0] = t31
+    t47 = T3 - 1
+    t46 = 4 * t47
+    t48 = p0 + t46
+    t45 = t48 [0]
+    t54 = T3 - 1
+    t53 = 4 * t54
+    t55 = p0 + t53
+    t52 = t55 [0]
+    t51 = 4 * t52
+    t56 = T1 + t51
+    t50 = t56 [0]
+    t49 = 4 * t50
+    t57 = p1 + t49
+    t57 [0] = t45
+    T3 = T3 - 1
+    goto l6 // stmt: while - to test
+    l7: // stmt: while - ldone
+    return 0
+    return 0 // stmt: func epilog
+end f_counting_sort
+
+f_main [0]
+var 40 T5 // local: a
+var T6 // local: i
+var 40 T7 // local: b
+var t59
+var t60
+var t61
+var t62
+var T8 // local: tmp
+var t63
+var t64
+var t65
+var t66
+    T0 = 10
+    T5 [0] = 4
+    T5 [4] = 3
+    T5 [8] = 9
+    T5 [12] = 2
+    T5 [16] = 0
+    T5 [20] = 1
+    T5 [24] = 6
+    T5 [28] = 5
+    T5 [32] = 7
+    T5 [36] = 8
+    T6 = 0
+    t60 = T5 + 0 // stmt: param array access
+    t61 = T7 + 0 // stmt: param array access
+    param t60 // #0
+    param t61 // #1
+    param T0 // #2
+    T6 = call f_counting_sort
+    l8: // stmt: while - ltest
+    if T6 >= T0 goto l9 // stmt: while - done
+    t64 = 4 * T6
+    t65 = T7 + t64
+    t63 = t65 [0]
+    T8 = t63
+    param T8 // #0
+    call f_putint
+    T8 = 10
+    param T8 // #0
+    call f_putch
+    T6 = T6 + 1
+    goto l8 // stmt: while - to test
+    l9: // stmt: while - ldone
+    return 0
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

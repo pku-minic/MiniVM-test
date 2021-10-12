@@ -1,0 +1,438 @@
+// BEGIN TIGGER
+//--- SCALAR DECL
+v0 = 0
+
+//--- ARRAY DECL
+
+//--- FUNCTIONS
+f_swap [3] [0]
+// DESTROYS: a2 a1 s4 t6 a0 a3
+
+//     {reg: s4}t1 = 4 * {reg: a1}p1
+    s4 = a1 * 4 // shift left
+
+//     {reg: a3}t2 = {reg: a0}p0 + {reg: s4}t1
+    a3 = a0 + s4
+
+//     {reg: a3}t0 = {reg: a3}t2 [0]
+    a3 = a3 [0]
+
+//     {reg: t6}T1 = {reg: a3}t0
+    t6 = a3
+
+//     {reg: a3}t4 = 4 * {reg: a2}p2
+    a3 = a2 * 4 // shift left
+
+//     {reg: a3}t5 = {reg: a0}p0 + {reg: a3}t4
+    a3 = a0 + a3
+
+//     {reg: s4}t3 = {reg: a3}t5 [0]
+    s4 = a3 [0]
+
+//     {reg: a3}t6 = 4 * {reg: a1}p1
+    a3 = a1 * 4 // shift left
+
+//     {reg: a3}t7 = {reg: a0}p0 + {reg: a3}t6
+    a3 = a0 + a3
+
+//     {reg: a3}t7 [0] = {reg: s4}t3
+    a3 [0] = s4
+
+//     {reg: s4}t8 = 4 * {reg: a2}p2
+    s4 = a2 * 4 // shift left
+
+//     {reg: s4}t9 = {reg: a0}p0 + {reg: s4}t8
+    s4 = a0 + s4
+
+//     {reg: s4}t9 [0] = {reg: t6}T1
+    s4 [0] = t6
+
+//     return 0
+    a0 = 0
+    return
+end f_swap
+
+f_heap_ajust [3] [5]
+// DESTROYS: a3 s4 t6 a0 a2 t5 a1
+
+//     {reg: t6}T2 = {reg: a1}p1
+    t6 = a1
+
+//     {reg: a1}t11 = {reg: t6}T2 * 2
+    a1 = t6 * 2 // shift left
+
+//     {reg: a3}T3 = {reg: a1}t11 + 1
+    a3 = a1 + 1
+
+//     l0:
+    l0:
+
+//     {reg: a1}t13 = {reg: a2}p2 + 1
+    a1 = a2 + 1
+
+//     if {reg: a3}T3 >= {reg: a1}t13 goto l1
+    if a3 >= a1 goto l1
+
+//     {reg: s4}t14 = 0
+    s4 = 0
+
+//     if {reg: a3}T3 >= {reg: a2}p2 goto l2
+    if a3 >= a2 goto l2
+
+//     {reg: a1}t18 = 4 * {reg: a3}T3
+    a1 = a3 * 4 // shift left
+
+//     {reg: a1}t19 = {reg: a0}p0 + {reg: a1}t18
+    a1 = a0 + a1
+
+//     {reg: a1}t17 = {reg: a1}t19 [0]
+    a1 = a1 [0]
+
+//     {reg: t5}t22 = {reg: a3}T3 + 1
+    t5 = a3 + 1
+
+//     {reg: t5}t21 = 4 * {reg: t5}t22
+    t5 = t5 * 4 // shift left
+
+//     {reg: t5}t23 = {reg: a0}p0 + {reg: t5}t21
+    t5 = a0 + t5
+
+//     {reg: t5}t20 = {reg: t5}t23 [0]
+    t5 = t5 [0]
+
+//     if {reg: a1}t17 >= {reg: t5}t20 goto l2
+    if a1 >= t5 goto l2
+
+//     {reg: s4}t14 = 1
+    s4 = 1
+
+//     l2:
+    l2:
+
+//     if {reg: s4}t14 == 0 goto l3
+    if s4 == x0 goto l3
+
+//     {reg: a3}T3 = {reg: a3}T3 + 1
+    a3 = a3 + 1
+
+//     l3:
+    l3:
+
+//     {reg: a1}t27 = 4 * {reg: t6}T2
+    a1 = t6 * 4 // shift left
+
+//     {reg: a1}t28 = {reg: a0}p0 + {reg: a1}t27
+    a1 = a0 + a1
+
+//     {reg: t5}t26 = {reg: a1}t28 [0]
+    t5 = a1 [0]
+
+//     {reg: a1}t30 = 4 * {reg: a3}T3
+    a1 = a3 * 4 // shift left
+
+//     {reg: a1}t31 = {reg: a0}p0 + {reg: a1}t30
+    a1 = a0 + a1
+
+//     {reg: a1}t29 = {reg: a1}t31 [0]
+    a1 = a1 [0]
+
+//     if {reg: t5}t26 <= {reg: a1}t29 goto l4
+    if t5 <= a1 goto l4
+
+//     return 0
+    a0 = 0
+    return
+
+//     l4:
+    l4:
+
+//     {reg: s4}t33 = {reg: a0}p0 + 0
+    s4 = a0 + 0
+
+
+
+
+//     param {reg: s4}t33 // #0
+//     param {reg: t6}T2 // #1
+//     param {reg: a3}T3 // #2
+//     {reg: t6}T2 = call f_swap
+    store a0 0
+    store a2 1
+    store a3 2
+    a0 = s4
+    a1 = t6
+    a2 = a3
+    call f_swap
+    load 0 a0
+    load 1 a2
+    load 2 a3
+
+//     {reg: t6}T2 = {reg: a3}T3
+    t6 = a3
+
+//     {reg: a1}t35 = {reg: t6}T2 * 2
+    a1 = t6 * 2 // shift left
+
+//     {reg: a3}T3 = {reg: a1}t35 + 1
+    a3 = a1 + 1
+
+//     l5:
+    l5:
+
+//     goto l0
+    goto l0
+
+//     l1:
+    l1:
+
+//     return 0
+    a0 = 0
+    return
+end f_heap_ajust
+
+f_heap_sort [2] [5]
+// DESTROYS: a2 t5 s4 a0 t6 a1 a3
+
+//     {reg: a2}t37 = {reg: a1}p1 / 2
+    a2 = a1 / 2 // shift right
+
+//     {reg: t6}T4 = {reg: a2}t37 - 1
+    t6 = a2 + -1
+
+//     l6:
+    l6:
+
+//     if {reg: t6}T4 <= -1 goto l7
+    t1 = -1
+    if t6 <= t1 goto l7
+
+//     {reg: a2}T5 = {reg: a1}p1 - 1
+    a2 = a1 + -1
+
+//     {reg: a3}t41 = {reg: a0}p0 + 0
+    a3 = a0 + 0
+
+
+
+
+//     param {reg: a3}t41 // #0
+//     param {reg: t6}T4 // #1
+//     param {reg: a2}T5 // #2
+//     {reg: a2}T5 = call f_heap_ajust
+    store a1 0
+    store a0 1
+    store t6 2
+    a0 = a3
+    a1 = t6
+    a2 = a2
+    call f_heap_ajust
+    load 0 a1
+    load 1 a0
+    load 2 t6
+
+//     {reg: t6}T4 = {reg: t6}T4 - 1
+    t6 = t6 + -1
+
+//     goto l6
+    goto l6
+
+//     l7:
+    l7:
+
+//     {reg: t6}T4 = {reg: a1}p1 - 1
+    t6 = a1 + -1
+
+//     l8:
+    l8:
+
+//     if {reg: t6}T4 <= 0 goto l9
+    if t6 <= x0 goto l9
+
+//     {reg: a1}T6 = 0
+    a1 = 0
+
+//     {reg: a3}t46 = {reg: a0}p0 + 0
+    a3 = a0 + 0
+
+
+
+
+//     param {reg: a3}t46 // #0
+//     param {reg: a1}T6 // #1
+//     param {reg: t6}T4 // #2
+//     {reg: a2}T5 = call f_swap
+    store a1 0
+    store a0 1
+    store t6 2
+    a0 = a3
+    a1 = a1
+    a2 = t6
+    call f_swap
+    load 0 a1
+    load 1 a0
+    load 2 t6
+
+//     {reg: a2}T5 = {reg: t6}T4 - 1
+    a2 = t6 + -1
+
+//     {reg: a3}t49 = {reg: a0}p0 + 0
+    a3 = a0 + 0
+
+
+
+
+//     param {reg: a3}t49 // #0
+//     param {reg: a1}T6 // #1
+//     param {reg: a2}T5 // #2
+//     {reg: a2}T5 = call f_heap_ajust
+    store a0 0
+    store t6 1
+    a0 = a3
+    a1 = a1
+    a2 = a2
+    call f_heap_ajust
+    load 0 a0
+    load 1 t6
+
+//     {reg: t6}T4 = {reg: t6}T4 - 1
+    t6 = t6 + -1
+
+//     goto l8
+    goto l8
+
+//     l9:
+    l9:
+
+//     return 0
+    a0 = 0
+    return
+end f_heap_sort
+
+f_main [0] [11]
+// DESTROYS: a5 t0 a6 t1 t2 t3 t4 a4 a3 a1 t5 a2 t6 a0 a7 s4
+
+//     {global}T0 = 10
+    t0 = 10
+    loadaddr v0 t1
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [0] = 4
+    loadaddr 0 t1
+    t0 = 4
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [4] = 3
+    loadaddr 1 t1
+    t0 = 3
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [8] = 9
+    loadaddr 2 t1
+    t0 = 9
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [12] = 2
+    loadaddr 3 t1
+    t0 = 2
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [16] = 0
+    loadaddr 4 t1
+    t1 [0] = x0
+
+//     {stk #0 +10}T7 [20] = 1
+    loadaddr 5 t1
+    t0 = 1
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [24] = 6
+    loadaddr 6 t1
+    t0 = 6
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [28] = 5
+    loadaddr 7 t1
+    t0 = 5
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [32] = 7
+    loadaddr 8 t1
+    t0 = 7
+    t1 [0] = t0
+
+//     {stk #0 +10}T7 [36] = 8
+    loadaddr 9 t1
+    t0 = 8
+    t1 [0] = t0
+
+//     {reg: a0}T8 = 0
+
+//     {reg: a0}t52 = {stk #0 +10}T7 + 0
+    loadaddr 0 t0
+    a0 = t0 + 0
+
+
+
+//     param {reg: a0}t52 // #0
+//     param {global}T0 // #1
+//     {reg: a0}T8 = call f_heap_sort
+    a0 = a0
+    load v0 t1
+    a1 = t1
+    call f_heap_sort
+    a0 = a0
+
+//     l10:
+    l10:
+
+//     if {reg: a0}T8 >= {global}T0 goto l11
+    load v0 t1
+    if a0 >= t1 goto l11
+
+//     {reg: s4}t55 = 4 * {reg: a0}T8
+    s4 = a0 * 4 // shift left
+
+//     {reg: s4}t56 = {stk #0 +10}T7 + {reg: s4}t55
+    loadaddr 0 t0
+    s4 = t0 + s4
+
+//     {reg: s4}t54 = {reg: s4}t56 [0]
+    s4 = s4 [0]
+
+//     {reg: s4}T9 = {reg: s4}t54
+    s4 = s4
+
+
+//     param {reg: s4}T9 // #0
+//     call f_putint
+    store a0 10
+    a0 = s4
+    call f_putint
+    load 10 a0
+
+//     {reg: s4}T9 = 10
+    s4 = 10
+
+
+//     param {reg: s4}T9 // #0
+//     call f_putch
+    store a0 10
+    a0 = s4
+    call f_putch
+    load 10 a0
+
+//     {reg: a0}T8 = {reg: a0}T8 + 1
+    a0 = a0 + 1
+
+//     goto l10
+    goto l10
+
+//     l11:
+    l11:
+
+//     return 0
+    a0 = 0
+    return
+end f_main
+
+// END TIGGER

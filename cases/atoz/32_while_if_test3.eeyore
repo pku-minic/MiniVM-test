@@ -1,0 +1,48 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_deepWhileBr [2]
+var T0 // local: c
+var t0
+var t1
+var T1 // local: d
+var t2
+var t3
+var t4
+var T2 // local: e
+var t5
+var t6
+    T0 = p0 + p1
+    l0: // stmt: while - ltest
+    if T0 >= 75 goto l1 // stmt: while - done
+    T1 = 42
+    if T0 >= 100 goto l2 // stmt: ifonly
+    T0 = T0 + T1
+    if T0 <= 99 goto l3 // stmt: ifonly
+    T2 = T1 * 2
+    if 1 == 0 goto l4 // stmt: ifonly
+    T0 = T2 * 2
+    l4: // stmt: ifonly - lskip
+    l3: // stmt: ifonly - lskip
+    l2: // stmt: ifonly - lskip
+    goto l0 // stmt: while - to test
+    l1: // stmt: while - ldone
+    return T0
+    return 0 // stmt: func epilog
+end f_deepWhileBr
+
+f_main [0]
+var T3 // local: p
+var t7
+    T3 = 2
+    param T3 // #0
+    param T3 // #1
+    t7 = call f_deepWhileBr
+    return t7
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

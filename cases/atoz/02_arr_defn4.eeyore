@@ -1,0 +1,32 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_main [0]
+var 32 T0 // local: a
+var 32 T1 // local: b
+    //[ local_array_fill_zero T0 ]
+    T0 [0] = 1 // stmt: a
+    T0 [4] = 2 // stmt: a
+    T0 [8] = 3 // stmt: a
+    T0 [12] = 4 // stmt: a
+    T0 [16] = 5 // stmt: a
+    T0 [20] = 6 // stmt: a
+    T0 [24] = 7 // stmt: a
+    T0 [28] = 8 // stmt: a
+    //[ local_array_fill_zero T1 ]
+    T1 [0] = 1 // stmt: b
+    T1 [4] = 2 // stmt: b
+    T1 [8] = 3 // stmt: b
+    T1 [12] = 4 // stmt: b
+    T1 [16] = 5 // stmt: b
+    T1 [20] = 6 // stmt: b
+    T1 [24] = 7 // stmt: b
+    T1 [28] = 8 // stmt: b
+    return 0
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

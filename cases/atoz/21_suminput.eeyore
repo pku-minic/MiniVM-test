@@ -1,0 +1,52 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+var T0 // global: n
+var 40 T1 // global: a
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_main [0]
+var t0
+var t1
+var T2 // local: s
+var T3 // local: i
+var t2
+var t3
+var t4
+var t5
+var t6
+var t7
+var t8
+var t9
+var t10
+var T4 // local: newline
+    T0 = call f_getint
+    if T0 <= 10 goto l0 // stmt: ifonly
+    return 1
+    l0: // stmt: ifonly - lskip
+    T3 = 0
+    T2 = T3
+    l1: // stmt: while - ltest
+    if T3 >= T0 goto l2 // stmt: while - done
+    t3 = call f_getint
+    t4 = 4 * T3
+    t5 = T1 + t4
+    t5 [0] = t3
+    t8 = 4 * T3
+    t9 = T1 + t8
+    t7 = t9 [0]
+    T2 = T2 + t7
+    T3 = T3 + 1
+    goto l1 // stmt: while - to test
+    l2: // stmt: while - ldone
+    param T2 // #0
+    call f_putint
+    T4 = 10
+    param T4 // #0
+    call f_putch
+    return T2
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

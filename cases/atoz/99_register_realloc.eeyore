@@ -1,0 +1,281 @@
+// BEGIN EEYORE
+//--- GLOBAL DECL
+
+//--- GLOBAL INIT
+
+//--- FUNCTIONS
+f_func [2]
+var T0 // local: i
+var t0
+var T1 // local: c1
+var T2 // local: c2
+var T3 // local: c3
+var T4 // local: c4
+var T5 // local: d1
+var T6 // local: d2
+var T7 // local: d3
+var T8 // local: d4
+var T9 // local: e1
+var T10 // local: e2
+var T11 // local: e3
+var T12 // local: e4
+var T13 // local: f1
+var T14 // local: f2
+var T15 // local: f3
+var T16 // local: f4
+var T17 // local: g1
+var T18 // local: g2
+var T19 // local: g3
+var T20 // local: g4
+var T21 // local: h1
+var T22 // local: h2
+var T23 // local: h3
+var T24 // local: h4
+var T25 // local: i1
+var T26 // local: i2
+var T27 // local: i3
+var T28 // local: i4
+var T29 // local: j1
+var T30 // local: j2
+var T31 // local: j3
+var T32 // local: j4
+var T33 // local: k1
+var T34 // local: k2
+var T35 // local: k3
+var T36 // local: k4
+var t1
+var t2
+var t3
+var t4
+var t5
+var t6
+var t7
+var t8
+var t9
+var t10
+var t11
+var t12
+var t13
+var t14
+var t15
+var t16
+var t17
+var t18
+var t19
+var t20
+var t21
+var t22
+var t23
+var t24
+var t25
+var t26
+var t27
+var t28
+var t29
+var t30
+var t31
+var t32
+var t33
+var t34
+var t35
+var t36
+var t37
+var t38
+var t39
+var t40
+var t41
+var t42
+var t43
+var t44
+var t45
+var t46
+var t47
+var t48
+var t49
+var t50
+var t51
+var t52
+var t53
+var t54
+var t55
+var t56
+var t57
+var t58
+var t59
+var t60
+var t61
+var t62
+var t63
+var t64
+var t65
+var t66
+var t67
+var t68
+var t69
+var t70
+var t71
+var t72
+var t73
+var t74
+var t75
+var t76
+var t77
+var t78
+var t79
+var t80
+var t81
+var t82
+var t83
+var t84
+var t85
+var t86
+var t87
+var t88
+var t89
+var t90
+var t91
+var t92
+var t93
+var t94
+var t95
+var t96
+var t97
+var t98
+var t99
+var t100
+var t101
+var t102
+var t103
+var t104
+var t105
+var t106
+    T0 = p0 + p1
+    T1 = 1
+    T2 = 2
+    T3 = 3
+    T4 = 4
+    T5 = 1 + T1
+    T6 = 2 + T2
+    T7 = 3 + T3
+    T8 = 4 + T4
+    T9 = 1 + T5
+    T10 = 2 + T6
+    T11 = 3 + T7
+    T12 = 4 + T8
+    T13 = 1 + T9
+    T14 = 2 + T10
+    T15 = 3 + T11
+    T16 = 4 + T12
+    T17 = 1 + T13
+    T18 = 2 + T14
+    T19 = 3 + T15
+    T20 = 4 + T16
+    T21 = 1 + T17
+    T22 = 2 + T18
+    T23 = 3 + T19
+    T24 = 4 + T20
+    T25 = 1 + T21
+    T26 = 2 + T22
+    T27 = 3 + T23
+    T28 = 4 + T24
+    T29 = 1 + T25
+    T30 = 2 + T26
+    T31 = 3 + T27
+    T32 = 4 + T28
+    T33 = 1 + T29
+    T34 = 2 + T30
+    T35 = 3 + T31
+    T36 = 4 + T32
+    t34 = p0 - p1
+    T0 = t34 + 10
+    T33 = 1 + T29
+    T34 = 2 + T30
+    T35 = 3 + T31
+    T36 = 4 + T32
+    T29 = 1 + T25
+    T30 = 2 + T26
+    T31 = 3 + T27
+    T32 = 4 + T28
+    T25 = 1 + T21
+    T26 = 2 + T22
+    T27 = 3 + T23
+    T28 = 4 + T24
+    T21 = 1 + T17
+    T22 = 2 + T18
+    T23 = 3 + T19
+    T24 = 4 + T20
+    T17 = 1 + T13
+    T18 = 2 + T14
+    T19 = 3 + T15
+    T20 = 4 + T16
+    T13 = 1 + T9
+    T14 = 2 + T10
+    T15 = 3 + T11
+    T16 = 4 + T12
+    T9 = 1 + T5
+    T10 = 2 + T6
+    T11 = 3 + T7
+    T12 = 4 + T8
+    T5 = 1 + T1
+    T6 = 2 + T2
+    T7 = 3 + T3
+    T8 = 4 + T4
+    T1 = 1 + T33
+    T2 = 2 + T34
+    T3 = 3 + T35
+    T4 = 4 + T36
+    t106 = T0 + T1
+    t105 = t106 + T2
+    t104 = t105 + T3
+    t103 = t104 + T4
+    t102 = t103 - T5
+    t101 = t102 - T6
+    t100 = t101 - T7
+    t99 = t100 - T8
+    t98 = t99 + T9
+    t97 = t98 + T10
+    t96 = t97 + T11
+    t95 = t96 + T12
+    t94 = t95 - T13
+    t93 = t94 - T14
+    t92 = t93 - T15
+    t91 = t92 - T16
+    t90 = t91 + T17
+    t89 = t90 + T18
+    t88 = t89 + T19
+    t87 = t88 + T20
+    t86 = t87 - T21
+    t85 = t86 - T22
+    t84 = t85 - T23
+    t83 = t84 - T24
+    t82 = t83 + T25
+    t81 = t82 + T26
+    t80 = t81 + T27
+    t79 = t80 + T28
+    t78 = t79 - T29
+    t77 = t78 - T30
+    t76 = t77 - T31
+    t75 = t76 - T32
+    t74 = t75 + T33
+    t73 = t74 + T34
+    t72 = t73 + T35
+    t71 = t72 + T36
+    return t71
+    return 0 // stmt: func epilog
+end f_func
+
+f_main [0]
+var T37 // local: a
+var T38 // local: b
+var t107
+var t108
+    T37 = 1
+    T38 = T37 + 18
+    param T37 // #0
+    param T38 // #1
+    t108 = call f_func
+    return t108
+    return 0 // stmt: func epilog
+end f_main
+
+// END EEYORE

@@ -1,0 +1,51 @@
+// BEGIN TIGGER
+//--- SCALAR DECL
+
+//--- ARRAY DECL
+
+//--- FUNCTIONS
+f_main [0] [1]
+// DESTROYS: a5 t0 a6 t1 t2 t3 t4 t5 a1 a4 a0 t6 s4 a7 a2 a3
+
+//     {reg: a0}T0 = -2
+    a0 = -2
+
+//     {reg: a3}T1 = 1
+    a3 = 1
+
+//     {reg: a2}t2 = - {reg: a3}T1
+    a2 = - a3
+
+//     {reg: a2}t1 = {reg: a0}T0 - {reg: a2}t2
+    a2 = a0 - a2
+
+//     {reg: s4}t5 = {reg: a0}T0 + {reg: a3}T1
+    s4 = a0 + a3
+
+//     {reg: s4}t4 = - {reg: s4}t5
+    s4 = - s4
+
+//     {reg: a3}t7 = {reg: a0}T0 - {reg: a3}T1
+    a3 = a0 - a3
+
+//     {reg: a3}t6 = - {reg: a3}t7
+    a3 = - a3
+
+//     {reg: s4}t3 = {reg: s4}t4 % {reg: a3}t6
+    s4 = s4 % a3
+
+//     {reg: a0}T0 = {reg: a2}t1 + {reg: s4}t3
+    a0 = a2 + s4
+
+
+//     param {reg: a0}T0 // #0
+//     call f_putint
+    a0 = a0
+    call f_putint
+
+//     return 0
+    a0 = 0
+    return
+end f_main
+
+// END TIGGER
