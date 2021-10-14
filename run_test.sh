@@ -29,11 +29,16 @@ fi
 run="timeout 120"
 
 
+# C compiler
+cc="clang -O3"
+
+
 # run the specific test case
-#   arg1: command line for running MiniVM
+#   arg1: command line for running test case
 #   arg2: path to test case
+#   arg3: prompt
 function run_case {
-  echo "running testcase $2"
+  echo "  running ($3)..."
 
   # get name of test case
   local case_name="$2"
@@ -47,9 +52,9 @@ function run_case {
 
   # run the specific test case
   if [ -e "$case_in" ]; then
-    $run $1 $2 < "$case_in" > "$case_out"
+    $run $1 < "$case_in" > "$case_out"
   else
-    $run $1 $2 > "$case_out"
+    $run $1 > "$case_out"
   fi
   local ret=$?
 
@@ -69,12 +74,43 @@ function run_case {
   # remove output file
   rm $case_out
 
+  return $ret
+}
+
+
+# check the specific test case
+#   arg1: command line for running MiniVM
+#   arg2: path to test case
+function check_case {
+  echo "checking test case $2 ..."
+
+  # get name of test case
+  local case_name="$2"
+  local case_name=${case_name%.eeyore}
+  local case_name=${case_name%.tigger}
+
+  # get path to C source file
+  local case_c="$case_name.c"
+
+  # compile the specific test case using C backend
+  echo "  compiling..."
+  $run $1 -c $2 -o $case_c
+  $cc $case_c -o $case_name
+
+  # run MiniVM & C backend
+  run_case "$1 $2" $2 "MiniVM"
+  local ret1=$?
+  run_case "$case_name" $2 "C backend"
+  local ret2=$?
+
+  # remove output file
+  rm $case_c $case_name
+
   # updated pass/fail info
   total=$((total+1))
-  if [ $ret -eq 0 ]; then
+  if [[ $ret1 -eq 0 && $ret2 -eq 0 ]]; then
     pass=$((pass+1))
   fi
-  return $ret
 }
 
 
@@ -84,13 +120,13 @@ for dir in ${test_case_dirs[@]}; do
   # run Eeyore test cases
   if ls $base_dir/$dir/*.eeyore 1> /dev/null 2>&1; then
     for f in $base_dir/$dir/*.eeyore; do
-      run_case "$1" $f
+      check_case "$1" $f
     done
   fi
   # run Tigger test cases
   if ls $base_dir/$dir/*.tigger 1> /dev/null 2>&1; then
     for f in $base_dir/$dir/*.tigger; do
-      run_case "$1 -t" $f
+      check_case "$1 -t" $f
     done
   fi
 done
