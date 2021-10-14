@@ -1,0 +1,77 @@
+f_main [0]
+var T0
+var T1
+var T2
+var T3
+var 20 T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+T0=5
+T1=5
+T2=1
+T3=-2
+T4[0]=1
+T4[4]=2
+T4[8]=3
+T4[12]=4
+T4[16]=5
+T6=T3 * 1
+T7=T6 / 2
+T8=T7 + 4
+T9=T0 - T1
+T10=T8 + T9
+T11=T2 + 3
+T12= - T11
+T13=T12 % 2
+T14=T10 - T13
+T15=T14 % 5
+T16=0
+T17=T15 * 4
+T16=T16 + T17
+T18=T4[T16]
+T5=T18
+param T5
+call f_putint
+T19=T2 % 2
+T20=T19 + 67
+T21=T20 + T0
+T22=T21 - T1
+T23=T2 + 2
+T24=T23 % 2
+T25= - T24
+T26=T22 - T25
+T27=T26 % 5
+T28=0
+T29=T27 * 4
+T28=T28 + T29
+T30=T4[T28]
+T5=T30
+param T5
+call f_putint
+return 0
+return 0
+end f_main

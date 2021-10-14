@@ -1,0 +1,291 @@
+f_canJump [2] [56]
+store a0 0
+store a1 1
+load 1 t1
+t2 = 1
+t0 = t1 == t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 1
+return
+l1:
+load 0 t3
+t0 = t3[0]
+store t0 9
+load 1 t1
+t2 = 2
+t0 = t1 - t2
+store t0 10
+load 9 t1
+load 10 t2
+t0 = t1 > t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+a0 = 1
+return
+l5:
+t0 = 0
+store t0 22
+l8:
+load 1 t1
+t2 = 1
+t0 = t1 - t2
+store t0 23
+load 22 t1
+load 23 t2
+t0 = t1 < t2
+store t0 24
+load 24 t0
+if t0 == x0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+store x0 25
+load 22 t1
+t2 = 4
+t0 = t1 * t2
+store t0 26
+load 25 t1
+load 26 t2
+t0 = t1 + t2
+store t0 25
+t0 = 0
+loadaddr 12 t3
+load 25 t4
+t5 = t3 + t4
+t5[0] = t0
+load 22 t1
+t2 = 1
+t0 = t1 + t2
+store t0 27
+load 27 t0
+store t0 22
+goto l8
+l10:
+load 1 t1
+t2 = 1
+t0 = t1 - t2
+store t0 28
+store x0 29
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 30
+load 29 t1
+load 30 t2
+t0 = t1 + t2
+store t0 29
+t0 = 1
+loadaddr 12 t3
+load 29 t4
+t5 = t3 + t4
+t5[0] = t0
+load 1 t1
+t2 = 2
+t0 = t1 - t2
+store t0 31
+load 31 t0
+store t0 22
+l12:
+load 22 t1
+t2 = -1
+t0 = t1 > t2
+store t0 32
+load 32 t0
+if t0 == x0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+store x0 34
+load 22 t1
+t2 = 4
+t0 = t1 * t2
+store t0 35
+load 34 t1
+load 35 t2
+t0 = t1 + t2
+store t0 34
+load 0 t3
+load 34 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 36
+load 1 t1
+t2 = 1
+t0 = t1 - t2
+store t0 37
+load 37 t1
+load 22 t2
+t0 = t1 - t2
+store t0 38
+load 36 t1
+load 38 t2
+t0 = t1 < t2
+store t0 39
+load 39 t0
+if t0 == x0 goto l19
+goto l16
+l19:
+goto l17
+l16:
+store x0 40
+load 22 t1
+t2 = 4
+t0 = t1 * t2
+store t0 41
+load 40 t1
+load 41 t2
+t0 = t1 + t2
+store t0 40
+load 0 t3
+load 40 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 42
+load 42 t0
+store t0 33
+goto l18
+l17:
+load 1 t1
+t2 = 1
+t0 = t1 - t2
+store t0 43
+load 43 t1
+load 22 t2
+t0 = t1 - t2
+store t0 44
+load 44 t0
+store t0 33
+l18:
+l20:
+load 33 t1
+t2 = -1
+t0 = t1 > t2
+store t0 45
+load 45 t0
+if t0 == x0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+load 22 t1
+load 33 t2
+t0 = t1 + t2
+store t0 46
+store x0 47
+load 46 t1
+t2 = 4
+t0 = t1 * t2
+store t0 48
+load 47 t1
+load 48 t2
+t0 = t1 + t2
+store t0 47
+loadaddr 12 t3
+load 47 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 49
+load 49 t1
+t2 = 0
+t0 = t1 != t2
+store t0 50
+load 50 t0
+if t0 == x0 goto l27
+goto l24
+l27:
+goto l25
+l24:
+store x0 51
+load 22 t1
+t2 = 4
+t0 = t1 * t2
+store t0 52
+load 51 t1
+load 52 t2
+t0 = t1 + t2
+store t0 51
+t0 = 1
+loadaddr 12 t3
+load 51 t4
+t5 = t3 + t4
+t5[0] = t0
+l25:
+load 33 t1
+t2 = 1
+t0 = t1 - t2
+store t0 53
+load 53 t0
+store t0 33
+goto l20
+l22:
+load 22 t1
+t2 = 1
+t0 = t1 - t2
+store t0 54
+load 54 t0
+store t0 22
+goto l12
+l14:
+loadaddr 12 t3
+t0 = t3[0]
+store t0 55
+load 55 a0
+return
+return
+end f_canJump
+f_main [0] [20]
+t0 = 3
+loadaddr 9 t3
+t3[0] = t0
+t0 = 3
+loadaddr 9 t3
+t3[4] = t0
+t0 = 9
+loadaddr 9 t3
+t3[8] = t0
+t0 = 0
+loadaddr 9 t3
+t3[12] = t0
+t0 = 0
+loadaddr 9 t3
+t3[16] = t0
+t0 = 1
+loadaddr 9 t3
+t3[20] = t0
+t0 = 1
+loadaddr 9 t3
+t3[24] = t0
+t0 = 5
+loadaddr 9 t3
+t3[28] = t0
+t0 = 7
+loadaddr 9 t3
+t3[32] = t0
+t0 = 8
+loadaddr 9 t3
+t3[36] = t0
+t0 = 10
+store t0 8
+loadaddr 9 a0
+load 8 a1
+call f_canJump
+store a0 19
+load 19 t0
+store t0 8
+load 8 a0
+return
+return
+end f_main

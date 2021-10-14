@@ -1,0 +1,138 @@
+f_main [0] [43]
+t0 = 5
+store t0 8
+t0 = 5
+store t0 9
+t0 = 1
+store t0 10
+t0 = -2
+store t0 11
+t0 = 1
+loadaddr 12 t3
+t3[0] = t0
+t0 = 2
+loadaddr 12 t3
+t3[4] = t0
+t0 = 3
+loadaddr 12 t3
+t3[8] = t0
+t0 = 4
+loadaddr 12 t3
+t3[12] = t0
+t0 = 5
+loadaddr 12 t3
+t3[16] = t0
+load 11 t1
+t2 = 1
+t0 = t1 * t2
+store t0 18
+load 18 t1
+t2 = 2
+t0 = t1 / t2
+store t0 19
+load 19 t1
+t2 = 4
+t0 = t1 + t2
+store t0 20
+load 8 t1
+load 9 t2
+t0 = t1 - t2
+store t0 21
+load 20 t1
+load 21 t2
+t0 = t1 + t2
+store t0 22
+load 10 t1
+t2 = 3
+t0 = t1 + t2
+store t0 23
+load 23 t1
+t0 = - t1
+store t0 24
+load 24 t1
+t2 = 2
+t0 = t1 % t2
+store t0 25
+load 22 t1
+load 25 t2
+t0 = t1 - t2
+store t0 26
+load 26 t1
+t2 = 5
+t0 = t1 % t2
+store t0 27
+store x0 28
+load 27 t1
+t2 = 4
+t0 = t1 * t2
+store t0 29
+load 28 t1
+load 29 t2
+t0 = t1 + t2
+store t0 28
+loadaddr 12 t3
+load 28 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 30
+load 30 t0
+store t0 17
+load 17 a0
+call f_putint
+load 10 t1
+t2 = 2
+t0 = t1 % t2
+store t0 31
+load 31 t1
+t2 = 67
+t0 = t1 + t2
+store t0 32
+load 32 t1
+load 8 t2
+t0 = t1 + t2
+store t0 33
+load 33 t1
+load 9 t2
+t0 = t1 - t2
+store t0 34
+load 10 t1
+t2 = 2
+t0 = t1 + t2
+store t0 35
+load 35 t1
+t2 = 2
+t0 = t1 % t2
+store t0 36
+load 36 t1
+t0 = - t1
+store t0 37
+load 34 t1
+load 37 t2
+t0 = t1 - t2
+store t0 38
+load 38 t1
+t2 = 5
+t0 = t1 % t2
+store t0 39
+store x0 40
+load 39 t1
+t2 = 4
+t0 = t1 * t2
+store t0 41
+load 40 t1
+load 41 t2
+t0 = t1 + t2
+store t0 40
+loadaddr 12 t3
+load 40 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 42
+load 42 t0
+store t0 17
+load 17 a0
+call f_putint
+a0 = 0
+return
+return
+end f_main

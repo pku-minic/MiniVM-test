@@ -1,0 +1,169 @@
+f_canJump [2]
+var T0
+var T1
+var T2
+var T3
+var 40 T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+var T38
+T0=p1 == 1
+if T0== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+return 1
+l1:
+T1=p0[0]
+T2=p1 - 2
+T3=T1 > T2
+if T3== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+return 1
+l5:
+T5=0
+l8:
+T6=p1 - 1
+T7=T5 < T6
+if T7== 0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+T8=0
+T9=T5 * 4
+T8=T8 + T9
+T4[T8]=0
+T10=T5 + 1
+T5=T10
+goto l8
+l10:
+T11=p1 - 1
+T12=0
+T13=T11 * 4
+T12=T12 + T13
+T4[T12]=1
+T14=p1 - 2
+T5=T14
+l12:
+T15=T5 > -1
+if T15== 0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+T17=0
+T18=T5 * 4
+T17=T17 + T18
+T19=p0[T17]
+T20=p1 - 1
+T21=T20 - T5
+T22=T19 < T21
+if T22== 0 goto l19
+goto l16
+l19:
+goto l17
+l16:
+T23=0
+T24=T5 * 4
+T23=T23 + T24
+T25=p0[T23]
+T16=T25
+goto l18
+l17:
+T26=p1 - 1
+T27=T26 - T5
+T16=T27
+l18:
+l20:
+T28=T16 > -1
+if T28== 0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+T29=T5 + T16
+T30=0
+T31=T29 * 4
+T30=T30 + T31
+T32=T4[T30]
+T33=T32 != 0
+if T33== 0 goto l27
+goto l24
+l27:
+goto l25
+l24:
+T34=0
+T35=T5 * 4
+T34=T34 + T35
+T4[T34]=1
+l25:
+T36=T16 - 1
+T16=T36
+goto l20
+l22:
+T37=T5 - 1
+T5=T37
+goto l12
+l14:
+T38=T4[0]
+return T38
+return 0
+end f_canJump
+f_main [0]
+var T39
+var 40 T40
+var T41
+T40[0]=3
+T40[4]=3
+T40[8]=9
+T40[12]=0
+T40[16]=0
+T40[20]=1
+T40[24]=1
+T40[28]=5
+T40[32]=7
+T40[36]=8
+T39=10
+param T40
+param T39
+T41=call f_canJump
+T39=T41
+return T39
+return 0
+end f_main

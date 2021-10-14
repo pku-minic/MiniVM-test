@@ -1,0 +1,543 @@
+v0 = 0
+f_Merge [4] [93]
+store a0 0
+store a1 1
+store a2 2
+store a3 3
+load 2 t1
+load 1 t2
+t0 = t1 - t2
+store t0 9
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 10
+load 10 t0
+store t0 8
+load 3 t1
+load 2 t2
+t0 = t1 - t2
+store t0 12
+load 12 t0
+store t0 11
+t0 = 0
+store t0 33
+t0 = 0
+store t0 34
+l0:
+load 33 t1
+load 8 t2
+t0 = t1 < t2
+store t0 35
+load 35 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+store x0 36
+load 33 t1
+t2 = 4
+t0 = t1 * t2
+store t0 37
+load 36 t1
+load 37 t2
+t0 = t1 + t2
+store t0 36
+load 33 t1
+load 1 t2
+t0 = t1 + t2
+store t0 38
+store x0 39
+load 38 t1
+t2 = 4
+t0 = t1 * t2
+store t0 40
+load 39 t1
+load 40 t2
+t0 = t1 + t2
+store t0 39
+load 0 t3
+load 39 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 41
+load 41 t0
+loadaddr 13 t3
+load 36 t4
+t5 = t3 + t4
+t5[0] = t0
+load 33 t1
+t2 = 1
+t0 = t1 + t2
+store t0 42
+load 42 t0
+store t0 33
+goto l0
+l2:
+l4:
+load 34 t1
+load 11 t2
+t0 = t1 < t2
+store t0 43
+load 43 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+store x0 44
+load 34 t1
+t2 = 4
+t0 = t1 * t2
+store t0 45
+load 44 t1
+load 45 t2
+t0 = t1 + t2
+store t0 44
+load 34 t1
+load 2 t2
+t0 = t1 + t2
+store t0 46
+load 46 t1
+t2 = 1
+t0 = t1 + t2
+store t0 47
+store x0 48
+load 47 t1
+t2 = 4
+t0 = t1 * t2
+store t0 49
+load 48 t1
+load 49 t2
+t0 = t1 + t2
+store t0 48
+load 0 t3
+load 48 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 50
+load 50 t0
+loadaddr 23 t3
+load 44 t4
+t5 = t3 + t4
+t5[0] = t0
+load 34 t1
+t2 = 1
+t0 = t1 + t2
+store t0 51
+load 51 t0
+store t0 34
+goto l4
+l6:
+t0 = 0
+store t0 33
+t0 = 0
+store t0 34
+load 1 t0
+store t0 52
+l8:
+load 33 t1
+load 8 t2
+t0 = t1 != t2
+store t0 53
+load 53 t0
+if t0 == x0 goto l11
+load 34 t1
+load 11 t2
+t0 = t1 != t2
+store t0 54
+load 54 t0
+if t0 == x0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+store x0 55
+load 33 t1
+t2 = 4
+t0 = t1 * t2
+store t0 56
+load 55 t1
+load 56 t2
+t0 = t1 + t2
+store t0 55
+loadaddr 13 t3
+load 55 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 57
+store x0 58
+load 34 t1
+t2 = 4
+t0 = t1 * t2
+store t0 59
+load 58 t1
+load 59 t2
+t0 = t1 + t2
+store t0 58
+loadaddr 23 t3
+load 58 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 60
+load 60 t1
+t2 = 1
+t0 = t1 + t2
+store t0 61
+load 57 t1
+load 61 t2
+t0 = t1 < t2
+store t0 62
+load 62 t0
+if t0 == x0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+store x0 63
+load 52 t1
+t2 = 4
+t0 = t1 * t2
+store t0 64
+load 63 t1
+load 64 t2
+t0 = t1 + t2
+store t0 63
+store x0 65
+load 33 t1
+t2 = 4
+t0 = t1 * t2
+store t0 66
+load 65 t1
+load 66 t2
+t0 = t1 + t2
+store t0 65
+loadaddr 13 t3
+load 65 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 67
+load 67 t0
+load 0 t3
+load 63 t4
+t5 = t3 + t4
+t5[0] = t0
+load 52 t1
+t2 = 1
+t0 = t1 + t2
+store t0 68
+load 68 t0
+store t0 52
+load 33 t1
+t2 = 1
+t0 = t1 + t2
+store t0 69
+load 69 t0
+store t0 33
+goto l14
+l13:
+store x0 70
+load 52 t1
+t2 = 4
+t0 = t1 * t2
+store t0 71
+load 70 t1
+load 71 t2
+t0 = t1 + t2
+store t0 70
+store x0 72
+load 34 t1
+t2 = 4
+t0 = t1 * t2
+store t0 73
+load 72 t1
+load 73 t2
+t0 = t1 + t2
+store t0 72
+loadaddr 23 t3
+load 72 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 74
+load 74 t0
+load 0 t3
+load 70 t4
+t5 = t3 + t4
+t5[0] = t0
+load 52 t1
+t2 = 1
+t0 = t1 + t2
+store t0 75
+load 75 t0
+store t0 52
+load 34 t1
+t2 = 1
+t0 = t1 + t2
+store t0 76
+load 76 t0
+store t0 34
+l14:
+goto l8
+l10:
+l16:
+load 33 t1
+load 8 t2
+t0 = t1 < t2
+store t0 77
+load 77 t0
+if t0 == x0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+store x0 78
+load 52 t1
+t2 = 4
+t0 = t1 * t2
+store t0 79
+load 78 t1
+load 79 t2
+t0 = t1 + t2
+store t0 78
+store x0 80
+load 33 t1
+t2 = 4
+t0 = t1 * t2
+store t0 81
+load 80 t1
+load 81 t2
+t0 = t1 + t2
+store t0 80
+loadaddr 13 t3
+load 80 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 82
+load 82 t0
+load 0 t3
+load 78 t4
+t5 = t3 + t4
+t5[0] = t0
+load 52 t1
+t2 = 1
+t0 = t1 + t2
+store t0 83
+load 83 t0
+store t0 52
+load 33 t1
+t2 = 1
+t0 = t1 + t2
+store t0 84
+load 84 t0
+store t0 33
+goto l16
+l18:
+l20:
+load 34 t1
+load 11 t2
+t0 = t1 < t2
+store t0 85
+load 85 t0
+if t0 == x0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+store x0 86
+load 52 t1
+t2 = 4
+t0 = t1 * t2
+store t0 87
+load 86 t1
+load 87 t2
+t0 = t1 + t2
+store t0 86
+store x0 88
+load 34 t1
+t2 = 4
+t0 = t1 * t2
+store t0 89
+load 88 t1
+load 89 t2
+t0 = t1 + t2
+store t0 88
+loadaddr 23 t3
+load 88 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 90
+load 90 t0
+load 0 t3
+load 86 t4
+t5 = t3 + t4
+t5[0] = t0
+load 52 t1
+t2 = 1
+t0 = t1 + t2
+store t0 91
+load 91 t0
+store t0 52
+load 34 t1
+t2 = 1
+t0 = t1 + t2
+store t0 92
+load 92 t0
+store t0 34
+goto l20
+l22:
+a0 = 0
+return
+return
+end f_Merge
+f_MergeSort [3] [17]
+store a0 0
+store a1 1
+store a2 2
+load 1 t1
+load 2 t2
+t0 = t1 < t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l27
+goto l24
+l27:
+goto l25
+l24:
+load 1 t1
+load 2 t2
+t0 = t1 + t2
+store t0 10
+load 10 t1
+t2 = 2
+t0 = t1 / t2
+store t0 11
+load 11 t0
+store t0 9
+load 0 a0
+load 1 a1
+load 9 a2
+call f_MergeSort
+store a0 13
+load 13 t0
+store t0 12
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 14
+load 14 t0
+store t0 12
+load 0 a0
+load 12 a1
+load 2 a2
+call f_MergeSort
+store a0 15
+load 15 t0
+store t0 12
+load 0 a0
+load 1 a1
+load 9 a2
+load 2 a3
+call f_Merge
+store a0 16
+load 16 t0
+store t0 12
+l25:
+a0 = 0
+return
+return
+end f_MergeSort
+f_main [0] [27]
+t0 = 10
+loadaddr v0 t3
+t3[0] = t0
+t0 = 4
+loadaddr 8 t3
+t3[0] = t0
+t0 = 3
+loadaddr 8 t3
+t3[4] = t0
+t0 = 9
+loadaddr 8 t3
+t3[8] = t0
+t0 = 2
+loadaddr 8 t3
+t3[12] = t0
+t0 = 0
+loadaddr 8 t3
+t3[16] = t0
+t0 = 1
+loadaddr 8 t3
+t3[20] = t0
+t0 = 6
+loadaddr 8 t3
+t3[24] = t0
+t0 = 5
+loadaddr 8 t3
+t3[28] = t0
+t0 = 7
+loadaddr 8 t3
+t3[32] = t0
+t0 = 8
+loadaddr 8 t3
+t3[36] = t0
+t0 = 0
+store t0 18
+load v0 t1
+t2 = 1
+t0 = t1 - t2
+store t0 20
+load 20 t0
+store t0 19
+loadaddr 8 a0
+load 18 a1
+load 19 a2
+call f_MergeSort
+store a0 21
+load 21 t0
+store t0 18
+l28:
+load 18 t1
+load v0 t2
+t0 = t1 < t2
+store t0 22
+load 22 t0
+if t0 == x0 goto l31
+goto l29
+l31:
+goto l30
+l29:
+store x0 23
+load 18 t1
+t2 = 4
+t0 = t1 * t2
+store t0 24
+load 23 t1
+load 24 t2
+t0 = t1 + t2
+store t0 23
+loadaddr 8 t3
+load 23 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 25
+load 25 t0
+store t0 19
+load 19 a0
+call f_putint
+t0 = 10
+store t0 19
+load 19 a0
+call f_putch
+load 18 t1
+t2 = 1
+t0 = t1 + t2
+store t0 26
+load 26 t0
+store t0 18
+goto l28
+l30:
+a0 = 0
+return
+return
+end f_main

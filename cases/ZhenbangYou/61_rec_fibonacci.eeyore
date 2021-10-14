@@ -1,0 +1,61 @@
+var T0
+f_f [1]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+T1=p0 == 1
+if T1== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+return 1
+l1:
+T2=p0 == 2
+if T2== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+return 1
+l5:
+T5=p0 - 1
+T3=T5
+T6=p0 - 2
+T4=T6
+param T3
+T8=call f_f
+param T4
+T9=call f_f
+T10=T8 + T9
+T7=T10
+return T7
+return 0
+end f_f
+f_main [0]
+var T11
+var T12
+var T13
+var T14
+var T15
+T0=0
+T11=call f_getint
+T0=T11
+param T0
+T14=call f_f
+T12=T14
+param T12
+call f_putint
+T15=10
+param T15
+call f_putch
+return T12
+return 0
+end f_main

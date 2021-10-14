@@ -1,0 +1,42 @@
+f_fact [1] [13]
+store a0 0
+load 0 t1
+t2 = 0
+t0 = t1 == t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 1
+return
+l1:
+load 0 t1
+t2 = 1
+t0 = t1 - t2
+store t0 10
+load 10 t0
+store t0 9
+load 9 a0
+call f_fact
+store a0 11
+load 0 t1
+load 11 t2
+t0 = t1 * t2
+store t0 12
+load 12 a0
+return
+return
+end f_fact
+f_main [0] [10]
+t0 = 4
+store t0 8
+load 8 a0
+call f_fact
+store a0 9
+load 9 a0
+return
+return
+end f_main

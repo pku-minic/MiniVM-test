@@ -1,0 +1,121 @@
+f_main [0]
+var T0
+var T1
+var 40 T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+T1=0
+T0=0
+l0:
+T3=T0 < 10
+if T3== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T4=0
+T5=T0 * 4
+T4=T4 + T5
+T6=T0 + 1
+T2[T4]=T6
+T7=T0 + 1
+T0=T7
+goto l0
+l2:
+T12=10
+T13=call f_getint
+T8=T13
+T14=T12 - 1
+T9=T14
+T10=0
+T15=T9 + T10
+T16=T15 / 2
+T11=T16
+l4:
+T17=0
+T18=T11 * 4
+T17=T17 + T18
+T19=T2[T17]
+T20=T19 != T8
+if T20== 0 goto l7
+T21=T10 < T9
+if T21== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T22=T9 + T10
+T23=T22 / 2
+T11=T23
+T24=0
+T25=T11 * 4
+T24=T24 + T25
+T26=T2[T24]
+T27=T8 < T26
+if T27== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+T28=T11 - 1
+T9=T28
+goto l10
+l9:
+T29=T11 + 1
+T10=T29
+l10:
+goto l4
+l6:
+T30=0
+T31=T11 * 4
+T30=T30 + T31
+T32=T2[T30]
+T33=T8 == T32
+if T33== 0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+param T8
+call f_putint
+goto l14
+l13:
+T8=0
+param T8
+call f_putint
+l14:
+T8=10
+param T8
+call f_putch
+return 0
+return 0
+end f_main

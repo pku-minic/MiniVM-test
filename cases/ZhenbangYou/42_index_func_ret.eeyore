@@ -1,0 +1,68 @@
+f__getMaxOfAll [2]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+T0=-999999
+T1=p1 - 1
+p1=T1
+l0:
+T2=p1 > -1
+if T2== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T3=0
+T4=p1 * 4
+T3=T3 + T4
+T5=p0[T3]
+T6=T5 > T0
+if T6== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+T7=0
+T8=p1 * 4
+T7=T7 + T8
+T9=p0[T7]
+T0=T9
+l5:
+T10=p1 - 1
+p1=T10
+goto l0
+l2:
+return T0
+return 0
+end f__getMaxOfAll
+f_main [0]
+var 12 T11
+var T12
+var T13
+var T14
+var T15
+var T16
+T11[0]=-2
+T11[4]=2
+T11[8]=-7
+param T11
+param 3
+T13=call f__getMaxOfAll
+T14=0
+T15=T13 * 4
+T14=T14 + T15
+T16=T11[T14]
+T12=T16
+param T12
+call f_putint
+return 0
+return 0
+end f_main

@@ -1,0 +1,47 @@
+var T0
+f_myFunc [3]
+var T1
+var T2
+var T3
+var T4
+var T5
+p0=2
+T1=0
+T2=T1 != 0
+if T2== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+return 0
+l1:
+l4:
+T3=p1 > 0
+if T3== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T4=p1 - 1
+p1=T4
+goto l4
+l6:
+T5=p0 + p1
+return T5
+return 0
+end f_myFunc
+f_main [0]
+var T6
+var T7
+var T8
+T0=0
+T0=3
+param 1
+param 2
+param 1
+T7=call f_myFunc
+T6=T7
+T8=T0 + T6
+return T8
+return 0
+end f_main

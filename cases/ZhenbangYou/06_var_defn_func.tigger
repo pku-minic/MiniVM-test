@@ -1,0 +1,14 @@
+f_defn [0] [8]
+a0 = 4
+return
+return
+end f_defn
+f_main [0] [10]
+call f_defn
+store a0 9
+load 9 t0
+store t0 8
+load 8 a0
+return
+return
+end f_main

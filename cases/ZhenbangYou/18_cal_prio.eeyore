@@ -1,0 +1,25 @@
+var T0
+var T1
+var T2
+f_main [0]
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+T0=0
+T1=0
+T2=0
+T3=call f_getint
+T0=T3
+T4=call f_getint
+T1=T4
+T5=call f_getint
+T2=T5
+T7=T1 * T2
+T8=T0 + T7
+T6=T8
+return T6
+return 0
+end f_main

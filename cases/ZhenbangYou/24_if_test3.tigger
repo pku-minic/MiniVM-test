@@ -1,0 +1,48 @@
+f_ififElse [0] [13]
+t0 = 5
+store t0 8
+t0 = 10
+store t0 9
+load 8 t1
+t2 = 5
+t0 = t1 == t2
+store t0 10
+load 10 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+load 9 t1
+t2 = 10
+t0 = t1 == t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+t0 = 25
+store t0 8
+goto l6
+l5:
+load 8 t1
+t2 = 15
+t0 = t1 + t2
+store t0 12
+load 12 t0
+store t0 8
+l6:
+l1:
+load 8 a0
+return
+return
+end f_ififElse
+f_main [0] [9]
+call f_ififElse
+store a0 8
+load 8 a0
+return
+return
+end f_main

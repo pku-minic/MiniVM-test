@@ -1,0 +1,32 @@
+v0 = 0
+f_main [0] [13]
+call f_getint
+store a0 10
+load 10 t0
+store t0 8
+call f_getint
+store a0 11
+load 11 t0
+store t0 9
+load 8 t0
+store t0 12
+load 9 t0
+store t0 8
+load 12 t0
+store t0 9
+load 8 a0
+call f_putint
+t0 = 10
+store t0 12
+load 12 a0
+call f_putch
+load 9 a0
+call f_putint
+t0 = 10
+store t0 12
+load 12 a0
+call f_putch
+a0 = 0
+return
+return
+end f_main

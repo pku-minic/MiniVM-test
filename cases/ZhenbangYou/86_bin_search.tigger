@@ -1,0 +1,189 @@
+f_main [0] [51]
+t0 = 0
+store t0 9
+t0 = 0
+store t0 8
+l0:
+load 8 t1
+t2 = 10
+t0 = t1 < t2
+store t0 20
+load 20 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+store x0 21
+load 8 t1
+t2 = 4
+t0 = t1 * t2
+store t0 22
+load 21 t1
+load 22 t2
+t0 = t1 + t2
+store t0 21
+load 8 t1
+t2 = 1
+t0 = t1 + t2
+store t0 23
+load 23 t0
+loadaddr 10 t3
+load 21 t4
+t5 = t3 + t4
+t5[0] = t0
+load 8 t1
+t2 = 1
+t0 = t1 + t2
+store t0 24
+load 24 t0
+store t0 8
+goto l0
+l2:
+t0 = 10
+store t0 29
+call f_getint
+store a0 30
+load 30 t0
+store t0 25
+load 29 t1
+t2 = 1
+t0 = t1 - t2
+store t0 31
+load 31 t0
+store t0 26
+t0 = 0
+store t0 27
+load 26 t1
+load 27 t2
+t0 = t1 + t2
+store t0 32
+load 32 t1
+t2 = 2
+t0 = t1 / t2
+store t0 33
+load 33 t0
+store t0 28
+l4:
+store x0 34
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 35
+load 34 t1
+load 35 t2
+t0 = t1 + t2
+store t0 34
+loadaddr 10 t3
+load 34 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 36
+load 36 t1
+load 25 t2
+t0 = t1 != t2
+store t0 37
+load 37 t0
+if t0 == x0 goto l7
+load 27 t1
+load 26 t2
+t0 = t1 < t2
+store t0 38
+load 38 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+load 26 t1
+load 27 t2
+t0 = t1 + t2
+store t0 39
+load 39 t1
+t2 = 2
+t0 = t1 / t2
+store t0 40
+load 40 t0
+store t0 28
+store x0 41
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 42
+load 41 t1
+load 42 t2
+t0 = t1 + t2
+store t0 41
+loadaddr 10 t3
+load 41 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 43
+load 25 t1
+load 43 t2
+t0 = t1 < t2
+store t0 44
+load 44 t0
+if t0 == x0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+load 28 t1
+t2 = 1
+t0 = t1 - t2
+store t0 45
+load 45 t0
+store t0 26
+goto l10
+l9:
+load 28 t1
+t2 = 1
+t0 = t1 + t2
+store t0 46
+load 46 t0
+store t0 27
+l10:
+goto l4
+l6:
+store x0 47
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 48
+load 47 t1
+load 48 t2
+t0 = t1 + t2
+store t0 47
+loadaddr 10 t3
+load 47 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 49
+load 25 t1
+load 49 t2
+t0 = t1 == t2
+store t0 50
+load 50 t0
+if t0 == x0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+load 25 a0
+call f_putint
+goto l14
+l13:
+t0 = 0
+store t0 25
+load 25 a0
+call f_putint
+l14:
+t0 = 10
+store t0 25
+load 25 a0
+call f_putch
+a0 = 0
+return
+return
+end f_main

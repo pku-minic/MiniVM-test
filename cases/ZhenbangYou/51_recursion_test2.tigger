@@ -1,0 +1,64 @@
+f_fib [1] [17]
+store a0 0
+load 0 t1
+t2 = 0
+t0 = t1 == t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 0
+return
+l1:
+load 0 t1
+t2 = 1
+t0 = t1 == t2
+store t0 9
+load 9 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+a0 = 1
+return
+l5:
+load 0 t1
+t2 = 1
+t0 = t1 - t2
+store t0 11
+load 11 t0
+store t0 10
+load 0 t1
+t2 = 2
+t0 = t1 - t2
+store t0 13
+load 13 t0
+store t0 12
+load 10 a0
+call f_fib
+store a0 14
+load 12 a0
+call f_fib
+store a0 15
+load 14 t1
+load 15 t2
+t0 = t1 + t2
+store t0 16
+load 16 a0
+return
+return
+end f_fib
+f_main [0] [10]
+t0 = 10
+store t0 8
+load 8 a0
+call f_fib
+store a0 9
+load 9 a0
+return
+return
+end f_main

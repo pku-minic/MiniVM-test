@@ -1,0 +1,71 @@
+f_main [0]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+T0=0
+T1=0
+T2=0
+l0:
+T4=T0 < 21
+if T4== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+l4:
+T5=101 - T0
+T6=T1 < T5
+if T6== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T7=100 - T0
+T8=T7 - T1
+T2=T8
+T9=5 * T0
+T10=1 * T1
+T11=T9 + T10
+T12=T2 / 2
+T13=T11 + T12
+T14=T13 == 100
+if T14== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+param T0
+call f_putint
+param T1
+call f_putint
+param T2
+call f_putint
+T3=10
+param T3
+call f_putch
+l9:
+T15=T1 + 1
+T1=T15
+goto l4
+l6:
+T16=T0 + 1
+T0=T16
+goto l0
+l2:
+return 0
+return 0
+end f_main

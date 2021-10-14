@@ -1,0 +1,84 @@
+f_palindrome [1]
+var 16 T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+T1=0
+l0:
+T3=T1 < 4
+if T3== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T4=0
+T5=T1 * 4
+T4=T4 + T5
+T6=p0 % 10
+T0[T4]=T6
+T7=p0 / 10
+p0=T7
+T8=T1 + 1
+T1=T8
+goto l0
+l2:
+T9=T0[0]
+T10=T0[12]
+T11=T9 == T10
+if T11== 0 goto l7
+T12=T0[4]
+T13=T0[8]
+T14=T12 == T13
+if T14== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+T2=1
+goto l6
+l5:
+T2=0
+l6:
+return T2
+return 0
+end f_palindrome
+f_main [0]
+var T15
+var T16
+var T17
+var T18
+T15=1221
+param T15
+T17=call f_palindrome
+T16=T17
+T18=T16 == 1
+if T18== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+param T15
+call f_putint
+goto l10
+l9:
+T16=0
+param T16
+call f_putint
+l10:
+T16=10
+param T16
+call f_putch
+return 0
+return 0
+end f_main

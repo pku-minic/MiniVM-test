@@ -1,0 +1,600 @@
+f_func [2] [152]
+store a0 0
+store a1 1
+load 0 t1
+load 1 t2
+t0 = t1 + t2
+store t0 9
+load 9 t0
+store t0 8
+t0 = 1
+store t0 10
+t0 = 2
+store t0 11
+t0 = 3
+store t0 12
+t0 = 4
+store t0 13
+t1 = 1
+load 10 t2
+t0 = t1 + t2
+store t0 46
+load 46 t0
+store t0 14
+t1 = 2
+load 11 t2
+t0 = t1 + t2
+store t0 47
+load 47 t0
+store t0 15
+t1 = 3
+load 12 t2
+t0 = t1 + t2
+store t0 48
+load 48 t0
+store t0 16
+t1 = 4
+load 13 t2
+t0 = t1 + t2
+store t0 49
+load 49 t0
+store t0 17
+t1 = 1
+load 14 t2
+t0 = t1 + t2
+store t0 50
+load 50 t0
+store t0 18
+t1 = 2
+load 15 t2
+t0 = t1 + t2
+store t0 51
+load 51 t0
+store t0 19
+t1 = 3
+load 16 t2
+t0 = t1 + t2
+store t0 52
+load 52 t0
+store t0 20
+t1 = 4
+load 17 t2
+t0 = t1 + t2
+store t0 53
+load 53 t0
+store t0 21
+t1 = 1
+load 18 t2
+t0 = t1 + t2
+store t0 54
+load 54 t0
+store t0 22
+t1 = 2
+load 19 t2
+t0 = t1 + t2
+store t0 55
+load 55 t0
+store t0 23
+t1 = 3
+load 20 t2
+t0 = t1 + t2
+store t0 56
+load 56 t0
+store t0 24
+t1 = 4
+load 21 t2
+t0 = t1 + t2
+store t0 57
+load 57 t0
+store t0 25
+t1 = 1
+load 22 t2
+t0 = t1 + t2
+store t0 58
+load 58 t0
+store t0 26
+t1 = 2
+load 23 t2
+t0 = t1 + t2
+store t0 59
+load 59 t0
+store t0 27
+t1 = 3
+load 24 t2
+t0 = t1 + t2
+store t0 60
+load 60 t0
+store t0 28
+t1 = 4
+load 25 t2
+t0 = t1 + t2
+store t0 61
+load 61 t0
+store t0 29
+t1 = 1
+load 26 t2
+t0 = t1 + t2
+store t0 62
+load 62 t0
+store t0 30
+t1 = 2
+load 27 t2
+t0 = t1 + t2
+store t0 63
+load 63 t0
+store t0 31
+t1 = 3
+load 28 t2
+t0 = t1 + t2
+store t0 64
+load 64 t0
+store t0 32
+t1 = 4
+load 29 t2
+t0 = t1 + t2
+store t0 65
+load 65 t0
+store t0 33
+t1 = 1
+load 30 t2
+t0 = t1 + t2
+store t0 66
+load 66 t0
+store t0 34
+t1 = 2
+load 31 t2
+t0 = t1 + t2
+store t0 67
+load 67 t0
+store t0 35
+t1 = 3
+load 32 t2
+t0 = t1 + t2
+store t0 68
+load 68 t0
+store t0 36
+t1 = 4
+load 33 t2
+t0 = t1 + t2
+store t0 69
+load 69 t0
+store t0 37
+t1 = 1
+load 34 t2
+t0 = t1 + t2
+store t0 70
+load 70 t0
+store t0 38
+t1 = 2
+load 35 t2
+t0 = t1 + t2
+store t0 71
+load 71 t0
+store t0 39
+t1 = 3
+load 36 t2
+t0 = t1 + t2
+store t0 72
+load 72 t0
+store t0 40
+t1 = 4
+load 37 t2
+t0 = t1 + t2
+store t0 73
+load 73 t0
+store t0 41
+t1 = 1
+load 38 t2
+t0 = t1 + t2
+store t0 74
+load 74 t0
+store t0 42
+t1 = 2
+load 39 t2
+t0 = t1 + t2
+store t0 75
+load 75 t0
+store t0 43
+t1 = 3
+load 40 t2
+t0 = t1 + t2
+store t0 76
+load 76 t0
+store t0 44
+t1 = 4
+load 41 t2
+t0 = t1 + t2
+store t0 77
+load 77 t0
+store t0 45
+load 0 t1
+load 1 t2
+t0 = t1 - t2
+store t0 78
+load 78 t1
+t2 = 10
+t0 = t1 + t2
+store t0 79
+load 79 t0
+store t0 8
+t1 = 1
+load 38 t2
+t0 = t1 + t2
+store t0 80
+load 80 t0
+store t0 42
+t1 = 2
+load 39 t2
+t0 = t1 + t2
+store t0 81
+load 81 t0
+store t0 43
+t1 = 3
+load 40 t2
+t0 = t1 + t2
+store t0 82
+load 82 t0
+store t0 44
+t1 = 4
+load 41 t2
+t0 = t1 + t2
+store t0 83
+load 83 t0
+store t0 45
+t1 = 1
+load 34 t2
+t0 = t1 + t2
+store t0 84
+load 84 t0
+store t0 38
+t1 = 2
+load 35 t2
+t0 = t1 + t2
+store t0 85
+load 85 t0
+store t0 39
+t1 = 3
+load 36 t2
+t0 = t1 + t2
+store t0 86
+load 86 t0
+store t0 40
+t1 = 4
+load 37 t2
+t0 = t1 + t2
+store t0 87
+load 87 t0
+store t0 41
+t1 = 1
+load 30 t2
+t0 = t1 + t2
+store t0 88
+load 88 t0
+store t0 34
+t1 = 2
+load 31 t2
+t0 = t1 + t2
+store t0 89
+load 89 t0
+store t0 35
+t1 = 3
+load 32 t2
+t0 = t1 + t2
+store t0 90
+load 90 t0
+store t0 36
+t1 = 4
+load 33 t2
+t0 = t1 + t2
+store t0 91
+load 91 t0
+store t0 37
+t1 = 1
+load 26 t2
+t0 = t1 + t2
+store t0 92
+load 92 t0
+store t0 30
+t1 = 2
+load 27 t2
+t0 = t1 + t2
+store t0 93
+load 93 t0
+store t0 31
+t1 = 3
+load 28 t2
+t0 = t1 + t2
+store t0 94
+load 94 t0
+store t0 32
+t1 = 4
+load 29 t2
+t0 = t1 + t2
+store t0 95
+load 95 t0
+store t0 33
+t1 = 1
+load 22 t2
+t0 = t1 + t2
+store t0 96
+load 96 t0
+store t0 26
+t1 = 2
+load 23 t2
+t0 = t1 + t2
+store t0 97
+load 97 t0
+store t0 27
+t1 = 3
+load 24 t2
+t0 = t1 + t2
+store t0 98
+load 98 t0
+store t0 28
+t1 = 4
+load 25 t2
+t0 = t1 + t2
+store t0 99
+load 99 t0
+store t0 29
+t1 = 1
+load 18 t2
+t0 = t1 + t2
+store t0 100
+load 100 t0
+store t0 22
+t1 = 2
+load 19 t2
+t0 = t1 + t2
+store t0 101
+load 101 t0
+store t0 23
+t1 = 3
+load 20 t2
+t0 = t1 + t2
+store t0 102
+load 102 t0
+store t0 24
+t1 = 4
+load 21 t2
+t0 = t1 + t2
+store t0 103
+load 103 t0
+store t0 25
+t1 = 1
+load 14 t2
+t0 = t1 + t2
+store t0 104
+load 104 t0
+store t0 18
+t1 = 2
+load 15 t2
+t0 = t1 + t2
+store t0 105
+load 105 t0
+store t0 19
+t1 = 3
+load 16 t2
+t0 = t1 + t2
+store t0 106
+load 106 t0
+store t0 20
+t1 = 4
+load 17 t2
+t0 = t1 + t2
+store t0 107
+load 107 t0
+store t0 21
+t1 = 1
+load 10 t2
+t0 = t1 + t2
+store t0 108
+load 108 t0
+store t0 14
+t1 = 2
+load 11 t2
+t0 = t1 + t2
+store t0 109
+load 109 t0
+store t0 15
+t1 = 3
+load 12 t2
+t0 = t1 + t2
+store t0 110
+load 110 t0
+store t0 16
+t1 = 4
+load 13 t2
+t0 = t1 + t2
+store t0 111
+load 111 t0
+store t0 17
+t1 = 1
+load 42 t2
+t0 = t1 + t2
+store t0 112
+load 112 t0
+store t0 10
+t1 = 2
+load 43 t2
+t0 = t1 + t2
+store t0 113
+load 113 t0
+store t0 11
+t1 = 3
+load 44 t2
+t0 = t1 + t2
+store t0 114
+load 114 t0
+store t0 12
+t1 = 4
+load 45 t2
+t0 = t1 + t2
+store t0 115
+load 115 t0
+store t0 13
+load 8 t1
+load 10 t2
+t0 = t1 + t2
+store t0 116
+load 116 t1
+load 11 t2
+t0 = t1 + t2
+store t0 117
+load 117 t1
+load 12 t2
+t0 = t1 + t2
+store t0 118
+load 118 t1
+load 13 t2
+t0 = t1 + t2
+store t0 119
+load 119 t1
+load 14 t2
+t0 = t1 - t2
+store t0 120
+load 120 t1
+load 15 t2
+t0 = t1 - t2
+store t0 121
+load 121 t1
+load 16 t2
+t0 = t1 - t2
+store t0 122
+load 122 t1
+load 17 t2
+t0 = t1 - t2
+store t0 123
+load 123 t1
+load 18 t2
+t0 = t1 + t2
+store t0 124
+load 124 t1
+load 19 t2
+t0 = t1 + t2
+store t0 125
+load 125 t1
+load 20 t2
+t0 = t1 + t2
+store t0 126
+load 126 t1
+load 21 t2
+t0 = t1 + t2
+store t0 127
+load 127 t1
+load 22 t2
+t0 = t1 - t2
+store t0 128
+load 128 t1
+load 23 t2
+t0 = t1 - t2
+store t0 129
+load 129 t1
+load 24 t2
+t0 = t1 - t2
+store t0 130
+load 130 t1
+load 25 t2
+t0 = t1 - t2
+store t0 131
+load 131 t1
+load 26 t2
+t0 = t1 + t2
+store t0 132
+load 132 t1
+load 27 t2
+t0 = t1 + t2
+store t0 133
+load 133 t1
+load 28 t2
+t0 = t1 + t2
+store t0 134
+load 134 t1
+load 29 t2
+t0 = t1 + t2
+store t0 135
+load 135 t1
+load 30 t2
+t0 = t1 - t2
+store t0 136
+load 136 t1
+load 31 t2
+t0 = t1 - t2
+store t0 137
+load 137 t1
+load 32 t2
+t0 = t1 - t2
+store t0 138
+load 138 t1
+load 33 t2
+t0 = t1 - t2
+store t0 139
+load 139 t1
+load 34 t2
+t0 = t1 + t2
+store t0 140
+load 140 t1
+load 35 t2
+t0 = t1 + t2
+store t0 141
+load 141 t1
+load 36 t2
+t0 = t1 + t2
+store t0 142
+load 142 t1
+load 37 t2
+t0 = t1 + t2
+store t0 143
+load 143 t1
+load 38 t2
+t0 = t1 - t2
+store t0 144
+load 144 t1
+load 39 t2
+t0 = t1 - t2
+store t0 145
+load 145 t1
+load 40 t2
+t0 = t1 - t2
+store t0 146
+load 146 t1
+load 41 t2
+t0 = t1 - t2
+store t0 147
+load 147 t1
+load 42 t2
+t0 = t1 + t2
+store t0 148
+load 148 t1
+load 43 t2
+t0 = t1 + t2
+store t0 149
+load 149 t1
+load 44 t2
+t0 = t1 + t2
+store t0 150
+load 150 t1
+load 45 t2
+t0 = t1 + t2
+store t0 151
+load 151 a0
+return
+return
+end f_func
+f_main [0] [12]
+t0 = 1
+store t0 8
+load 8 t1
+t2 = 18
+t0 = t1 + t2
+store t0 10
+load 10 t0
+store t0 9
+load 8 a0
+load 9 a1
+call f_func
+store a0 11
+load 11 a0
+return
+return
+end f_main

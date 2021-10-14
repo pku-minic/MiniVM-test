@@ -1,0 +1,153 @@
+f_maxSubArray [2] [23]
+store a0 0
+store a1 1
+load 1 t1
+t2 = 0
+t0 = t1 == t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 0
+return
+l1:
+load 1 t1
+t2 = 1
+t0 = t1 == t2
+store t0 9
+load 9 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+load 0 t3
+t0 = t3[0]
+store t0 10
+load 10 a0
+return
+l5:
+load 0 t3
+t0 = t3[0]
+store t0 12
+load 12 t0
+store t0 11
+load 11 t0
+store t0 13
+t0 = 1
+store t0 14
+l8:
+load 14 t1
+load 1 t2
+t0 = t1 < t2
+store t0 15
+load 15 t0
+if t0 == x0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+load 11 t1
+t2 = 0
+t0 = t1 < t2
+store t0 16
+load 16 t0
+if t0 == x0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+t0 = 0
+store t0 11
+l13:
+store x0 17
+load 14 t1
+t2 = 4
+t0 = t1 * t2
+store t0 18
+load 17 t1
+load 18 t2
+t0 = t1 + t2
+store t0 17
+load 0 t3
+load 17 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 19
+load 11 t1
+load 19 t2
+t0 = t1 + t2
+store t0 20
+load 20 t0
+store t0 11
+load 13 t1
+load 11 t2
+t0 = t1 < t2
+store t0 21
+load 21 t0
+if t0 == x0 goto l19
+goto l16
+l19:
+goto l17
+l16:
+load 11 t0
+store t0 13
+l17:
+load 14 t1
+t2 = 1
+t0 = t1 + t2
+store t0 22
+load 22 t0
+store t0 14
+goto l8
+l10:
+load 13 a0
+return
+return
+end f_maxSubArray
+f_main [0] [20]
+t0 = -4
+loadaddr 9 t3
+t3[0] = t0
+t0 = 3
+loadaddr 9 t3
+t3[4] = t0
+t0 = 9
+loadaddr 9 t3
+t3[8] = t0
+t0 = -2
+loadaddr 9 t3
+t3[12] = t0
+t0 = 0
+loadaddr 9 t3
+t3[16] = t0
+t0 = 1
+loadaddr 9 t3
+t3[20] = t0
+t0 = -6
+loadaddr 9 t3
+t3[24] = t0
+t0 = 5
+loadaddr 9 t3
+t3[28] = t0
+t0 = 7
+loadaddr 9 t3
+t3[32] = t0
+t0 = 8
+loadaddr 9 t3
+t3[36] = t0
+t0 = 10
+store t0 8
+loadaddr 9 a0
+load 8 a1
+call f_maxSubArray
+store a0 19
+load 19 t0
+store t0 8
+load 8 a0
+return
+return
+end f_main

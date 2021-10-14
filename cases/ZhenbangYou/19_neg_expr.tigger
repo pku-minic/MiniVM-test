@@ -1,0 +1,28 @@
+v0 = 0
+v1 = 0
+f_main [0] [13]
+call f_getint
+store a0 8
+load 8 t0
+loadaddr v0 t3
+t3[0] = t0
+call f_getint
+store a0 9
+load 9 t0
+loadaddr v1 t3
+t3[0] = t0
+load v0 t1
+load v1 t2
+t0 = t1 + t2
+store t0 11
+load 11 t1
+t0 = - t1
+store t0 12
+load 12 t0
+store t0 10
+load 10 a0
+call f_putint
+a0 = 0
+return
+return
+end f_main

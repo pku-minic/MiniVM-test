@@ -1,0 +1,133 @@
+f_climbStairs [1] [37]
+store a0 0
+load 0 t1
+t2 = 4
+t0 = t1 < t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+load 0 a0
+return
+l1:
+t0 = 0
+loadaddr 9 t3
+t3[0] = t0
+t0 = 1
+loadaddr 9 t3
+t3[4] = t0
+t0 = 2
+loadaddr 9 t3
+t3[8] = t0
+t0 = 3
+store t0 19
+l4:
+load 0 t1
+t2 = 1
+t0 = t1 + t2
+store t0 20
+load 19 t1
+load 20 t2
+t0 = t1 < t2
+store t0 21
+load 21 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+store x0 22
+load 19 t1
+t2 = 4
+t0 = t1 * t2
+store t0 23
+load 22 t1
+load 23 t2
+t0 = t1 + t2
+store t0 22
+load 19 t1
+t2 = 1
+t0 = t1 - t2
+store t0 24
+store x0 25
+load 24 t1
+t2 = 4
+t0 = t1 * t2
+store t0 26
+load 25 t1
+load 26 t2
+t0 = t1 + t2
+store t0 25
+loadaddr 9 t3
+load 25 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 27
+load 19 t1
+t2 = 2
+t0 = t1 - t2
+store t0 28
+store x0 29
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 30
+load 29 t1
+load 30 t2
+t0 = t1 + t2
+store t0 29
+loadaddr 9 t3
+load 29 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 31
+load 27 t1
+load 31 t2
+t0 = t1 + t2
+store t0 32
+load 32 t0
+loadaddr 9 t3
+load 22 t4
+t5 = t3 + t4
+t5[0] = t0
+load 19 t1
+t2 = 1
+t0 = t1 + t2
+store t0 33
+load 33 t0
+store t0 19
+goto l4
+l6:
+store x0 34
+load 0 t1
+t2 = 4
+t0 = t1 * t2
+store t0 35
+load 34 t1
+load 35 t2
+t0 = t1 + t2
+store t0 34
+loadaddr 9 t3
+load 34 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 36
+load 36 a0
+return
+return
+end f_climbStairs
+f_main [0] [11]
+t0 = 5
+store t0 9
+load 9 a0
+call f_climbStairs
+store a0 10
+load 10 t0
+store t0 8
+load 8 a0
+return
+return
+end f_main

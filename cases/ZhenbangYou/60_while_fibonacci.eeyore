@@ -1,0 +1,59 @@
+var T0
+f_fib [1]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+T1=0
+T2=1
+T4=p0 == 0
+if T4== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+return 0
+l1:
+T5=p0 == 1
+if T5== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+return 1
+l5:
+l8:
+T6=p0 > 1
+if T6== 0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+T7=T1 + T2
+T3=T7
+T1=T2
+T2=T3
+T8=p0 - 1
+p0=T8
+goto l8
+l10:
+return T3
+return 0
+end f_fib
+f_main [0]
+var T9
+var T10
+var T11
+T0=0
+T9=call f_getint
+T0=T9
+param T0
+T11=call f_fib
+T10=T11
+return T10
+return 0
+end f_main

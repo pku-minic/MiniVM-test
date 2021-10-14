@@ -1,0 +1,78 @@
+var T0
+var T1
+f_split [2]
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+T3=T0 - 1
+T2=T3
+l0:
+T4=T2 != -1
+if T4== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T5=0
+T6=T2 * 4
+T5=T5 + T6
+T7=p0 % 10
+p1[T5]=T7
+T8=p0 / 10
+p0=T8
+T9=T2 - 1
+T2=T9
+goto l0
+l2:
+return 0
+return 0
+end f_split
+f_main [0]
+var T10
+var T11
+var 16 T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+T0=0
+T1=0
+T0=4
+T1=10
+T11=1478
+param T11
+param T12
+T13=call f_split
+T11=T13
+T10=0
+l4:
+T15=T10 < 4
+if T15== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T16=0
+T17=T10 * 4
+T16=T16 + T17
+T18=T12[T16]
+T14=T18
+param T14
+call f_putint
+param T1
+call f_putch
+T19=T10 + 1
+T10=T19
+goto l4
+l6:
+return 0
+return 0
+end f_main

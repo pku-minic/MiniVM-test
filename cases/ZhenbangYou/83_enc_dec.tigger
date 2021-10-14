@@ -1,0 +1,85 @@
+f_enc [1] [11]
+store a0 0
+load 0 t1
+t2 = 25
+t0 = t1 > t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+load 0 t1
+t2 = 60
+t0 = t1 + t2
+store t0 9
+load 9 t0
+store t0 0
+goto l2
+l1:
+load 0 t1
+t2 = 15
+t0 = t1 - t2
+store t0 10
+load 10 t0
+store t0 0
+l2:
+load 0 a0
+return
+return
+end f_enc
+f_dec [1] [11]
+store a0 0
+load 0 t1
+t2 = 85
+t0 = t1 > t2
+store t0 8
+load 8 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+load 0 t1
+t2 = 59
+t0 = t1 - t2
+store t0 9
+load 9 t0
+store t0 0
+goto l6
+l5:
+load 0 t1
+t2 = 14
+t0 = t1 + t2
+store t0 10
+load 10 t0
+store t0 0
+l6:
+load 0 a0
+return
+return
+end f_dec
+f_main [0] [12]
+t0 = 400
+store t0 8
+load 8 a0
+call f_enc
+store a0 10
+load 10 t0
+store t0 9
+load 9 a0
+call f_dec
+store a0 11
+load 11 t0
+store t0 9
+load 9 a0
+call f_putint
+t0 = 10
+store t0 9
+load 9 a0
+call f_putch
+a0 = 0
+return
+return
+end f_main

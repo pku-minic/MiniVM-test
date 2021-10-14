@@ -1,0 +1,19 @@
+var T0
+f_func [1]
+var T1
+T1=p0 - 1
+p0=T1
+return p0
+return 0
+end f_func
+f_main [0]
+var T2
+var T3
+T0=0
+T0=10
+param T0
+T3=call f_func
+T2=T3
+return T2
+return 0
+end f_main

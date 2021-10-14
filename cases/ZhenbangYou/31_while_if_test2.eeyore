@@ -1,0 +1,56 @@
+f_ifWhile [0]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+T0=0
+T1=3
+T2=T0 == 5
+if T2== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+l4:
+T3=T1 == 2
+if T3== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T4=T1 + 2
+T1=T4
+goto l4
+l6:
+T5=T1 + 25
+T1=T5
+goto l2
+l1:
+l8:
+T6=T0 < 5
+if T6== 0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+T7=T1 * 2
+T1=T7
+T8=T0 + 1
+T0=T8
+goto l8
+l10:
+l2:
+return T1
+return 0
+end f_ifWhile
+f_main [0]
+var T9
+T9=call f_ifWhile
+return T9
+return 0
+end f_main

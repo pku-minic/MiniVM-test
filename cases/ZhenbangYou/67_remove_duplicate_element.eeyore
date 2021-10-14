@@ -1,0 +1,79 @@
+f_removeElement [3]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+T0=0
+l0:
+T1=T0 < p1
+if T1== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T2=0
+T3=T0 * 4
+T2=T2 + T3
+T4=p0[T2]
+T5=T4 == p2
+if T5== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+T6=0
+T7=T0 * 4
+T6=T6 + T7
+T8=p1 - 1
+T9=0
+T10=T8 * 4
+T9=T9 + T10
+T11=p0[T9]
+p0[T6]=T11
+T12=p1 - 1
+p1=T12
+goto l6
+l5:
+T13=T0 + 1
+T0=T13
+l6:
+goto l0
+l2:
+return p1
+return 0
+end f_removeElement
+f_main [0]
+var T14
+var 40 T15
+var T16
+var T17
+T15[0]=3
+T15[4]=3
+T15[8]=9
+T15[12]=0
+T15[16]=0
+T15[20]=1
+T15[24]=1
+T15[28]=5
+T15[32]=7
+T15[36]=8
+T14=10
+T16=3
+param T15
+param T14
+param T16
+T17=call f_removeElement
+T14=T17
+return T14
+return 0
+end f_main

@@ -1,0 +1,266 @@
+v0 = 0
+v1 = 0
+v2 = 0
+v3 = 0
+f_EightWhile [0] [42]
+t0 = 5
+store t0 8
+t0 = 6
+store t0 9
+t0 = 7
+store t0 10
+t0 = 10
+store t0 11
+l0:
+load 8 t1
+t2 = 20
+t0 = t1 < t2
+store t0 12
+load 12 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+load 8 t1
+t2 = 3
+t0 = t1 + t2
+store t0 13
+load 13 t0
+store t0 8
+l4:
+load 9 t1
+t2 = 10
+t0 = t1 < t2
+store t0 14
+load 14 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 15
+load 15 t0
+store t0 9
+l8:
+load 10 t1
+t2 = 7
+t0 = t1 == t2
+store t0 16
+load 16 t0
+if t0 == x0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+load 10 t1
+t2 = 1
+t0 = t1 - t2
+store t0 17
+load 17 t0
+store t0 10
+l12:
+load 11 t1
+t2 = 20
+t0 = t1 < t2
+store t0 18
+load 18 t0
+if t0 == x0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+load 11 t1
+t2 = 3
+t0 = t1 + t2
+store t0 19
+load 19 t0
+store t0 11
+l16:
+load v3 t1
+t2 = 1
+t0 = t1 > t2
+store t0 20
+load 20 t0
+if t0 == x0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+load v3 t1
+t2 = 1
+t0 = t1 - t2
+store t0 21
+load 21 t0
+loadaddr v3 t3
+t3[0] = t0
+l20:
+load v2 t1
+t2 = 2
+t0 = t1 > t2
+store t0 22
+load 22 t0
+if t0 == x0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+load v2 t1
+t2 = 2
+t0 = t1 - t2
+store t0 23
+load 23 t0
+loadaddr v2 t3
+t3[0] = t0
+l24:
+load v0 t1
+t2 = 3
+t0 = t1 < t2
+store t0 24
+load 24 t0
+if t0 == x0 goto l27
+goto l25
+l27:
+goto l26
+l25:
+load v0 t1
+t2 = 10
+t0 = t1 + t2
+store t0 25
+load 25 t0
+loadaddr v0 t3
+t3[0] = t0
+l28:
+load v1 t1
+t2 = 10
+t0 = t1 < t2
+store t0 26
+load 26 t0
+if t0 == x0 goto l31
+goto l29
+l31:
+goto l30
+l29:
+load v1 t1
+t2 = 8
+t0 = t1 + t2
+store t0 27
+load 27 t0
+loadaddr v1 t3
+t3[0] = t0
+goto l28
+l30:
+load v1 t1
+t2 = 1
+t0 = t1 - t2
+store t0 28
+load 28 t0
+loadaddr v1 t3
+t3[0] = t0
+goto l24
+l26:
+load v0 t1
+t2 = 8
+t0 = t1 - t2
+store t0 29
+load 29 t0
+loadaddr v0 t3
+t3[0] = t0
+goto l20
+l22:
+load v2 t1
+t2 = 1
+t0 = t1 + t2
+store t0 30
+load 30 t0
+loadaddr v2 t3
+t3[0] = t0
+goto l16
+l18:
+load v3 t1
+t2 = 1
+t0 = t1 + t2
+store t0 31
+load 31 t0
+loadaddr v3 t3
+t3[0] = t0
+goto l12
+l14:
+load 11 t1
+t2 = 1
+t0 = t1 - t2
+store t0 32
+load 32 t0
+store t0 11
+goto l8
+l10:
+load 10 t1
+t2 = 1
+t0 = t1 + t2
+store t0 33
+load 33 t0
+store t0 10
+goto l4
+l6:
+load 9 t1
+t2 = 2
+t0 = t1 - t2
+store t0 34
+load 34 t0
+store t0 9
+goto l0
+l2:
+load 9 t1
+load 11 t2
+t0 = t1 + t2
+store t0 35
+load 8 t1
+load 35 t2
+t0 = t1 + t2
+store t0 36
+load 36 t1
+load 10 t2
+t0 = t1 + t2
+store t0 37
+load v3 t1
+load 11 t2
+t0 = t1 + t2
+store t0 38
+load 38 t1
+load v0 t2
+t0 = t1 - t2
+store t0 39
+load 39 t1
+load v1 t2
+t0 = t1 + t2
+store t0 40
+load 37 t1
+load 40 t2
+t0 = t1 - t2
+store t0 41
+load 41 a0
+return
+return
+end f_EightWhile
+f_main [0] [9]
+t0 = 1
+loadaddr v0 t3
+t3[0] = t0
+t0 = 2
+loadaddr v1 t3
+t3[0] = t0
+t0 = 4
+loadaddr v3 t3
+t3[0] = t0
+t0 = 6
+loadaddr v2 t3
+t3[0] = t0
+call f_EightWhile
+store a0 8
+load 8 a0
+return
+return
+end f_main

@@ -1,0 +1,206 @@
+f_atoi_ [1]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+var T38
+var T39
+var T40
+var T41
+var T42
+var T43
+var T44
+var T45
+var T46
+var T47
+var T48
+T0=0
+T1=1
+T2=0
+l0:
+T3=0
+T4=T2 * 4
+T3=T3 + T4
+T5=p0[T3]
+T6=T5 == 32
+if T6== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T7=T2 + 1
+T2=T7
+goto l0
+l2:
+T8=0
+T9=T2 * 4
+T8=T8 + T9
+T10=p0[T8]
+T11=T10 == 43
+if T11== 0 goto l7
+goto l4
+l7:
+T12=0
+T13=T2 * 4
+T12=T12 + T13
+T14=p0[T12]
+T15=T14 == 45
+if T15== 0 goto l8
+goto l4
+l8:
+goto l5
+l4:
+T16=0
+T17=T2 * 4
+T16=T16 + T17
+T18=p0[T16]
+T19=T18 == 45
+if T19== 0 goto l12
+goto l9
+l12:
+goto l10
+l9:
+T1=-1
+l10:
+T20=T2 + 1
+T2=T20
+goto l6
+l5:
+T21=0
+T22=T2 * 4
+T21=T21 + T22
+T23=p0[T21]
+T24=T23 < 48
+if T24== 0 goto l16
+goto l13
+l16:
+T25=0
+T26=T2 * 4
+T25=T25 + T26
+T27=p0[T25]
+T28=T27 > 57
+if T28== 0 goto l17
+goto l13
+l17:
+goto l14
+l13:
+T0=2147483647
+return T0
+l14:
+l6:
+l18:
+T29=0
+T30=T2 * 4
+T29=T29 + T30
+T31=p0[T29]
+T32=T31 != 0
+if T32== 0 goto l21
+T33=0
+T34=T2 * 4
+T33=T33 + T34
+T35=p0[T33]
+T36=T35 > 47
+if T36== 0 goto l21
+T37=0
+T38=T2 * 4
+T37=T37 + T38
+T39=p0[T37]
+T40=T39 < 58
+if T40== 0 goto l21
+goto l19
+l21:
+goto l20
+l19:
+T41=T0 * 10
+T42=0
+T43=T2 * 4
+T42=T42 + T43
+T44=p0[T42]
+T45=T41 + T44
+T46=T45 - 48
+T0=T46
+T47=T2 + 1
+T2=T47
+goto l18
+l20:
+T48=T0 * T1
+return T48
+return 0
+end f_atoi_
+f_main [0]
+var 2000 T49
+var T50
+var T51
+var T52
+var T53
+var T54
+var T55
+var T56
+var T57
+var T58
+var T59
+T50=0
+T51=0
+l22:
+T52=T50 != 10
+if T52== 0 goto l25
+goto l23
+l25:
+goto l24
+l23:
+T53=call f_getch
+T50=T53
+T54=0
+T55=T51 * 4
+T54=T54 + T55
+T49[T54]=T50
+T56=T51 + 1
+T51=T56
+goto l22
+l24:
+T57=0
+T58=T51 * 4
+T57=T57 + T58
+T49[T57]=0
+param T49
+T59=call f_atoi_
+T51=T59
+param T51
+call f_putint
+return 0
+return 0
+end f_main

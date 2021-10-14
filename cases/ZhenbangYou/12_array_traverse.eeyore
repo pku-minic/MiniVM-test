@@ -1,0 +1,74 @@
+var 48 T0
+f_main [0]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+T0[0]=0
+T0[4]=0
+T0[8]=0
+T0[12]=0
+T0[16]=0
+T0[20]=0
+T0[24]=0
+T0[28]=0
+T0[32]=0
+T0[36]=0
+T0[40]=0
+T0[44]=0
+T1=0
+T2=0
+l0:
+T3=T1 <= 5
+if T3== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T4=T1
+l4:
+T5=T4 >= 0
+if T5== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T6=T4 < 4
+if T6== 0 goto l11
+T7=T1 - T4
+T8=T7 < 3
+if T8== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+T9=T1 - T4
+T10=0
+T11=T9 * 16
+T10=T10 + T11
+T12=T4 * 4
+T10=T10 + T12
+T0[T10]=T2
+T2=1
+l9:
+T13=T4 - 1
+T4=T13
+goto l4
+l6:
+T14=T1 + 1
+T1=T14
+goto l0
+l2:
+return 0
+return 0
+end f_main

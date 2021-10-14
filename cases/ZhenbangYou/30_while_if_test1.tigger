@@ -1,0 +1,71 @@
+f_whileIf [0] [15]
+t0 = 0
+store t0 8
+t0 = 0
+store t0 9
+l0:
+load 8 t1
+t2 = 100
+t0 = t1 < t2
+store t0 10
+load 10 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+load 8 t1
+t2 = 5
+t0 = t1 == t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+t0 = 25
+store t0 9
+goto l6
+l5:
+load 8 t1
+t2 = 10
+t0 = t1 == t2
+store t0 12
+load 12 t0
+if t0 == x0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+t0 = 42
+store t0 9
+goto l10
+l9:
+load 8 t1
+t2 = 2
+t0 = t1 * t2
+store t0 13
+load 13 t0
+store t0 9
+l10:
+l6:
+load 8 t1
+t2 = 1
+t0 = t1 + t2
+store t0 14
+load 14 t0
+store t0 8
+goto l0
+l2:
+load 9 a0
+return
+return
+end f_whileIf
+f_main [0] [9]
+call f_whileIf
+store a0 8
+load 8 a0
+return
+return
+end f_main

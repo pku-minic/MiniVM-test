@@ -1,0 +1,35 @@
+f_ifElse [0] [11]
+t0 = 5
+store t0 8
+load 8 t1
+t2 = 5
+t0 = t1 == t2
+store t0 9
+load 9 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+t0 = 25
+store t0 8
+goto l2
+l1:
+load 8 t1
+t2 = 2
+t0 = t1 * t2
+store t0 10
+load 10 t0
+store t0 8
+l2:
+load 8 a0
+return
+return
+end f_ifElse
+f_main [0] [9]
+call f_ifElse
+store a0 8
+load 8 a0
+return
+return
+end f_main

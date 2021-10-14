@@ -1,0 +1,90 @@
+v0 = 0
+v1 = malloc 40
+f_main [0] [22]
+call f_getint
+store a0 8
+load 8 t0
+loadaddr v0 t3
+t3[0] = t0
+load v0 t1
+t2 = 10
+t0 = t1 > t2
+store t0 9
+load 9 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 1
+return
+l1:
+t0 = 0
+store t0 11
+load 11 t0
+store t0 10
+l4:
+load 11 t1
+load v0 t2
+t0 = t1 < t2
+store t0 12
+load 12 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+store x0 13
+load 11 t1
+t2 = 4
+t0 = t1 * t2
+store t0 14
+load 13 t1
+load 14 t2
+t0 = t1 + t2
+store t0 13
+call f_getint
+store a0 15
+load 15 t0
+loadaddr v1 t3
+load 13 t4
+t5 = t3 + t4
+t5[0] = t0
+store x0 16
+load 11 t1
+t2 = 4
+t0 = t1 * t2
+store t0 17
+load 16 t1
+load 17 t2
+t0 = t1 + t2
+store t0 16
+loadaddr v1 t3
+load 16 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 18
+load 10 t1
+load 18 t2
+t0 = t1 + t2
+store t0 19
+load 19 t0
+store t0 10
+load 11 t1
+t2 = 1
+t0 = t1 + t2
+store t0 20
+load 20 t0
+store t0 11
+goto l4
+l6:
+load 10 a0
+call f_putint
+t0 = 10
+store t0 21
+load 21 a0
+call f_putch
+load 10 a0
+return
+return
+end f_main

@@ -1,0 +1,134 @@
+f_wc [2] [19]
+store a0 0
+store a1 1
+t0 = 0
+store t0 9
+t0 = 0
+store t0 8
+t0 = 0
+store t0 10
+l0:
+load 9 t1
+load 1 t2
+t0 = t1 < t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+store x0 12
+load 9 t1
+t2 = 4
+t0 = t1 * t2
+store t0 13
+load 12 t1
+load 13 t2
+t0 = t1 + t2
+store t0 12
+load 0 t3
+load 12 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 14
+load 14 t1
+t2 = 32
+t0 = t1 != t2
+store t0 15
+load 15 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+load 8 t1
+t2 = 0
+t0 = t1 == t2
+store t0 16
+load 16 t0
+if t0 == x0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+load 10 t1
+t2 = 1
+t0 = t1 + t2
+store t0 17
+load 17 t0
+store t0 10
+t0 = 1
+store t0 8
+l9:
+goto l6
+l5:
+t0 = 0
+store t0 8
+l6:
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 18
+load 18 t0
+store t0 9
+goto l0
+l2:
+load 10 a0
+return
+return
+end f_wc
+f_main [0] [516]
+t0 = 0
+store t0 509
+t0 = 0
+store t0 508
+l12:
+load 508 t1
+t2 = 10
+t0 = t1 != t2
+store t0 510
+load 510 t0
+if t0 == x0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+call f_getch
+store a0 511
+load 511 t0
+store t0 508
+store x0 512
+load 509 t1
+t2 = 4
+t0 = t1 * t2
+store t0 513
+load 512 t1
+load 513 t2
+t0 = t1 + t2
+store t0 512
+load 508 t0
+loadaddr 8 t3
+load 512 t4
+t5 = t3 + t4
+t5[0] = t0
+load 509 t1
+t2 = 1
+t0 = t1 + t2
+store t0 514
+load 514 t0
+store t0 509
+goto l12
+l14:
+loadaddr 8 a0
+load 509 a1
+call f_wc
+store a0 515
+load 515 t0
+store t0 508
+load 508 a0
+call f_putint
+a0 = 0
+return
+return
+end f_main

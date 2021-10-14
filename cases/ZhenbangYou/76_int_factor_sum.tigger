@@ -1,0 +1,72 @@
+v0 = 0
+v1 = 0
+f_factor [1] [16]
+store a0 0
+t0 = 0
+store t0 9
+t0 = 1
+store t0 8
+l0:
+load 0 t1
+t2 = 1
+t0 = t1 + t2
+store t0 10
+load 8 t1
+load 10 t2
+t0 = t1 < t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+load 0 t1
+load 8 t2
+t0 = t1 % t2
+store t0 12
+load 12 t1
+t2 = 0
+t0 = t1 == t2
+store t0 13
+load 13 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+load 9 t1
+load 8 t2
+t0 = t1 + t2
+store t0 14
+load 14 t0
+store t0 9
+l5:
+load 8 t1
+t2 = 1
+t0 = t1 + t2
+store t0 15
+load 15 t0
+store t0 8
+goto l0
+l2:
+load 9 a0
+return
+return
+end f_factor
+f_main [0] [12]
+t0 = 4
+loadaddr v0 t3
+t3[0] = t0
+t0 = 10
+loadaddr v1 t3
+t3[0] = t0
+t0 = 1478
+store t0 9
+load 9 a0
+call f_factor
+store a0 11
+load 11 a0
+return
+return
+end f_main

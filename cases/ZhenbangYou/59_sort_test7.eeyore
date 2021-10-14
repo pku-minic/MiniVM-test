@@ -1,0 +1,314 @@
+var T0
+f_Merge [4]
+var T1
+var T2
+var T3
+var T4
+var T5
+var 40 T6
+var 40 T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+var T38
+var T39
+var T40
+var T41
+var T42
+var T43
+var T44
+var T45
+var T46
+var T47
+var T48
+var T49
+var T50
+var T51
+var T52
+var T53
+var T54
+var T55
+var T56
+var T57
+var T58
+var T59
+var T60
+var T61
+var T62
+var T63
+var T64
+var T65
+var T66
+var T67
+T2=p2 - p1
+T3=T2 + 1
+T1=T3
+T5=p3 - p2
+T4=T5
+T8=0
+T9=0
+l0:
+T10=T8 < T1
+if T10== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T11=0
+T12=T8 * 4
+T11=T11 + T12
+T13=T8 + p1
+T14=0
+T15=T13 * 4
+T14=T14 + T15
+T16=p0[T14]
+T6[T11]=T16
+T17=T8 + 1
+T8=T17
+goto l0
+l2:
+l4:
+T18=T9 < T4
+if T18== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T19=0
+T20=T9 * 4
+T19=T19 + T20
+T21=T9 + p2
+T22=T21 + 1
+T23=0
+T24=T22 * 4
+T23=T23 + T24
+T25=p0[T23]
+T7[T19]=T25
+T26=T9 + 1
+T9=T26
+goto l4
+l6:
+T8=0
+T9=0
+T27=p1
+l8:
+T28=T8 != T1
+if T28== 0 goto l11
+T29=T9 != T4
+if T29== 0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+T30=0
+T31=T8 * 4
+T30=T30 + T31
+T32=T6[T30]
+T33=0
+T34=T9 * 4
+T33=T33 + T34
+T35=T7[T33]
+T36=T35 + 1
+T37=T32 < T36
+if T37== 0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+T38=0
+T39=T27 * 4
+T38=T38 + T39
+T40=0
+T41=T8 * 4
+T40=T40 + T41
+T42=T6[T40]
+p0[T38]=T42
+T43=T27 + 1
+T27=T43
+T44=T8 + 1
+T8=T44
+goto l14
+l13:
+T45=0
+T46=T27 * 4
+T45=T45 + T46
+T47=0
+T48=T9 * 4
+T47=T47 + T48
+T49=T7[T47]
+p0[T45]=T49
+T50=T27 + 1
+T27=T50
+T51=T9 + 1
+T9=T51
+l14:
+goto l8
+l10:
+l16:
+T52=T8 < T1
+if T52== 0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+T53=0
+T54=T27 * 4
+T53=T53 + T54
+T55=0
+T56=T8 * 4
+T55=T55 + T56
+T57=T6[T55]
+p0[T53]=T57
+T58=T27 + 1
+T27=T58
+T59=T8 + 1
+T8=T59
+goto l16
+l18:
+l20:
+T60=T9 < T4
+if T60== 0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+T61=0
+T62=T27 * 4
+T61=T61 + T62
+T63=0
+T64=T9 * 4
+T63=T63 + T64
+T65=T7[T63]
+p0[T61]=T65
+T66=T27 + 1
+T27=T66
+T67=T9 + 1
+T9=T67
+goto l20
+l22:
+return 0
+return 0
+end f_Merge
+f_MergeSort [3]
+var T68
+var T69
+var T70
+var T71
+var T72
+var T73
+var T74
+var T75
+var T76
+T68=p1 < p2
+if T68== 0 goto l27
+goto l24
+l27:
+goto l25
+l24:
+T70=p1 + p2
+T71=T70 / 2
+T69=T71
+param p0
+param p1
+param T69
+T73=call f_MergeSort
+T72=T73
+T74=T69 + 1
+T72=T74
+param p0
+param T72
+param p2
+T75=call f_MergeSort
+T72=T75
+param p0
+param p1
+param T69
+param p2
+T76=call f_Merge
+T72=T76
+l25:
+return 0
+return 0
+end f_MergeSort
+f_main [0]
+var 40 T77
+var T78
+var T79
+var T80
+var T81
+var T82
+var T83
+var T84
+var T85
+var T86
+T0=0
+T0=10
+T77[0]=4
+T77[4]=3
+T77[8]=9
+T77[12]=2
+T77[16]=0
+T77[20]=1
+T77[24]=6
+T77[28]=5
+T77[32]=7
+T77[36]=8
+T78=0
+T80=T0 - 1
+T79=T80
+param T77
+param T78
+param T79
+T81=call f_MergeSort
+T78=T81
+l28:
+T82=T78 < T0
+if T82== 0 goto l31
+goto l29
+l31:
+goto l30
+l29:
+T83=0
+T84=T78 * 4
+T83=T83 + T84
+T85=T77[T83]
+T79=T85
+param T79
+call f_putint
+T79=10
+param T79
+call f_putch
+T86=T78 + 1
+T78=T86
+goto l28
+l30:
+return 0
+return 0
+end f_main

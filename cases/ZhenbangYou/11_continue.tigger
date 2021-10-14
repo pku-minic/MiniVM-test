@@ -1,0 +1,40 @@
+f_main [0] [12]
+t0 = 10
+store t0 8
+l0:
+load 8 t1
+t2 = 0
+t0 = t1 > t2
+store t0 9
+load 9 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+load 8 t1
+t2 = 5
+t0 = t1 > t2
+store t0 10
+load 10 t0
+if t0 == x0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+load 8 t1
+t2 = 1
+t0 = t1 - t2
+store t0 11
+load 11 t0
+store t0 8
+goto l0
+l5:
+load 8 a0
+return
+goto l0
+l2:
+load 8 a0
+return
+return
+end f_main

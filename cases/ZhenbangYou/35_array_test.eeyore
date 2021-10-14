@@ -1,0 +1,44 @@
+var 8 T0
+f_func [1]
+var T1
+var T2
+var T3
+var T4
+var T5
+T1=T0[0]
+T2=3 - T1
+T3=0
+T4=T2 * 4
+T3=T3 + T4
+T5=p0[T3]
+return T5
+return 0
+end f_func
+f_main [0]
+var 4 T6
+var 12 T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+T0[0]=0
+T0[4]=0
+T0[0]=1
+T0[4]=2
+T7[0]=-1
+T9=T7[0]
+T10=T9 - 2
+T7[4]=T10
+T11=T7[4]
+T8=T11
+T7[8]=16
+param T7
+T12=call f_func
+T13=T12 + 2
+T14=T13 + T8
+return T14
+return 0
+end f_main

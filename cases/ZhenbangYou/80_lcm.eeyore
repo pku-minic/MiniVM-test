@@ -1,0 +1,61 @@
+var T0
+f_gcd [2]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+T1=p0
+T2=p1
+T5=p0 < p1
+if T5== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+T3=p0
+p0=p1
+p1=T3
+l1:
+T6=p0 % p1
+T4=T6
+l4:
+T7=T4 != 0
+if T7== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+p0=p1
+p1=T4
+T8=p0 % p1
+T4=T8
+goto l4
+l6:
+T9=T1 * T2
+T10=T9 / p1
+return T10
+return 0
+end f_gcd
+f_main [0]
+var T11
+var T12
+var T13
+var T14
+var T15
+T0=0
+T13=call f_getint
+T11=T13
+T14=call f_getint
+T12=T14
+param T11
+param T12
+T15=call f_gcd
+return T15
+return 0
+end f_main

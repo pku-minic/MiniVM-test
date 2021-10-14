@@ -1,0 +1,254 @@
+v0 = 0
+f_bubblesort [1] [38]
+store a0 0
+t0 = 0
+store t0 8
+l0:
+load v0 t1
+t2 = 1
+t0 = t1 - t2
+store t0 10
+load 8 t1
+load 10 t2
+t0 = t1 < t2
+store t0 11
+load 11 t0
+if t0 == x0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+t0 = 0
+store t0 9
+l4:
+load v0 t1
+load 8 t2
+t0 = t1 - t2
+store t0 12
+load 12 t1
+t2 = 1
+t0 = t1 - t2
+store t0 13
+load 9 t1
+load 13 t2
+t0 = t1 < t2
+store t0 14
+load 14 t0
+if t0 == x0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+store x0 15
+load 9 t1
+t2 = 4
+t0 = t1 * t2
+store t0 16
+load 15 t1
+load 16 t2
+t0 = t1 + t2
+store t0 15
+load 0 t3
+load 15 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 17
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 18
+store x0 19
+load 18 t1
+t2 = 4
+t0 = t1 * t2
+store t0 20
+load 19 t1
+load 20 t2
+t0 = t1 + t2
+store t0 19
+load 0 t3
+load 19 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 21
+load 17 t1
+load 21 t2
+t0 = t1 > t2
+store t0 22
+load 22 t0
+if t0 == x0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 24
+store x0 25
+load 24 t1
+t2 = 4
+t0 = t1 * t2
+store t0 26
+load 25 t1
+load 26 t2
+t0 = t1 + t2
+store t0 25
+load 0 t3
+load 25 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 27
+load 27 t0
+store t0 23
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 28
+store x0 29
+load 28 t1
+t2 = 4
+t0 = t1 * t2
+store t0 30
+load 29 t1
+load 30 t2
+t0 = t1 + t2
+store t0 29
+store x0 31
+load 9 t1
+t2 = 4
+t0 = t1 * t2
+store t0 32
+load 31 t1
+load 32 t2
+t0 = t1 + t2
+store t0 31
+load 0 t3
+load 31 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 33
+load 33 t0
+load 0 t3
+load 29 t4
+t5 = t3 + t4
+t5[0] = t0
+store x0 34
+load 9 t1
+t2 = 4
+t0 = t1 * t2
+store t0 35
+load 34 t1
+load 35 t2
+t0 = t1 + t2
+store t0 34
+load 23 t0
+load 0 t3
+load 34 t4
+t5 = t3 + t4
+t5[0] = t0
+l9:
+load 9 t1
+t2 = 1
+t0 = t1 + t2
+store t0 36
+load 36 t0
+store t0 9
+goto l4
+l6:
+load 8 t1
+t2 = 1
+t0 = t1 + t2
+store t0 37
+load 37 t0
+store t0 8
+goto l0
+l2:
+a0 = 0
+return
+return
+end f_bubblesort
+f_main [0] [26]
+t0 = 10
+loadaddr v0 t3
+t3[0] = t0
+t0 = 4
+loadaddr 8 t3
+t3[0] = t0
+t0 = 3
+loadaddr 8 t3
+t3[4] = t0
+t0 = 9
+loadaddr 8 t3
+t3[8] = t0
+t0 = 2
+loadaddr 8 t3
+t3[12] = t0
+t0 = 0
+loadaddr 8 t3
+t3[16] = t0
+t0 = 1
+loadaddr 8 t3
+t3[20] = t0
+t0 = 6
+loadaddr 8 t3
+t3[24] = t0
+t0 = 5
+loadaddr 8 t3
+t3[28] = t0
+t0 = 7
+loadaddr 8 t3
+t3[32] = t0
+t0 = 8
+loadaddr 8 t3
+t3[36] = t0
+loadaddr 8 a0
+call f_bubblesort
+store a0 19
+load 19 t0
+store t0 18
+l12:
+load 18 t1
+load v0 t2
+t0 = t1 < t2
+store t0 20
+load 20 t0
+if t0 == x0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+store x0 22
+load 18 t1
+t2 = 4
+t0 = t1 * t2
+store t0 23
+load 22 t1
+load 23 t2
+t0 = t1 + t2
+store t0 22
+loadaddr 8 t3
+load 22 t4
+t5 = t3 + t4
+t0 = t5[0]
+store t0 24
+load 24 t0
+store t0 21
+load 21 a0
+call f_putint
+t0 = 10
+store t0 21
+load 21 a0
+call f_putch
+load 18 t1
+t2 = 1
+t0 = t1 + t2
+store t0 25
+load 25 t0
+store t0 18
+goto l12
+l14:
+a0 = 0
+return
+return
+end f_main

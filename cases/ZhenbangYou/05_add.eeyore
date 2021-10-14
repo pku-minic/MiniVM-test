@@ -1,0 +1,14 @@
+var T0
+var T1
+f_main [0]
+var T2
+var T3
+T0=0
+T1=0
+T0=10
+T1=20
+T3=T0 + T1
+T2=T3
+return T2
+return 0
+end f_main

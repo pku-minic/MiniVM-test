@@ -1,0 +1,52 @@
+f_whileIf [0]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+T0=0
+T1=0
+l0:
+T2=T0 < 100
+if T2== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T3=T0 == 5
+if T3== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+T1=25
+goto l6
+l5:
+T4=T0 == 10
+if T4== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+T1=42
+goto l10
+l9:
+T5=T0 * 2
+T1=T5
+l10:
+l6:
+T6=T0 + 1
+T0=T6
+goto l0
+l2:
+return T1
+return 0
+end f_whileIf
+f_main [0]
+var T7
+T7=call f_whileIf
+return T7
+return 0
+end f_main

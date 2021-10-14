@@ -1,0 +1,30 @@
+v0 = 0
+v1 = 0
+f_main [0] [10]
+call f_getint
+store a0 8
+load 8 t0
+loadaddr v0 t3
+t3[0] = t0
+call f_getint
+store a0 9
+load 9 t0
+loadaddr v1 t3
+t3[0] = t0
+load v0 t0
+if t0 == x0 goto l3
+load v1 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+a0 = 1
+return
+goto l2
+l1:
+a0 = 0
+return
+l2:
+return
+end f_main

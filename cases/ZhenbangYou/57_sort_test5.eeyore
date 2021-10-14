@@ -1,0 +1,241 @@
+var T0
+f_swap [3]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+T2=0
+T3=p1 * 4
+T2=T2 + T3
+T4=p0[T2]
+T1=T4
+T5=0
+T6=p1 * 4
+T5=T5 + T6
+T7=0
+T8=p2 * 4
+T7=T7 + T8
+T9=p0[T7]
+p0[T5]=T9
+T10=0
+T11=p2 * 4
+T10=T10 + T11
+p0[T10]=T1
+return 0
+return 0
+end f_swap
+f_heap_ajust [3]
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+T12=p1
+T14=T12 * 2
+T15=T14 + 1
+T13=T15
+l0:
+T16=p2 + 1
+T17=T13 < T16
+if T17== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T18=T13 < p2
+if T18== 0 goto l7
+T19=0
+T20=T13 * 4
+T19=T19 + T20
+T21=p0[T19]
+T22=T13 + 1
+T23=0
+T24=T22 * 4
+T23=T23 + T24
+T25=p0[T23]
+T26=T21 < T25
+if T26== 0 goto l7
+goto l4
+l7:
+goto l5
+l4:
+T27=T13 + 1
+T13=T27
+l5:
+T28=0
+T29=T12 * 4
+T28=T28 + T29
+T30=p0[T28]
+T31=0
+T32=T13 * 4
+T31=T31 + T32
+T33=p0[T31]
+T34=T30 > T33
+if T34== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+return 0
+goto l10
+l9:
+param p0
+param T12
+param T13
+T35=call f_swap
+T12=T35
+T12=T13
+T36=T12 * 2
+T37=T36 + 1
+T13=T37
+l10:
+goto l0
+l2:
+return 0
+return 0
+end f_heap_ajust
+f_heap_sort [2]
+var T38
+var T39
+var T40
+var T41
+var T42
+var T43
+var T44
+var T45
+var T46
+var T47
+var T48
+var T49
+var T50
+var T51
+var T52
+T40=p1 / 2
+T41=T40 - 1
+T38=T41
+l12:
+T42=T38 > -1
+if T42== 0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+T43=p1 - 1
+T39=T43
+param p0
+param T38
+param T39
+T44=call f_heap_ajust
+T39=T44
+T45=T38 - 1
+T38=T45
+goto l12
+l14:
+T46=p1 - 1
+T38=T46
+l16:
+T47=T38 > 0
+if T47== 0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+T48=0
+param p0
+param T48
+param T38
+T49=call f_swap
+T39=T49
+T50=T38 - 1
+T39=T50
+param p0
+param T48
+param T39
+T51=call f_heap_ajust
+T39=T51
+T52=T38 - 1
+T38=T52
+goto l16
+l18:
+return 0
+return 0
+end f_heap_sort
+f_main [0]
+var 40 T53
+var T54
+var T55
+var T56
+var T57
+var T58
+var T59
+var T60
+var T61
+T0=0
+T0=10
+T53[0]=4
+T53[4]=3
+T53[8]=9
+T53[12]=2
+T53[16]=0
+T53[20]=1
+T53[24]=6
+T53[28]=5
+T53[32]=7
+T53[36]=8
+T54=0
+param T53
+param T0
+T55=call f_heap_sort
+T54=T55
+l20:
+T56=T54 < T0
+if T56== 0 goto l23
+goto l21
+l23:
+goto l22
+l21:
+T58=0
+T59=T54 * 4
+T58=T58 + T59
+T60=T53[T58]
+T57=T60
+param T57
+call f_putint
+T57=10
+param T57
+call f_putch
+T61=T54 + 1
+T54=T61
+goto l20
+l22:
+return 0
+return 0
+end f_main

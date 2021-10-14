@@ -1,0 +1,211 @@
+var T0
+f_QuickSort [3]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+var T38
+var T39
+var T40
+var T41
+var T42
+T1=p1 < p2
+if T1== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+T2=p1
+T3=p2
+T5=0
+T6=p1 * 4
+T5=T5 + T6
+T7=p0[T5]
+T4=T7
+l4:
+T8=T2 < T3
+if T8== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+l8:
+T9=T2 < T3
+if T9== 0 goto l11
+T10=0
+T11=T3 * 4
+T10=T10 + T11
+T12=p0[T10]
+T13=T4 - 1
+T14=T12 > T13
+if T14== 0 goto l11
+goto l9
+l11:
+goto l10
+l9:
+T15=T3 - 1
+T3=T15
+goto l8
+l10:
+T16=T2 < T3
+if T16== 0 goto l15
+goto l12
+l15:
+goto l13
+l12:
+T17=0
+T18=T2 * 4
+T17=T17 + T18
+T19=0
+T20=T3 * 4
+T19=T19 + T20
+T21=p0[T19]
+p0[T17]=T21
+T22=T2 + 1
+T2=T22
+l13:
+l16:
+T23=T2 < T3
+if T23== 0 goto l19
+T24=0
+T25=T2 * 4
+T24=T24 + T25
+T26=p0[T24]
+T27=T26 < T4
+if T27== 0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+T28=T2 + 1
+T2=T28
+goto l16
+l18:
+T29=T2 < T3
+if T29== 0 goto l23
+goto l20
+l23:
+goto l21
+l20:
+T30=0
+T31=T3 * 4
+T30=T30 + T31
+T32=0
+T33=T2 * 4
+T32=T32 + T33
+T34=p0[T32]
+p0[T30]=T34
+T35=T3 - 1
+T3=T35
+l21:
+goto l4
+l6:
+T36=0
+T37=T2 * 4
+T36=T36 + T37
+p0[T36]=T4
+T39=T2 - 1
+T38=T39
+param p0
+param p1
+param T38
+T40=call f_QuickSort
+T38=T40
+T41=T2 + 1
+T38=T41
+param p0
+param T38
+param p2
+T42=call f_QuickSort
+T38=T42
+l1:
+return 0
+return 0
+end f_QuickSort
+f_main [0]
+var 40 T43
+var T44
+var T45
+var T46
+var T47
+var T48
+var T49
+var T50
+var T51
+var T52
+T0=0
+T0=10
+T43[0]=4
+T43[4]=3
+T43[8]=9
+T43[12]=2
+T43[16]=0
+T43[20]=1
+T43[24]=6
+T43[28]=5
+T43[32]=7
+T43[36]=8
+T44=0
+T45=9
+param T43
+param T44
+param T45
+T46=call f_QuickSort
+T44=T46
+l24:
+T47=T44 < T0
+if T47== 0 goto l27
+goto l25
+l27:
+goto l26
+l25:
+T49=0
+T50=T44 * 4
+T49=T49 + T50
+T51=T43[T49]
+T48=T51
+param T48
+call f_putint
+T48=10
+param T48
+call f_putch
+T52=T44 + 1
+T44=T52
+goto l24
+l26:
+return 0
+return 0
+end f_main

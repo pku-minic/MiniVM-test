@@ -1,0 +1,19 @@
+v0 = 0
+v1 = 0
+f_main [0] [10]
+t0 = 10
+loadaddr v0 t3
+t3[0] = t0
+t0 = 20
+loadaddr v1 t3
+t3[0] = t0
+load v0 t1
+load v1 t2
+t0 = t1 + t2
+store t0 9
+load 9 t0
+store t0 8
+load 8 a0
+return
+return
+end f_main

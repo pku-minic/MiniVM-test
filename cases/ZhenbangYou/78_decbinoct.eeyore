@@ -1,0 +1,51 @@
+f_dec2bin [1]
+var T0
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+T0=0
+T1=1
+T3=p0
+l0:
+T4=T3 != 0
+if T4== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T5=T3 % 2
+T2=T5
+T6=T1 * T2
+T7=T6 + T0
+T0=T7
+T8=T1 * 10
+T1=T8
+T9=T3 / 2
+T3=T9
+goto l0
+l2:
+return T0
+return 0
+end f_dec2bin
+f_main [0]
+var T10
+var T11
+var T12
+T10=400
+param T10
+T12=call f_dec2bin
+T11=T12
+param T11
+call f_putint
+T11=10
+param T11
+call f_putch
+return 0
+return 0
+end f_main

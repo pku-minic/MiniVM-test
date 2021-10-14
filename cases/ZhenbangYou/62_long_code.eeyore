@@ -1,0 +1,1022 @@
+var T0
+f_bubblesort [1]
+var T1
+var T2
+var T3
+var T4
+var T5
+var T6
+var T7
+var T8
+var T9
+var T10
+var T11
+var T12
+var T13
+var T14
+var T15
+var T16
+var T17
+var T18
+var T19
+var T20
+var T21
+var T22
+var T23
+var T24
+var T25
+var T26
+var T27
+var T28
+var T29
+var T30
+T1=0
+l0:
+T3=T0 - 1
+T4=T1 < T3
+if T4== 0 goto l3
+goto l1
+l3:
+goto l2
+l1:
+T2=0
+l4:
+T5=T0 - T1
+T6=T5 - 1
+T7=T2 < T6
+if T7== 0 goto l7
+goto l5
+l7:
+goto l6
+l5:
+T8=0
+T9=T2 * 4
+T8=T8 + T9
+T10=p0[T8]
+T11=T2 + 1
+T12=0
+T13=T11 * 4
+T12=T12 + T13
+T14=p0[T12]
+T15=T10 > T14
+if T15== 0 goto l11
+goto l8
+l11:
+goto l9
+l8:
+T17=T2 + 1
+T18=0
+T19=T17 * 4
+T18=T18 + T19
+T20=p0[T18]
+T16=T20
+T21=T2 + 1
+T22=0
+T23=T21 * 4
+T22=T22 + T23
+T24=0
+T25=T2 * 4
+T24=T24 + T25
+T26=p0[T24]
+p0[T22]=T26
+T27=0
+T28=T2 * 4
+T27=T27 + T28
+p0[T27]=T16
+l9:
+T29=T2 + 1
+T2=T29
+goto l4
+l6:
+T30=T1 + 1
+T1=T30
+goto l0
+l2:
+return 0
+return 0
+end f_bubblesort
+f_insertsort [1]
+var T31
+var T32
+var T33
+var T34
+var T35
+var T36
+var T37
+var T38
+var T39
+var T40
+var T41
+var T42
+var T43
+var T44
+var T45
+var T46
+var T47
+var T48
+var T49
+var T50
+var T51
+var T52
+var T53
+var T54
+T31=1
+l12:
+T32=T31 < T0
+if T32== 0 goto l15
+goto l13
+l15:
+goto l14
+l13:
+T34=0
+T35=T31 * 4
+T34=T34 + T35
+T36=p0[T34]
+T33=T36
+T38=T31 - 1
+T37=T38
+l16:
+T39=T37 > -1
+if T39== 0 goto l19
+T40=0
+T41=T37 * 4
+T40=T40 + T41
+T42=p0[T40]
+T43=T33 < T42
+if T43== 0 goto l19
+goto l17
+l19:
+goto l18
+l17:
+T44=T37 + 1
+T45=0
+T46=T44 * 4
+T45=T45 + T46
+T47=0
+T48=T37 * 4
+T47=T47 + T48
+T49=p0[T47]
+p0[T45]=T49
+T50=T37 - 1
+T37=T50
+goto l16
+l18:
+T51=T37 + 1
+T52=0
+T53=T51 * 4
+T52=T52 + T53
+p0[T52]=T33
+T54=T31 + 1
+T31=T54
+goto l12
+l14:
+return 0
+return 0
+end f_insertsort
+f_QuickSort [3]
+var T55
+var T56
+var T57
+var T58
+var T59
+var T60
+var T61
+var T62
+var T63
+var T64
+var T65
+var T66
+var T67
+var T68
+var T69
+var T70
+var T71
+var T72
+var T73
+var T74
+var T75
+var T76
+var T77
+var T78
+var T79
+var T80
+var T81
+var T82
+var T83
+var T84
+var T85
+var T86
+var T87
+var T88
+var T89
+var T90
+var T91
+var T92
+var T93
+var T94
+var T95
+var T96
+T55=p1 < p2
+if T55== 0 goto l23
+goto l20
+l23:
+goto l21
+l20:
+T56=p1
+T57=p2
+T59=0
+T60=p1 * 4
+T59=T59 + T60
+T61=p0[T59]
+T58=T61
+l24:
+T62=T56 < T57
+if T62== 0 goto l27
+goto l25
+l27:
+goto l26
+l25:
+l28:
+T63=T56 < T57
+if T63== 0 goto l31
+T64=0
+T65=T57 * 4
+T64=T64 + T65
+T66=p0[T64]
+T67=T58 - 1
+T68=T66 > T67
+if T68== 0 goto l31
+goto l29
+l31:
+goto l30
+l29:
+T69=T57 - 1
+T57=T69
+goto l28
+l30:
+T70=T56 < T57
+if T70== 0 goto l35
+goto l32
+l35:
+goto l33
+l32:
+T71=0
+T72=T56 * 4
+T71=T71 + T72
+T73=0
+T74=T57 * 4
+T73=T73 + T74
+T75=p0[T73]
+p0[T71]=T75
+T76=T56 + 1
+T56=T76
+l33:
+l36:
+T77=T56 < T57
+if T77== 0 goto l39
+T78=0
+T79=T56 * 4
+T78=T78 + T79
+T80=p0[T78]
+T81=T80 < T58
+if T81== 0 goto l39
+goto l37
+l39:
+goto l38
+l37:
+T82=T56 + 1
+T56=T82
+goto l36
+l38:
+T83=T56 < T57
+if T83== 0 goto l43
+goto l40
+l43:
+goto l41
+l40:
+T84=0
+T85=T57 * 4
+T84=T84 + T85
+T86=0
+T87=T56 * 4
+T86=T86 + T87
+T88=p0[T86]
+p0[T84]=T88
+T89=T57 - 1
+T57=T89
+l41:
+goto l24
+l26:
+T90=0
+T91=T56 * 4
+T90=T90 + T91
+p0[T90]=T58
+T93=T56 - 1
+T92=T93
+param p0
+param p1
+param T92
+T94=call f_QuickSort
+T92=T94
+T95=T56 + 1
+T92=T95
+param p0
+param T92
+param p2
+T96=call f_QuickSort
+T92=T96
+l21:
+return 0
+return 0
+end f_QuickSort
+f_getMid [1]
+var T97
+var T98
+var T99
+var T100
+var T101
+var T102
+var T103
+var T104
+var T105
+var T106
+var T107
+var T108
+var T109
+var T110
+var T111
+var T112
+var T113
+T98=T0 % 2
+T99=T98 == 0
+if T99== 0 goto l47
+goto l44
+l47:
+goto l45
+l44:
+T100=T0 / 2
+T97=T100
+T101=0
+T102=T97 * 4
+T101=T101 + T102
+T103=p0[T101]
+T104=T97 - 1
+T105=0
+T106=T104 * 4
+T105=T105 + T106
+T107=p0[T105]
+T108=T103 + T107
+T109=T108 / 2
+return T109
+goto l46
+l45:
+T110=T0 / 2
+T97=T110
+T111=0
+T112=T97 * 4
+T111=T111 + T112
+T113=p0[T111]
+return T113
+l46:
+return 0
+end f_getMid
+f_getMost [1]
+var 4000 T114
+var T115
+var T116
+var T117
+var T118
+var T119
+var T120
+var T121
+var T122
+var T123
+var T124
+var T125
+var T126
+var T127
+var T128
+var T129
+var T130
+var T131
+var T132
+var T133
+var T134
+var T135
+var T136
+var T137
+var T138
+var T139
+var T140
+T115=0
+l48:
+T116=T115 < 1000
+if T116== 0 goto l51
+goto l49
+l51:
+goto l50
+l49:
+T117=0
+T118=T115 * 4
+T117=T117 + T118
+T114[T117]=0
+T119=T115 + 1
+T115=T119
+goto l48
+l50:
+T115=0
+T120=0
+l52:
+T122=T115 < T0
+if T122== 0 goto l55
+goto l53
+l55:
+goto l54
+l53:
+T124=0
+T125=T115 * 4
+T124=T124 + T125
+T126=p0[T124]
+T123=T126
+T127=0
+T128=T123 * 4
+T127=T127 + T128
+T129=0
+T130=T123 * 4
+T129=T129 + T130
+T131=T114[T129]
+T132=T131 + 1
+T114[T127]=T132
+T133=0
+T134=T123 * 4
+T133=T133 + T134
+T135=T114[T133]
+T136=T135 > T120
+if T136== 0 goto l59
+goto l56
+l59:
+goto l57
+l56:
+T137=0
+T138=T123 * 4
+T137=T137 + T138
+T139=T114[T137]
+T120=T139
+T121=T123
+l57:
+T140=T115 + 1
+T115=T140
+goto l52
+l54:
+return T121
+return 0
+end f_getMost
+f_revert [1]
+var T141
+var T142
+var T143
+var T144
+var T145
+var T146
+var T147
+var T148
+var T149
+var T150
+var T151
+var T152
+var T153
+var T154
+var T155
+var T156
+T142=0
+T143=0
+l60:
+T144=T142 < T143
+if T144== 0 goto l63
+goto l61
+l63:
+goto l62
+l61:
+T145=0
+T146=T142 * 4
+T145=T145 + T146
+T147=p0[T145]
+T141=T147
+T148=0
+T149=T142 * 4
+T148=T148 + T149
+T150=0
+T151=T143 * 4
+T150=T150 + T151
+T152=p0[T150]
+p0[T148]=T152
+T153=0
+T154=T143 * 4
+T153=T153 + T154
+p0[T153]=T141
+T155=T142 + 1
+T142=T155
+T156=T143 - 1
+T143=T156
+goto l60
+l62:
+return 0
+return 0
+end f_revert
+f_arrCopy [2]
+var T157
+var T158
+var T159
+var T160
+var T161
+var T162
+var T163
+var T164
+T157=0
+l64:
+T158=T157 < T0
+if T158== 0 goto l67
+goto l65
+l67:
+goto l66
+l65:
+T159=0
+T160=T157 * 4
+T159=T159 + T160
+T161=0
+T162=T157 * 4
+T161=T161 + T162
+T163=p0[T161]
+p1[T159]=T163
+T164=T157 + 1
+T157=T164
+goto l64
+l66:
+return 0
+return 0
+end f_arrCopy
+f_calSum [2]
+var T165
+var T166
+var T167
+var T168
+var T169
+var T170
+var T171
+var T172
+var T173
+var T174
+var T175
+var T176
+var T177
+var T178
+var T179
+T165=0
+T166=0
+l68:
+T167=T166 < T0
+if T167== 0 goto l71
+goto l69
+l71:
+goto l70
+l69:
+T168=0
+T169=T166 * 4
+T168=T168 + T169
+T170=p0[T168]
+T171=T165 + T170
+T165=T171
+T172=T166 % p1
+T173=p1 - 1
+T174=T172 != T173
+if T174== 0 goto l75
+goto l72
+l75:
+goto l73
+l72:
+T175=0
+T176=T166 * 4
+T175=T175 + T176
+p0[T175]=0
+goto l74
+l73:
+T177=0
+T178=T166 * 4
+T177=T177 + T178
+p0[T177]=T165
+T165=0
+l74:
+T179=T166 + 1
+T166=T179
+goto l68
+l70:
+return 0
+return 0
+end f_calSum
+f_avgPooling [2]
+var T180
+var T181
+var T182
+var T183
+var T184
+var T185
+var T186
+var T187
+var T188
+var T189
+var T190
+var T191
+var T192
+var T193
+var T194
+var T195
+var T196
+var T197
+var T198
+var T199
+var T200
+var T201
+var T202
+var T203
+var T204
+var T205
+var T206
+var T207
+var T208
+var T209
+var T210
+var T211
+var T212
+var T213
+var T214
+var T215
+T181=0
+T180=0
+l76:
+T183=T181 < T0
+if T183== 0 goto l79
+goto l77
+l79:
+goto l78
+l77:
+T184=p1 - 1
+T185=T181 < T184
+if T185== 0 goto l83
+goto l80
+l83:
+goto l81
+l80:
+T186=0
+T187=T181 * 4
+T186=T186 + T187
+T188=p0[T186]
+T189=T180 + T188
+T180=T189
+goto l82
+l81:
+T190=p1 - 1
+T191=T181 == T190
+if T191== 0 goto l87
+goto l84
+l87:
+goto l85
+l84:
+T192=p0[0]
+T182=T192
+T193=T180 / p1
+p0[0]=T193
+goto l86
+l85:
+T194=0
+T195=T181 * 4
+T194=T194 + T195
+T196=p0[T194]
+T197=T180 + T196
+T198=T197 - T182
+T180=T198
+T199=T181 - p1
+T200=T199 + 1
+T201=0
+T202=T200 * 4
+T201=T201 + T202
+T203=p0[T201]
+T182=T203
+T204=T181 - p1
+T205=T204 + 1
+T206=0
+T207=T205 * 4
+T206=T206 + T207
+T208=T180 / p1
+p0[T206]=T208
+l86:
+l82:
+T209=T181 + 1
+T181=T209
+goto l76
+l78:
+T210=T0 - p1
+T211=T210 + 1
+T181=T211
+l88:
+T212=T181 < T0
+if T212== 0 goto l91
+goto l89
+l91:
+goto l90
+l89:
+T213=0
+T214=T181 * 4
+T213=T213 + T214
+p0[T213]=0
+T215=T181 + 1
+T181=T215
+goto l88
+l90:
+return 0
+return 0
+end f_avgPooling
+f_main [0]
+var 128 T216
+var 128 T217
+var T218
+var T219
+var T220
+var T221
+var T222
+var T223
+var T224
+var T225
+var T226
+var T227
+var T228
+var T229
+var T230
+var T231
+var T232
+var T233
+var T234
+var T235
+var T236
+var T237
+var T238
+var T239
+var T240
+var T241
+var T242
+var T243
+var T244
+var T245
+var T246
+var T247
+var T248
+var T249
+var T250
+var T251
+var T252
+var T253
+var T254
+var T255
+var T256
+var T257
+var T258
+var T259
+var T260
+var T261
+var T262
+var T263
+var T264
+var T265
+var T266
+var T267
+var T268
+var T269
+T0=0
+T0=32
+T216[0]=7
+T216[4]=23
+T216[8]=89
+T216[12]=26
+T216[16]=282
+T216[20]=254
+T216[24]=27
+T216[28]=5
+T216[32]=83
+T216[36]=273
+T216[40]=574
+T216[44]=905
+T216[48]=354
+T216[52]=657
+T216[56]=935
+T216[60]=264
+T216[64]=639
+T216[68]=459
+T216[72]=29
+T216[76]=68
+T216[80]=929
+T216[84]=756
+T216[88]=452
+T216[92]=279
+T216[96]=58
+T216[100]=87
+T216[104]=96
+T216[108]=36
+T216[112]=39
+T216[116]=28
+T216[120]=1
+T216[124]=290
+param T216
+param T217
+T219=call f_arrCopy
+T218=T219
+param T217
+T220=call f_revert
+T218=T220
+T221=0
+l92:
+T222=T221 < 32
+if T222== 0 goto l95
+goto l93
+l95:
+goto l94
+l93:
+T223=0
+T224=T221 * 4
+T223=T223 + T224
+T225=T217[T223]
+T218=T225
+param T218
+call f_putint
+T226=T221 + 1
+T221=T226
+goto l92
+l94:
+param T217
+T227=call f_bubblesort
+T218=T227
+T221=0
+l96:
+T228=T221 < 32
+if T228== 0 goto l99
+goto l97
+l99:
+goto l98
+l97:
+T229=0
+T230=T221 * 4
+T229=T229 + T230
+T231=T217[T229]
+T218=T231
+param T218
+call f_putint
+T232=T221 + 1
+T221=T232
+goto l96
+l98:
+param T217
+T233=call f_getMid
+T218=T233
+param T218
+call f_putint
+param T217
+T234=call f_getMost
+T218=T234
+param T218
+call f_putint
+param T216
+param T217
+T235=call f_arrCopy
+T218=T235
+param T217
+T236=call f_bubblesort
+T218=T236
+T221=0
+l100:
+T237=T221 < 32
+if T237== 0 goto l103
+goto l101
+l103:
+goto l102
+l101:
+T238=0
+T239=T221 * 4
+T238=T238 + T239
+T240=T217[T238]
+T218=T240
+param T218
+call f_putint
+T241=T221 + 1
+T221=T241
+goto l100
+l102:
+param T216
+param T217
+T242=call f_arrCopy
+T218=T242
+param T217
+T243=call f_insertsort
+T218=T243
+T221=0
+l104:
+T244=T221 < 32
+if T244== 0 goto l107
+goto l105
+l107:
+goto l106
+l105:
+T245=0
+T246=T221 * 4
+T245=T245 + T246
+T247=T217[T245]
+T218=T247
+param T218
+call f_putint
+T248=T221 + 1
+T221=T248
+goto l104
+l106:
+param T216
+param T217
+T249=call f_arrCopy
+T218=T249
+T221=0
+T218=31
+param T217
+param T221
+param T218
+T250=call f_QuickSort
+T218=T250
+l108:
+T251=T221 < 32
+if T251== 0 goto l111
+goto l109
+l111:
+goto l110
+l109:
+T252=0
+T253=T221 * 4
+T252=T252 + T253
+T254=T217[T252]
+T218=T254
+param T218
+call f_putint
+T255=T221 + 1
+T221=T255
+goto l108
+l110:
+param T216
+param T217
+T256=call f_arrCopy
+T218=T256
+param T217
+param 4
+T257=call f_calSum
+T218=T257
+T221=0
+l112:
+T258=T221 < 32
+if T258== 0 goto l115
+goto l113
+l115:
+goto l114
+l113:
+T259=0
+T260=T221 * 4
+T259=T259 + T260
+T261=T217[T259]
+T218=T261
+param T218
+call f_putint
+T262=T221 + 1
+T221=T262
+goto l112
+l114:
+param T216
+param T217
+T263=call f_arrCopy
+T218=T263
+param T217
+param 3
+T264=call f_avgPooling
+T218=T264
+T221=0
+l116:
+T265=T221 < 32
+if T265== 0 goto l119
+goto l117
+l119:
+goto l118
+l117:
+T266=0
+T267=T221 * 4
+T266=T266 + T267
+T268=T217[T266]
+T218=T268
+param T218
+call f_putint
+T269=T221 + 1
+T221=T269
+goto l116
+l118:
+return 0
+return 0
+end f_main

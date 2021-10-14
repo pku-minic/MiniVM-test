@@ -1,0 +1,31 @@
+f_fact [1]
+var T0
+var T1
+var T2
+var T3
+var T4
+T0=p0 == 0
+if T0== 0 goto l3
+goto l0
+l3:
+goto l1
+l0:
+return 1
+l1:
+T2=p0 - 1
+T1=T2
+param T1
+T3=call f_fact
+T4=p0 * T3
+return T4
+return 0
+end f_fact
+f_main [0]
+var T5
+var T6
+T5=4
+param T5
+T6=call f_fact
+return T6
+return 0
+end f_main

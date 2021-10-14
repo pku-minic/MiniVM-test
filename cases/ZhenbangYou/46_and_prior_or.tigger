@@ -1,0 +1,71 @@
+f_main [0] [23]
+t0 = 3
+store t0 8
+t0 = 8
+store t0 9
+t0 = -4
+store t0 10
+t0 = 15
+store t0 11
+load 9 t1
+load 8 t2
+t0 = t1 - t2
+store t0 13
+load 11 t1
+load 13 t2
+t0 = t1 % t2
+store t0 14
+load 14 t1
+t2 = 0
+t0 = t1 != t2
+store t0 15
+load 15 t0
+if t0 == x0 goto l3
+load 8 t1
+t2 = 0
+t0 = t1 > t2
+store t0 16
+load 16 t0
+if t0 == x0 goto l3
+goto l0
+l3:
+load 11 t1
+t2 = 3
+t0 = t1 % t2
+store t0 17
+load 17 t1
+t2 = 0
+t0 = t1 == t2
+store t0 18
+load 18 t0
+if t0 == x0 goto l4
+load 10 t1
+t2 = 0
+t0 = t1 > t2
+store t0 19
+load 19 t0
+if t0 == x0 goto l4
+goto l0
+l4:
+goto l1
+l0:
+load 11 t1
+load 10 t2
+t0 = t1 + t2
+store t0 20
+load 9 t1
+t0 = - t1
+store t0 21
+load 20 t1
+load 21 t2
+t0 = t1 - t2
+store t0 22
+load 22 t0
+store t0 12
+load 12 a0
+call f_putint
+l1:
+a0 = 0
+return
+return
+end f_main
