@@ -9,7 +9,7 @@
 
 # test case directories (relative to script directory)
 test_case_dirs=(
-  "cases/atoz"
+  "cases/ZhenbangYou"
   "cases/open-test-cases/eeyore/functional"
   "cases/open-test-cases/tigger/functional"
 )
